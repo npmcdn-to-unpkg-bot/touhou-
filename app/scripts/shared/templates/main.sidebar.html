@@ -1,0 +1,47 @@
+<div class="row">
+	<div class="col-xs-4">
+		<div class="sidemenu">
+			<section class="sidemenu-search">
+				<h2 translate>Quick Search</h2>
+				<!-- <form action="/content/ccfe/orderSearch.html" method="Get" role="searchOrder" data-name="blanksearch">
+					<div class="right-inner-addon form-group">
+						<button class="fa fa-search btn-link" type="submit"></button>
+						<input type="text" name="oid" placeholder="{{'Search by Order ID' | translate}}" class="form-control">
+					</div>
+				</form> -->
+				<div class="form-group">
+					<quick-search state="main.order.search" searchfield="id" placeholder="{{'Order ID' | translate}}"></quick-search>
+				</div>
+				<div class="form-group">
+					<quick-search state="main.customer.search" searchfield="c_id" placeholder="{{'Customer ID, Email' | translate}}"></quick-search>
+				</div>
+				<product-search-widget></product-search-widget>
+			</section>
+			<hr>
+			<section class="sidemenu-links">
+				<h2 translate>Customer</h2>
+				<ul class="link-list">
+					<li class="row"><div class="pull-left col-xs-1 padding-top-list"><i class="icon icon-right-angle"></i></div><div class="pull-left col-xs-14"><a href="" ui-sref="main.customer.search" translate>DETAILED CUSTOMER SEARCH</a></div>
+					</li>
+					<li class="row"><div class="pull-left col-xs-1 padding-top-list"><i class="icon icon-right-angle"></i></div><div class="pull-left col-xs-14"><a ui-sref="main.customer.create" translate>Create New Customer</a></div></li>
+				</ul>
+				<hr>
+				<h2 translate>Order</h2>
+				<ul class="link-list">  
+					<li class="row"><div class="pull-left col-xs-1 padding-top-list"><i class="icon icon-right-angle"></i></div><div class="pull-left col-xs-14"><a href="#/order/search" translate>Detailed Order Search</a></div></li>					
+					<li class="row"><div class="pull-left col-xs-1 padding-top-list"><i class="icon icon-right-angle"></i></div><div class="pull-left col-xs-14"><a href="#/order/create" translate>Create New Order</a></div></li>
+					<li class="row"><div class="pull-left col-xs-1 padding-top-list"><i class="icon icon-right-angle"></i></div><div class="pull-left col-xs-14"><a href="/content/ccfe/orderlisting.html?ors=0000&afs=REVI&tl=iro" translate>In review Orders</a></div></li>
+					<li class="row"><div class="pull-left col-xs-1 padding-top-list"><i class="icon icon-right-angle"></i></div><div class="pull-left col-xs-14"><a href="/content/ccfe/orderlisting.html?ors=0500&rs=0000&tl=pr&pendingReturns=true" translate>Pending returns</a></div></li>
+					<li class="row"><div class="pull-left col-xs-1 padding-top-list"><i class="icon icon-right-angle"></i></div><div class="pull-left col-xs-14"><a href="/content/ccfe/orderlisting.html?ors=0500&rs=0000&tl=pe" translate>PENDING EXCHANGES</a></div></li>
+					<li class="row"><div class="pull-left col-xs-1 padding-top-list"><i class="icon icon-right-angle"></i></div><div class="pull-left col-xs-14"><a href="/content/ccfe/orderlisting.html?sc=bpa&tl=bpa" translate>Being processed and<br>Allocated orders</a></div></li>
+				</ul>
+				<hr>
+				<h2 translate>Product</h2>
+				<ul class="link-list">
+					<li class="row"><div class="pull-left col-xs-1 padding-top-list"><i class="icon icon-right-angle"></i></div><div class="pull-left col-xs-14"><a ui-sref="main.product.search" translate>Detailed Product Search</a></div></li>
+				</ul>
+			</section> 
+		</div>
+	</div>
+	<main ui-view></main>
+</div>

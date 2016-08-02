@@ -1,0 +1,81 @@
+header {
+    height: 55px;
+    padding: 10px;
+    color: #838383;
+    margin-bottom: 30px;
+}
+header a {
+    color: #838383;
+    &:hover { text-decoration: none; }
+}
+header .home {
+    position: absolute;
+    top: 16px;
+    left: 255px;
+}
+header .user {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+header .user .fa {
+    font-size: 1.5em;
+}
+header .user {
+	.user-item,
+	.user-name {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.user-item:hover {
+		cursor: pointer;
+	}
+}
+
+.maison-dropdown {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	padding-right: 0px;
+	width: 230px;
+}
+.maison-dropdown .dropdown .dropdown-toggle,.maison-dropdown .dropdown .dropdown-menu {
+	width: 100%;
+}
+.maison-dropdown .dropdown .dropdown-toggle {
+	height: 55px;
+	box-shadow: 0px 1px 4px 0 #666;
+	behavior: url(../../../assets/images/PIE.htc);
+	position: relative;
+}
+.maison-dropdown .dropdown .dropdown-menu {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.maison-dropdown .dropdown .dropdown-menu li,.maison-dropdown .dropdown .dropdown-menu a {
+	height: 55px;
+}
+.maison-dropdown .dropdown .dropdown-menu li a:hover,.maison-dropdown .dropdown .dropdown-menu li a:focus {
+	background-color: transparent;
+	filter: none;
+}
+.maison-dropdown .dropdown .cartier-logo {
+	background: url('../../../assets/images/cartier-logo.png') no-repeat center center;
+}
+.maison-dropdown .dropdown .panerai-logo-us {
+	background: url('../../../assets/images/panerai-logo-us.png') no-repeat center center;
+}
+.maison-dropdown .dropdown .panerai-logo-eu {
+	background: url('../../../assets/images/panerai-logo-eu.png') no-repeat center center;
+}
+.maison-dropdown .dropdown .piaget-logo {
+	background: url('../../../assets/images/piaget-logo.png') no-repeat center center;
+}
+.maison-dropdown .dropdown .vcaa-logo {
+	background: url('../../../assets/images/vcaa-logo.png') no-repeat center center;
+}
+.maison-dropdown .fa-angle-down {
+	color: #838383;
+}

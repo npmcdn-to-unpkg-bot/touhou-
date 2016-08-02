@@ -1,0 +1,32 @@
+# NodeJS and Angular
+node_modules
+www
+platforms
+# release
+.tmp
+app/assets/styles/**/*.css
+app/assets/styles/**/*.css.map
+.sass-cache
+# bower_components
+# app/bower_components
+*.logdd -
+samples
+app/scripts/constants.js
+# docs/methods/source/touhou.controller
+# docs/methods/source/touhou.directive
+
+# Ignore IDE and Operating System artifacts
+.idea
+atlassian-ide-plugin.xml
+*.iml
+*.ipr
+*.iws
+.project
+.settings
+.classpath
+target/
+maven-eclipse.xml
+nb-configuration.xml
+.DS_Store
+
+## PS: you should not gitignore gitignore files.

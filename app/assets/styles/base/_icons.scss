@@ -1,0 +1,351 @@
+// [class^="icon-"], [class*=" icon-"] {
+//     font-family:             'icon-font';
+//     speak:                   none;
+//     font-style:              normal;
+//     font-weight:             normal;
+//     font-variant:            normal;
+//     text-transform:          none;
+//     line-height:             1;
+//     /* Better Font Rendering =========== */
+//     -webkit-font-smoothing:  antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+.icon {
+    background: url('../../../assets/images/sprite-awesome.png') repeat scroll;
+    display: inline-block;
+    opacity: 0.8;
+}
+.icon-lg {
+    font-size: 1.33333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+.icon-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+.icon-stack-1x,.icon-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.icon-stack-1x {
+    line-height: inherit;
+}
+.icon-stack-2x {
+    font-size: 2em;
+}
+.icon-inverse {
+    color: #ffffff;
+}
+.icon-border {
+    padding: .2em .25em .15em;
+    border: solid 0.08em #eeeeee;
+    border-radius: .1em;
+}
+.icon.pull-left {
+    margin-right: .3em;
+}
+.icon.pull-right {
+    margin-left: .3em;
+}
+.icon-fw {
+    width: 1.2857142857142858em;
+    text-align: center;
+}
+.icon:hover {
+    opacity: 1;
+}
+.icon-angle-down {
+    background-position: -18px -29px;
+    width: 8px;
+    height: 5px;
+}
+.icon-angle-down.icon-2x {
+    background-position: -169px -24px;
+    width: 15px;
+    height: 9px;
+}
+.icon-home.icon-2x {
+    background-position: -215px -17px;
+    width: 24px;
+    height: 19px;
+}
+.icon-home.icon-4x {
+    background-position: -57px -13px;
+    width: 35px;
+    height: 27px;
+}
+.icon-sign-out {
+    background-position: -269px -20px;
+    width: 16px;
+    height: 14px;
+}
+.icon-search {
+    background-position: -317px -19px;
+    width: 17px;
+    height: 17px;
+}
+.icon-search:hover {
+    opacity: 0.8;
+}
+.icon-caret-right {
+    background-position: -373px -24px;
+    width: 7px;
+    height: 10px;
+}
+.icon-times-circle {
+    background-position: -416px -20px;
+    width: 16px;
+    height: 16px;
+}
+.icon-minus-circle {
+    background-position: -466px -24px;
+    width: 12px;
+    height: 12px;
+}
+.error .icon-minus-circle {
+    background-position: -520px -23px;
+    width: 12px;
+    height: 12px;
+}
+.icon-right-angle {
+    background-position: -572px -21px;
+    width: 8px;
+    height: 12px;
+}
+.icon-arrow-circle-right {
+    background-position: -617px -16px;
+    width: 23px;
+    height: 22px;
+}
+.login-box .login-submit.icon-arrow-circle-right {
+    background-position: -617px -16px;
+    width: 23px;
+    height: 22px;
+}
+.icon-eye {
+    background-position: -667px -25px;
+    width: 12px;
+    height: 8px;
+    opacity: 1;
+}
+.icon-calendar {
+    background-position: -719px -21px;
+    width: 13px;
+    height: 13px;
+}
+.info-box .icon-eye {
+    background-position: -765px -23px;
+    width: 18px;
+    height: 12px;
+}
+.icon-star {
+    background-position: -814px -19px;
+    width: 17px;
+    height: 16px;
+}
+.icon-eraser {
+    background-position: -867px -22px;
+    width: 15px;
+    height: 11px;
+}
+.icon-user {
+    background-position: -917px -18px;
+    width: 15px;
+    height: 16px;
+}
+.icon-file {
+    background-position: -968px -21px;
+    width: 12px;
+    height: 13px;
+}
+.icon-pencil {
+    background-position: -22px -67px;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+}
+#page-nav .icon-angle-right {
+    background-position: -49px -72px;
+    width: 5px;
+    height: 8px;
+    opacity: 1;
+    display: inline;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+#page-nav .icon-angle-left {
+    background-position: -110px -72px;
+    width: 5px;
+    height: 8px;
+    opacity: 1;
+    display: inline;
+    padding-left: 17px;
+}
+.icon-angle-right {
+    background-position: -74px -75px;
+    width: 5px;
+    height: 8px;
+    opacity: 1;
+}
+.icon-angle-left {
+    background-position: -122px -75px;
+    width: 5px;
+    height: 8px;
+    opacity: 1;
+}
+.icon-angle-right.icon-4x {
+    background-position: -171px -65px;
+    width: 17px;
+    height: 28px;
+    opacity: 1;
+}
+.icon-angle-left.icon-4x {
+    background-position: -218px -65px;
+    width: 17px;
+    height: 28px;
+    opacity: 1;
+}
+.icon-check-circle {
+    background-position: -268px -70px;
+    width: 16px;
+    height: 16px;
+}
+.icon-check-circle.ok {
+    background-position: -317px -70px;
+    width: 16px;
+    height: 16px;
+}
+.icon-times-circle.error {
+    background-position: -368px -71px;
+    width: 16px;
+    height: 16px;
+}
+i.glyphicon-chevron-up, .up i {
+    background: url('../../../assets/images/sprite-awesome.png') repeat scroll;
+    opacity: 1;
+    width: 9px;
+    height: 6px;
+    display: inline-block;
+    background-position: -420px -77px;
+    margin-left: 5px;
+}
+i.glyphicon-chevron-down, down i {
+    background: url('../../../assets/images/sprite-awesome.png') repeat scroll;
+    opacity: 1;
+    width: 9px;
+    height: 6px;
+    background-position: -18px -29px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.carousel-control .glyphicon-chevron-left{
+    position: absolute;
+    display: inline-block;
+    top:50%;
+    width: 17px;
+    height: 28px;
+    margin-left: 5px;
+    opacity: 1;
+    background: url('../../../assets/images/sprite-awesome.png') repeat scroll;
+    background-position: -218px -65px;
+}
+.carousel-control .glyphicon-chevron-right{
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    width: 17px;
+    height: 28px;
+    margin-left: 5px;
+    opacity: 1;
+    background: url('../../../assets/images/sprite-awesome.png') repeat scroll;
+    background-position: -171px -65px;
+}
+.sprite {
+    display: inline-block;
+    background: url("../../../assets/images/ccfe_icon_sprite.png") scroll no-repeat 0 0 transparent;
+}
+.sprite.sprite-check-green {
+    background-position: -12px -15px;
+    width: 18px;
+    height: 17px;
+}
+.sprite.sprite-new-green {
+    background-position: -13px -45px;
+    width: 25px;
+    height: 17px;
+}
+.sprite.sprite-refresh-green {
+    background-position: -13px -72px;
+    width: 18px;
+    height: 17px;
+}
+.sprite.sprite-stock-red {
+    background-position: -13px -100px;
+    width: 18px;
+    height: 17px;
+}
+.sprite.sprite-limited {
+    background-position: -12px -134px;
+    width: 19px;
+    height: 18px;
+}
+.sprite.sprite-exclusive {
+    background-position: -12px -167px;
+    width: 19px;
+    height: 18px;
+}
+.sprite.sprite-worn {
+    background-position: -13px -202px;
+    width: 15px;
+    height: 23px;
+}
+.sprite.sprite-threesixty {
+    background-position: -12px -242px;
+    width: 33px;
+    height: 20px;
+}
+.sprite.sprite-stop-red {
+    background-position: -14px -276px;
+    width: 18px;
+    height: 17px;
+}
+.sprite.sprite-gift-green {
+    background-position: -14px -304px;
+    width: 25px;
+    height: 17px;
+}
+.sprite.sprite-empty-circle {
+    background-position: -14px -335px;
+    width: 19px;
+    height: 18px;
+}
+.sprite.sprite-shopping-bag {
+    background-position: -16px -364px;
+    width: 15px;
+    height: 18px;
+}
+.sprite.sprite-exchange-return {
+    background-position: -15px -392px;
+    width: 15px;
+    height: 13px;
+    margin-left: 2px;
+}
+
+.icon-nav {
+    position: absolute;
+    width: 90%;
+    margin-top: 4px;
+    margin-left: 8px;
+    padding: 10px 5px;
+    top: 0px;
+}
+.icon-nav a {
+    text-decoration: none;
+}

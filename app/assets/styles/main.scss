@@ -1,0 +1,52 @@
+/*
+IMPORTANT NOTE:
+ This file SHOULD NOT BE EDITED MANUALLY, as its purpose
+ is to be the point where all your stylesheet-files will
+ be imported
+*/
+
+
+
+// inject:sass
+@import  '_functions/_angular-datepicker.scss';
+@import  '_functions/_carousel.scss';
+@import  '_functions/_common.scss';
+@import  '_functions/_datepicker.scss';
+@import  '_functions/_spinner.scss';
+@import  '_functions/_swiper.scss';
+@import  '_variables.scss';
+@import  'base/_alerts.scss';
+@import  'base/_breadcrumb.scss';
+@import  'base/_buttons.scss';
+@import  'base/_colors.scss';
+@import  'base/_custom.scss';
+@import  'base/_dropdown.scss';
+@import  'base/_effects.scss';
+@import  'base/_font-awesome.scss';
+@import  'base/_fonts.scss';
+@import  'base/_forms.scss';
+@import  'base/_grid.scss';
+@import  'base/_icons.scss';
+@import  'base/_img.scss';
+@import  'base/_lists.scss';
+@import  'base/_media.scss';
+@import  'base/_modal.scss';
+@import  'base/_nav.scss';
+@import  'base/_normalize.scss';
+@import  'base/_page.scss';
+@import  'base/_pagination.scss';
+@import  'base/_panel.scss';
+@import  'base/_popover.scss';
+@import  'base/_progress-bars.scss';
+@import  'base/_tables.scss';
+@import  'base/_thumbnail.scss';
+@import  'base/_typography.scss';
+@import  '../../scripts/routes/authenticate/_authenticateCtrl.scss';
+@import  '../../scripts/routes/expert/_expertCtrl.scss';
+@import  '../../scripts/routes/index/_indexCtrl.scss';
+@import  '../../scripts/routes/login/_loginCtrl.scss';
+@import  '../../scripts/routes/manage/_manageCtrl.scss';
+@import  '../../scripts/routes/recommend/_recommendCtrl.scss';
+@import  '../../scripts/routes/resource/_resourceCtrl.scss';
+@import  '../../scripts/shared/templates/header/_headerCtrl.scss';
+// endinject

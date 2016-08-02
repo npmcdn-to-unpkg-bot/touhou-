@@ -1,0 +1,32 @@
+{
+    "local": {
+        "baseURL": "http://127.0.0.1:8080/ccfe/"
+    },
+    "localdev": {
+        "baseURL": "http://ccfe.richemont.d1m.cn:8086/ccfe/"
+    },
+    "dev": {
+        "baseURL": "http://dev-ccfe5.intranet.rccad.net/api/"
+    },
+    "dev-cn": {
+        "baseURL": "http://dev-ccfe5-cn.intranet.rccad.net/api/"
+    },
+    "quality": {
+        "baseURL": "http://quality-ccfe5.intranet.rccad.net/api/"
+    },
+    "quality-cn": {
+        "baseURL": "http://quality-ccfe5-cn.intranet.rccad.net/api/"
+    },
+    "prepod": {
+        "baseURL": "http://preprod-ccfe5.intranet.rccad.net/api/"
+    },
+    "prepod-cn": {
+        "baseURL": "http://preprod-ccfe5-cn.intranet.rccad.net/api/"
+    },
+    "production-cn": {
+        "baseURL": "http://ccfe5.intranet.rccad.net/api/"
+    },
+    "production": {
+        "baseURL": "http://ccfe5-cn.intranet.rccad.net/api/"
+    }
+}

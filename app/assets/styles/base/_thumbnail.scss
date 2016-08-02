@@ -1,0 +1,26 @@
+.thumbnail {
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	line-height: 1.666666667;
+	background-color: #b0b0b0;
+	border: 1px solid #dddddd;
+	border-radius: 0px;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.thumbnail > img,.thumbnail a > img {
+	margin-left: auto;
+	margin-right: auto;
+}
+a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active {
+	border-color: #5e5e5e;
+}
+.thumbnail .caption {
+	padding: 9px;
+	color: #5e5e5e;
+}
+.thumbnail,.img-thumbnail {
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}

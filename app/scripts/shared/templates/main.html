@@ -1,0 +1,15 @@
+<!-- This is the view when users are logged in -->
+<div class="app">
+  <!-- Common loading spinner -->
+  <spinner is-loading="activeRequests > 0"></spinner>
+  <!-- Common Header -->
+  <!-- <ng-include src="'scripts/shared/templates/header/headerCtrl.html'" scope="" onload=""></ng-include> -->
+			
+  <!-- Main body -->
+  <div class="container-fluid">
+    <main ui-view></main>
+  </div>
+  <div class="container-fluid text-center">
+	<h1>Please wait while properties load...</h1>
+  </div>
+</div>

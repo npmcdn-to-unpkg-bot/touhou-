@@ -1,0 +1,1679 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: routes\product\detail\caseProperties.html:1
+#: routes\product\detail\detailCtrl.html:470
+msgid "{{item}}"
+msgstr ""
+
+#: routes\product\detail\detailCtrl.html:483
+#: routes\product\detail\detailCtrl.html:499
+msgid "{{item}}:"
+msgstr ""
+
+#: routes\product\detail\caseProperties.html:5
+msgid "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{propertyName}}:"
+msgstr ""
+
+#: routes\customer\modify\_modals.html:25
+msgid "Account Confirmation"
+msgstr "账户确认"
+
+#: routes\customer\modify\_modals.html:92
+msgid "Account Confirmation Email"
+msgstr "帐户确认电子邮件"
+
+#: routes\customer\modify\_modals.html:40
+#: routes\customer\modify\modifyCtrl.html:135
+msgid "Account Confirmed"
+msgstr "账户确认"
+
+#: routes\customer\modify\_modals.html:56
+msgid "Account Not Confirmed"
+msgstr "帐户未确认"
+
+#: routes\dashboard\dashboardCtrl.html:186
+msgid "ACTION REQUIRED ON ORDERS REVIEWED"
+msgstr "审核通过的订单需要操作"
+
+#: routes\order\create\order-comment\order-comment-modal.html:24
+msgid "Add Comment"
+msgstr "添加备注"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:63
+msgid "Add Product"
+msgstr "添加产品"
+
+#: routes\customer\detail\detailCtrl.html:197
+msgid "Address :"
+msgstr "地址部分1 :"
+
+#: routes\customer\detail\detailCtrl.html:203
+msgid "Address Details :"
+msgstr "详细地址 :"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:166
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:391
+msgid "address.part"
+msgstr "地址部分"
+
+#: routes\customer\modify\_modals_done.html:74
+msgid "Are you sure that you want to delete that customer?"
+msgstr "你确定要删除那个客户吗?"
+
+#: routes\dashboard\dashboardCtrl.html:105
+msgid "Being processed and allocated orders"
+msgstr "正在处理和已配货订单"
+
+#: shared\templates\main.sidebar.html:36
+msgid "Being processed and<br>Allocated orders"
+msgstr "正在处理并已配货"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:32
+msgid "Brand Discount"
+msgstr "品牌折扣"
+
+#: routes\customer\detail\detailCtrl.html:235
+msgid "Building / Apartment :"
+msgstr "门牌号"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:528
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:114
+#: routes\order\create\order-comment\order-comment-modal.html:23
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:143
+msgid "Cancel"
+msgstr "取消"
+
+#: routes\order\create\components\_customerSearchModal.html:35
+msgid "Cancel Search"
+msgstr "取消"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:74
+msgid "cancel-draft-order"
+msgstr "取消草拟订单"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:46
+msgid "characterRemaining"
+msgstr "剩余字符"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:146
+msgid "CHECKOUT"
+msgstr "结账"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:28
+msgid "Checkout as Guest"
+msgstr "以访客身份下单"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:525
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:111
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:258
+msgid "checkout.address.back"
+msgstr "返回"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:82
+msgid "checkout.address.billing.address"
+msgstr "账单地址"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:242
+msgid "checkout.address.boutique.pickup"
+msgstr "您是否希望到门店提货"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:275
+msgid "checkout.address.check.same.address"
+msgstr "送货地址和账单地址相同吗?"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:127
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:337
+msgid "checkout.address.choose.address"
+msgstr "在你的通讯录中选一个地址或者在下面输入一个新的账单地址"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:279
+msgid "checkout.address.no"
+msgstr "否"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:131
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:341
+msgid "checkout.address.select.address"
+msgstr "选择地址"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:272
+msgid "checkout.address.shipping.information"
+msgstr "送货信息"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:37
+msgid "checkout.address.tax.exemption"
+msgstr "免税"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:247
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:506
+msgid "checkout.address.validation.error"
+msgstr "系统无法认证这个地址，请向客户查询并修改"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:45
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:47
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:33
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:33
+msgid "checkout.address.vat.refundable"
+msgstr "VAT 增值税发票"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:277
+msgid "checkout.address.yes"
+msgstr "确定"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:32
+msgid "checkout.confirmation"
+msgstr "确认"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:34
+msgid "checkout.confirmation.apply"
+msgstr "申请"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:58
+msgid "checkout.confirmation.balance"
+msgstr "余额"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:45
+msgid "checkout.confirmation.del.charge"
+msgstr "运费"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:41
+#: routes\order\create\order-summary\order-summaryDirective.html:52
+msgid "checkout.confirmation.incl.VAT"
+msgstr "包括增值税"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:56
+msgid "checkout.confirmation.maison.charge"
+msgstr "品牌优惠"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:40
+msgid "checkout.confirmation.order.details"
+msgstr "订单明细"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:242
+msgid "checkout.confirmation.order.info"
+msgstr "订单信息"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:252
+msgid "checkout.confirmation.order.ref.no"
+msgstr "订单号"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:51
+msgid "checkout.confirmation.order.total"
+msgstr "订单总价"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:23
+msgid "checkout.confirmation.pricePerUnit"
+msgstr "单价"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:22
+msgid "checkout.confirmation.quantity"
+msgstr "数量"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:20
+msgid "checkout.confirmation.ref.no"
+msgstr "订单号"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:19
+msgid "checkout.confirmation.size"
+msgstr "尺寸"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:40
+msgid "checkout.confirmation.subtotal"
+msgstr "小计"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:48
+msgid "checkout.confirmation.vat"
+msgstr "增值税"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:83
+msgid "checkout.delivery.discuss.with.client"
+msgstr "当你客户在讨论时请这样措辞…"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:63
+msgid "checkout.delivery.estimated.delivery"
+msgstr "预计送货日期是"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:44
+msgid "checkout.delivery.free.delivery"
+msgstr "免运费"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:84
+msgid "checkout.delivery.instruction"
+msgstr ""
+"如果今天就处理你的订单，预计送货日期是： 在左边引用按入标准送货选项后给出的送"
+"货日期. 如果客人要求更早一些送货,按入下一个选项加急送货然后给出日期看客人是否"
+"接受.如果客人还是需要更快送货(隔夜到达), 请让客人了解到我们很乐意先为他完成这"
+"个订单, 但是只能在一个小时之内再回复他,确认能不能提供特急送货的服务."
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:41
+msgid "checkout.delivery.options"
+msgstr "送货选项"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:70
+msgid "checkout.delivery.requested.delivery"
+msgstr "请求交货日期"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:42
+msgid "checkout.delivery.select.delivery"
+msgstr "请选择送货方式"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:119
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:89
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:110
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:80
+msgid "checkout.delivery.shipping.country"
+msgstr "运送地(国家)"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:12
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:12
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:12
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:12
+msgid "checkout.payment.addresses.label"
+msgstr "地址"
+
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:216
+msgid "checkout.payment.conditions"
+msgstr "已经告知客户销售条款"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:24
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:24
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:24
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:24
+msgid "checkout.payment.confirmation.label"
+msgstr "确认"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:206
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:206
+#: routes\order\detail\orderdetail\deliveryAddress.html:32
+msgid "checkout.payment.delivery.billing.same"
+msgstr "送货地址和账单地址一致"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:16
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:16
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:16
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:16
+msgid "checkout.payment.delivery.label"
+msgstr "送货"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:165
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:162
+#: routes\order\detail\orderdetail\deliveryMethod.html:9
+msgid "checkout.payment.estimated.delivery.date"
+msgstr "预计送货日期"
+
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:246
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:249
+msgid "checkout.payment.place.order"
+msgstr "提交订单"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:168
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:165
+#: routes\order\detail\orderdetail\deliveryMethod.html:11
+msgid "checkout.payment.requested.delivery.date"
+msgstr "请求交货日期"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:20
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:20
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:20
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:20
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:39
+msgid "checkout.payment.review.payment"
+msgstr "回顾及付款"
+
+#: routes\customer\detail\detailCtrl.html:174
+msgid "City :"
+msgstr "城市 :"
+
+#: routes\order\create\components\_customerSearch.html:52
+msgid "Clear"
+msgstr "清空"
+
+#: routes\customer\modify\modifyCtrl.html:153
+msgid "Click button to resend account confirmation email"
+msgstr "点击按钮将重新发送账户确认邮件"
+
+#: routes\customer\modify\modifyCtrl.html:128
+msgid "Click to confirm account"
+msgstr "点击按钮确认账户"
+
+#: routes\order\create\components\_customerSearchModal.html:6
+#: routes\order\create\components\_draftOrderSaveComponent.html:7
+#: routes\order\create\shoppingbag\_stock-quantity-modal.html:6
+#: routes\product\detail\_stock-quantity-modal.html:6
+msgid "Close"
+msgstr "关闭"
+
+#: routes\customer\detail\detailCtrl.html:257
+msgid "Company Name :"
+msgstr "公司名称"
+
+#: routes\customer\detail\detailCtrl.html:292
+#: routes\customer\form\_fields-CN.html:250
+msgid "Complete Account"
+msgstr "完整帐户"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:70
+msgid "complete.draft.order"
+msgstr "完成草拟订单"
+
+#: shared\global-directives\modal-with-confirmation\modal-with-confirmationDirective.html:30
+msgid "Confirm"
+msgstr "确认"
+
+#: routes\customer\modify\_modals.html:104
+#: routes\customer\modify\_modals.html:120
+#: routes\customer\modify\_modals.html:22
+#: routes\customer\modify\_modals.html:37
+#: routes\customer\modify\_modals.html:53 routes\customer\modify\_modals.html:7
+#: routes\customer\modify\modifyCtrl.html:125
+#: routes\customer\modify\modifyCtrl.html:134
+msgid "Confirm Account"
+msgstr "确认账户"
+
+#: routes\customer\modify\_modals.html:73
+#: routes\customer\modify\_modals.html:88
+msgid "Confirm Account Email"
+msgstr "确认电子邮件帐户"
+
+#: routes\customer\modify\modifyCtrl.html:133
+msgid "Confirm Account?"
+msgstr "确认账户？"
+
+#: routes\customer\create\_createCtrl_CN.html:255
+#: routes\customer\form\_newsletter-options.html:3
+msgid "CONTACT OPTIONS"
+msgstr "联系人选项"
+
+#: routes\order\create\components\_customerInformation.html:33
+#: routes\order\create\components\_customerSearchModal.html:29
+msgid "Country"
+msgstr "国家"
+
+#: routes\customer\detail\detailCtrl.html:160
+msgid "Country :"
+msgstr "国家 :"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:90
+msgid "Create gift message"
+msgstr "创建礼品卡信息"
+
+#: routes\customer\create\_createCtrl_CN.html:3
+#: routes\customer\create\createCtrl.html:11
+#: shared\templates\main.sidebar.html:26
+msgid "Create New Customer"
+msgstr "创建新客户"
+
+#: shared\templates\main.sidebar.html:32
+msgid "Create New Order"
+msgstr "创建新订单"
+
+#: routes\customer\detail\detailCtrl.html:359
+msgid "CRM INFORMATION"
+msgstr "CRM信息"
+
+#: shared\templates\main.sidebar.html:22
+msgid "Customer"
+msgstr "客户"
+
+#: routes\customer\detail\detailCtrl.html:9
+msgid "Customer Detail"
+msgstr "客户详情"
+
+#: routes\customer\modify\_modals_done.html:111
+#: routes\customer\modify\modifyCtrl.html:57
+msgid "Customer has been deleted."
+msgstr "客户已经被删除"
+
+#: routes\customer\search\searchCtrl.html:21
+#: routes\order\create\components\_customerSearch.html:8
+msgid "Customer ID (Email, SWSE ID, SAP ID)"
+msgstr "客户ID（邮箱 / SWSE ID / SAP ID）"
+
+#: shared\templates\main.sidebar.html:16
+msgid "Customer ID, Email"
+msgstr "客户编号或邮箱"
+
+#: routes\customer\detail\detailCtrl.html:17
+#: routes\order\create\components\_customerInformation.html:6
+msgid "Customer Information"
+msgstr "客户信息"
+
+#: routes\customer\search\searchCtrl.html:5
+#: routes\order\create\components\_customerSearch.html:3
+#: routes\order\create\components\_customerSearchModal.html:8
+msgid "Customer Search"
+msgstr "客户搜索"
+
+#: routes\customer\create\_createCtrl_CN.html:303
+#: routes\customer\create\createCtrl.html:65
+msgid "customer.button.cancelCreation"
+msgstr "取消"
+
+#: routes\customer\create\_createCtrl_CN.html:249
+#: routes\customer\form\_fields-CN-2.html:237
+#: routes\customer\form\_fields-CN.html:241
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:256
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:515
+msgid "customer.button.checkAddress"
+msgstr "确认地址"
+
+#: routes\customer\create\_createCtrl_CN.html:304
+#: routes\customer\create\createCtrl.html:66
+msgid "customer.button.createAccount"
+msgstr "创建客户账号"
+
+#. {{brand}} expands to the selected brand
+#. brand expands to the selected brand
+#: routes\customer\create\_createCtrl_CN.html:260
+#: routes\customer\form\_newsletter-options.html:9
+msgid "customer.create.contactByBrand"
+msgstr "是的,我乐意收到{{brand.code}}产品和活动的相关信息"
+
+#: routes\customer\create\_createCtrl_CN.html:291
+#: routes\customer\create\createCtrl.html:53
+msgid "customer.create.isLegal"
+msgstr ""
+"只有法定成年人(大多数国家是18岁)且具备签订合同的法定资格才可以通过客户联系中"
+"心或网站订购产品."
+
+#. brand expands to the selected brand
+#: routes\customer\create\_createCtrl_CN.html:283
+#: routes\customer\create\createCtrl.html:45
+msgid "customer.create.isPrivacy"
+msgstr "已经告知客人关于{{brand.code}}的隐私条款"
+
+#. {{brand}} expands to the selected brand
+#. brand expands to the selected brand
+#: routes\customer\create\_createCtrl_CN.html:264
+#: routes\customer\form\_newsletter-options.html:14
+msgid "customer.create.newsLetter"
+msgstr "我希望可以收到{{brand.code}}的电子订阅"
+
+#. brand expands to the selected brand
+#: routes\customer\create\_createCtrl_CN.html:277
+#: routes\customer\create\createCtrl.html:39
+msgid "customer.create.policyInfo"
+msgstr ""
+"请告知客户，创建新帐户前必须接受{{brand.code}}的隐私权政策。客户通过客户服务"
+"完成注册后将收到一封邮件。该电子邮件包含{{brand.code}}隐私政策的链接，客户可"
+"随时上网阅读。此外，客户收到登录的一次性密码。客户登录后表示其接受了{{brand."
+"code}}隐私政策。"
+
+#: routes\customer\form\_error-messages.html:5
+msgid "customer.error.email"
+msgstr "Invalid email"
+
+#: routes\customer\create\_createCtrl_CN.html:220
+msgid "customer.error.invalidDate"
+msgstr "Invalid date of birth entered"
+
+#: routes\customer\form\_error-messages.html:3
+msgid "customer.error.maxlength"
+msgstr "This field is too long"
+
+#: routes\customer\form\_error-messages.html:2
+msgid "customer.error.minlength"
+msgstr "This field is too short"
+
+#: routes\customer\form\_fields-CN-2.html:232
+#: routes\customer\form\_fields-CN.html:257
+msgid "customer.error.noAddress"
+msgstr "系统无法认证这个地址，请向客户查询并修改"
+
+#: routes\customer\form\_error-messages.html:4
+msgid "customer.error.pattern"
+msgstr "Invalid input"
+
+#: routes\customer\create\_createCtrl_CN.html:114
+#: routes\customer\create\_createCtrl_CN.html:153
+#: routes\customer\create\_createCtrl_CN.html:236
+#: routes\customer\create\_createCtrl_CN.html:285
+#: routes\customer\create\_createCtrl_CN.html:293
+#: routes\customer\create\_createCtrl_CN.html:57
+#: routes\customer\create\_createCtrl_CN.html:72
+#: routes\customer\create\_createCtrl_CN.html:97
+#: routes\customer\create\createCtrl.html:47
+#: routes\customer\create\createCtrl.html:55
+#: routes\customer\form\_error-messages.html:1
+#: routes\order\create\components\_draftOrderSaveComponent.html:36
+#: routes\order\create\components\_draftOrderSaveComponent.html:44
+msgid "customer.error.required"
+msgstr "This value is required."
+
+#: routes\customer\create\_createCtrl_CN.html:183
+#: routes\customer\form\_fields-CN-2.html:174
+#: routes\customer\form\_fields-CN.html:206
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:145
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:357
+msgid "customer.form.address5"
+msgstr "地址部分1"
+
+#: routes\customer\create\_createCtrl_CN.html:202
+#: routes\customer\form\_fields-CN-2.html:193
+#: routes\customer\form\_fields-CN.html:215
+msgid "customer.form.address6"
+msgstr "地址部分2"
+
+#: routes\customer\create\_createCtrl_CN.html:36
+#: routes\customer\form\_fields-CN-2.html:16
+#: routes\customer\form\_fields-CN.html:16
+msgid "customer.form.addressAvailable"
+msgstr "填写地址"
+
+#: routes\customer\create\_createCtrl_CN.html:213
+#: routes\customer\form\_fields-CN-2.html:206
+#: routes\customer\form\_fields-CN.html:62
+#: routes\customer\search\searchCtrl.html:31
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:103
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:94
+#: routes\order\create\components\_customerSearch.html:35
+msgid "customer.form.birthDate"
+msgstr "出生日期"
+
+#: routes\customer\create\_createCtrl_CN.html:104
+#: routes\customer\form\_fields-CN-2.html:112
+#: routes\customer\form\_fields-CN.html:188
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:174
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:400
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:411
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:115
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:85
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:106
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:76
+msgid "customer.form.city"
+msgstr "城市"
+
+#: routes\customer\create\_createCtrl_CN.html:89
+#: routes\customer\form\_fields-CN-2.html:101
+#: routes\customer\form\_fields-CN.html:94
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:138
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:348
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:117
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:87
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:108
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:78
+msgid "customer.form.country"
+msgstr "国家"
+
+#: routes\customer\create\_createCtrl_CN.html:143
+#: routes\customer\form\_fields-CN-2.html:143
+#: routes\customer\form\_fields-CN.html:196
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:185
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:421
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:433
+msgid "customer.form.district"
+msgstr "区/县"
+
+#: routes\customer\create\_createCtrl_CN.html:195
+#: routes\customer\form\_fields-CN-2.html:185
+#: routes\customer\form\_fields-CN.html:51
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:105
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:75
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:66
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:96
+msgid "customer.form.email"
+msgstr "登录电子邮箱"
+
+#: routes\customer\create\_createCtrl_CN.html:163
+#: routes\customer\form\_fields-CN-2.html:156
+#: routes\customer\form\_fields-CN.html:45
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:119
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:328
+msgid "customer.form.firstName1"
+msgstr "名（拼音）"
+
+#: routes\customer\create\_createCtrl_CN.html:82
+#: routes\customer\form\_fields-CN.html:32
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:104
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:310
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:111
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:81
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:102
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:72
+msgid "customer.form.firstName2"
+msgstr "名（中文）"
+
+#: routes\customer\create\_createCtrl_CN.html:124
+#: routes\customer\form\_fields-CN-2.html:125
+#: routes\customer\form\_fields-CN.html:39
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:113
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:321
+msgid "customer.form.lastName1"
+msgstr "姓（拼音）"
+
+#: routes\customer\create\_createCtrl_CN.html:44
+#: routes\customer\form\_fields-CN-2.html:23
+#: routes\customer\form\_fields-CN.html:25
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:300
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:97
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:71
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:99
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:62
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:90
+msgid "customer.form.lastName2"
+msgstr "姓（中文）"
+
+#: routes\customer\create\_createCtrl_CN.html:132
+#: routes\customer\form\_fields-CN-2.html:131
+#: routes\customer\form\_fields-CN.html:109
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:214
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:472
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:101
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:73
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:64
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:92
+msgid "customer.form.mobile"
+msgstr "电话号码"
+
+#: routes\customer\create\_createCtrl_CN.html:171
+#: routes\customer\form\_fields-CN-2.html:162
+#: routes\customer\form\_fields-CN.html:120
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:227
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:487
+msgid "customer.form.phone"
+msgstr "手机号码"
+
+#: routes\customer\create\_createCtrl_CN.html:51
+#: routes\customer\form\_fields-CN-2.html:32
+#: routes\customer\form\_fields-CN.html:79
+msgid "customer.form.preferredLanguage"
+msgstr "首选语言"
+
+#: routes\customer\create\_createCtrl_CN.html:32
+#: routes\customer\create\createCtrl.html:27
+msgid "customer.form.sapId"
+msgstr "CDB ID"
+
+#: routes\customer\create\_createCtrl_CN.html:111
+#: routes\customer\form\_fields-CN-2.html:114
+#: routes\customer\form\_fields-CN.html:189
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:175
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:401
+msgid "customer.form.selectCity"
+msgstr "选择城市"
+
+#: routes\customer\create\_createCtrl_CN.html:150
+#: routes\customer\form\_fields-CN-2.html:145
+#: routes\customer\form\_fields-CN.html:197
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:186
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:422
+msgid "customer.form.selectDistrict"
+msgstr "选择区"
+
+#: routes\customer\create\_createCtrl_CN.html:69
+#: routes\customer\form\_fields-CN-2.html:51
+#: routes\customer\form\_fields-CN.html:182
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:157
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:372
+msgid "customer.form.selectState"
+msgstr "选择省"
+
+#: routes\customer\create\_createCtrl_CN.html:233
+#: routes\customer\form\_fields-CN-2.html:219
+#: routes\customer\form\_fields-CN.html:224
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:200
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:446
+msgid "customer.form.selectZip"
+msgstr "选择邮政编码"
+
+#: routes\customer\create\_createCtrl_CN.html:63
+#: routes\customer\form\_fields-CN-2.html:44
+#: routes\customer\form\_fields-CN.html:137
+#: routes\customer\form\_fields-CN.html:181
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:156
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:371
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:381
+msgid "customer.form.state"
+msgstr "省市"
+
+#: routes\customer\create\_createCtrl_CN.html:24
+#: routes\customer\form\_fields-CN-2.html:3
+#: routes\customer\form\_fields-CN.html:3
+msgid "customer.form.title"
+msgstr "称谓"
+
+#: routes\customer\create\_createCtrl_CN.html:227
+#: routes\customer\form\_fields-CN-2.html:217
+#: routes\customer\form\_fields-CN.html:223
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:199
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:445
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:458
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:113
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:83
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:104
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:74
+msgid "customer.form.zip"
+msgstr "邮政编码"
+
+#: routes\customer\create\_createCtrl_CN.html:245
+#: routes\customer\form\_fields-CN-2.html:233
+#: routes\customer\form\_fields-CN.html:235
+#: routes\customer\form\_fields-CN.html:258
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:250
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:509
+msgid "customer.info.addressValidated"
+msgstr "已审核地址"
+
+#: routes\customer\form\_fields-CN-2.html:234
+#: routes\customer\form\_fields-CN.html:259
+msgid "customer.info.customerValidated"
+msgstr "客户认证"
+
+#: routes\customer\modify\modifyCtrl.html:50
+msgid "customer.info.removeAccount"
+msgstr "如客户无任何未结订单，可以删除该账户"
+
+#: routes\customer\modify\modifyCtrl.html:173
+msgid "customer.modify.btn.save"
+msgstr "保存"
+
+#: routes\customer\modify\modifyCtrl.html:56
+msgid "customer.modify.btnDelete"
+msgstr "删除"
+
+#: routes\customer\modify\_modals_done.html:11
+#: routes\customer\modify\_modals_done.html:146
+#: routes\customer\modify\_modals_done.html:81
+#: routes\customer\modify\modifyCtrl.html:175
+#: shared\global-directives\modal-with-confirmation\modal-with-confirmationDirective.html:28
+msgid "customer.modify.cancel"
+msgstr "取消"
+
+#: routes\customer\modify\_modals_done.html:107
+#: routes\customer\modify\_modals_done.html:123
+#: routes\customer\modify\_modals_done.html:141
+#: routes\customer\modify\_modals_done.html:156
+#: routes\customer\modify\_modals_done.html:171
+#: routes\customer\modify\_modals_done.html:187
+#: routes\customer\modify\_modals_done.html:21
+#: routes\customer\modify\_modals_done.html:36
+#: routes\customer\modify\_modals_done.html:52
+#: routes\customer\modify\_modals_done.html:6
+#: routes\customer\modify\_modals_done.html:70
+#: routes\customer\modify\_modals_done.html:92
+#: routes\customer\modify\_modals.html:103
+#: routes\customer\modify\_modals.html:11
+#: routes\customer\modify\_modals.html:119
+#: routes\customer\modify\_modals.html:21
+#: routes\customer\modify\_modals.html:36
+#: routes\customer\modify\_modals.html:52 routes\customer\modify\_modals.html:6
+#: routes\customer\modify\_modals.html:72
+#: routes\customer\modify\_modals.html:77
+#: routes\customer\modify\_modals.html:87
+#: shared\global-directives\modal-with-confirmation\modal-with-confirmationDirective.html:6
+msgid "customer.modify.close"
+msgstr "关闭"
+
+#: routes\customer\modify\modifyCtrl.html:161
+msgid "customer.modify.info.failedSending"
+msgstr "账户确认邮件发送失败"
+
+#: routes\customer\modify\modifyCtrl.html:158
+msgid "customer.modify.info.sendAccountEmail"
+msgstr "确认重新发送账户确认邮件？"
+
+#: routes\customer\modify\modifyCtrl.html:102
+msgid "customer.modify.info.sendPersonalInfo"
+msgstr "历峰保存的客户个人信息将通过电子邮件发送给客户"
+
+#: routes\customer\modify\modifyCtrl.html:76
+msgid "customer.modify.info.temporaryPassword"
+msgstr "如果客人忘了他的密码, 你可以发送一个临时密码给他"
+
+#: routes\customer\modify\_modals_done.html:114
+#: routes\customer\modify\_modals_done.html:12
+#: routes\customer\modify\_modals_done.html:130
+#: routes\customer\modify\_modals_done.html:178
+#: routes\customer\modify\_modals_done.html:194
+#: routes\customer\modify\_modals_done.html:43
+#: routes\customer\modify\_modals_done.html:59
+#: routes\customer\modify\_modals.html:110
+#: routes\customer\modify\_modals.html:12
+#: routes\customer\modify\_modals.html:126
+#: routes\customer\modify\_modals.html:43
+#: routes\customer\modify\_modals.html:59
+#: routes\customer\modify\_modals.html:78
+#: shared\global-directives\modal-with-confirmation\modal-with-confirmationDirective.html:35
+msgid "customer.modify.ok"
+msgstr "确认"
+
+#: routes\customer\modify\modifyCtrl.html:34
+msgid "customer.modify.sapId"
+msgstr "CDB ID"
+
+#: routes\dashboard\dashboardCtrl.html:15
+msgid "Customers"
+msgstr "客户"
+
+#: routes\customer\detail\_draftorder-list.html:7
+msgid "darftOrderSearch.listing.UID"
+msgstr "草拟订单UID"
+
+#: routes\order\create\components\_customerInformation.html:20
+#: routes\order\create\components\_customerSearchModal.html:28
+msgid "Date of Birth"
+msgstr "出生日期"
+
+#: routes\customer\detail\detailCtrl.html:124
+msgid "Date of Birth :"
+msgstr "出生日期 :"
+
+#: routes\customer\detail\detailCtrl.html:302
+#: routes\customer\detail\detailCtrl.html:317
+msgid "Delete Account"
+msgstr "删除帐户"
+
+#: routes\customer\modify\_modals_done.html:108
+#: routes\customer\modify\_modals_done.html:124
+#: routes\customer\modify\_modals_done.html:71
+#: routes\customer\modify\_modals_done.html:82
+#: routes\customer\modify\_modals_done.html:93
+#: routes\customer\modify\modifyCtrl.html:47
+#: routes\customer\modify\modifyCtrl.html:55
+msgid "Delete Customer"
+msgstr "删除客户"
+
+#: routes\customer\modify\_modals_done.html:96
+msgid "Deleting Customer"
+msgstr "正删除客户"
+
+#: shared\templates\main.sidebar.html:24
+msgid "DETAILED CUSTOMER SEARCH"
+msgstr "详细客户搜索"
+
+#: shared\templates\main.sidebar.html:31
+msgid "Detailed Order Search"
+msgstr "详细订单搜索"
+
+#: shared\templates\main.sidebar.html:41
+msgid "Detailed Product Search"
+msgstr "详细的产品搜索"
+
+#: routes\dashboard\dashboardCtrl.html:24
+#: routes\dashboard\dashboardCtrl.html:50
+#: routes\dashboard\dashboardCtrl.html:78
+msgid "Detailed Search"
+msgstr "详细搜索"
+
+#: routes\customer\detail\detailCtrl.html:219
+msgid "District :"
+msgstr "区/县 :"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:9
+msgid "draft.order.uid"
+msgstr "草拟订单UID"
+
+#: routes\order\detail\draftorder\cancelDraftOrderConfirmation.html:11
+msgid "draftorderdetail.label.cancelSuccess"
+msgstr "草拟订单已成功取消"
+
+#: routes\customer\detail\_draftorder-list.html:9
+msgid "draftOrderSearch.listing.creationDate"
+msgstr "订单日期"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:15
+msgid "draftOrderSearch.listing.Reservations"
+msgstr "已预留产品"
+
+#: routes\customer\detail\detailCtrl.html:345
+msgid "draftOrderSearchTab.label.searchTitle"
+msgstr "草拟订单"
+
+#: routes\customer\detail\detailCtrl.html:118
+msgid "Email :"
+msgstr "电子邮箱地址 :"
+
+#: routes\order\create\components\_customerSearchModal.html:25
+msgid "Email Address"
+msgstr "电子邮箱地址"
+
+#: routes\customer\modify\_modals.html:123
+msgid "Email Not Send"
+msgstr "电子邮件不发送"
+
+#: routes\customer\modify\_modals_done.html:191
+#: routes\customer\modify\modifyCtrl.html:111
+msgid "Email not sent"
+msgstr "电子邮件还未发送"
+
+#: routes\customer\modify\_modals_done.html:175
+#: routes\customer\modify\modifyCtrl.html:109
+#: routes\customer\modify\modifyCtrl.html:160
+msgid "Email will be sent"
+msgstr "将会发送电子邮件"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:100
+msgid "Enter your personal message"
+msgstr "输入你的个人信息"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:114
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:123
+msgid "exclSalesTax"
+msgstr "不含销售税"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:229
+#: routes\order\detail\draftorder\draftOrderInfo.html:13
+#: routes\order\detail\orderdetail\paymentInfo.html:19
+msgid "expiry.date"
+msgstr "截至日期"
+
+#: routes\customer\modify\modifyCtrl.html:136
+msgid "Failed confirming account"
+msgstr "帐户确认失败"
+
+#: routes\customer\modify\_modals_done.html:127
+#: routes\customer\modify\modifyCtrl.html:58
+msgid "Failed deleting customer."
+msgstr "删除客户失败"
+
+#: routes\customer\detail\detailCtrl.html:356
+msgid "FAVORITE LIST"
+msgstr "收藏夹"
+
+#: routes\customer\search\searchCtrl.html:47
+#: routes\order\create\components\_customerInformation.html:28
+#: routes\order\create\components\_customerSearch.html:26
+#: routes\order\create\components\_customerSearchModal.html:27
+msgid "First Name"
+msgstr "名"
+
+#: routes\customer\detail\detailCtrl.html:112
+msgctxt "First Name 1"
+msgid "First Name :"
+msgstr "名（拼音） :"
+
+#: routes\customer\detail\detailCtrl.html:99
+msgctxt "First Name 2"
+msgid "First Name :"
+msgstr "名（中文）:"
+
+#: routes\customer\detail\detailCtrl.html:69
+msgid "Full Name :"
+msgstr "姓名："
+
+#: routes\customer\detail\detailCtrl.html:63
+msgid "Gender :"
+msgstr ""
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:31
+#: shared\global-directives\user-context-bar\user-context-barDirective.html:67
+msgid "GUEST"
+msgstr "访客"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:15
+msgid "Guest Checkout"
+msgstr "以访客身份下单"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:60
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:51
+msgid "heading.customer.information"
+msgstr "客户信息"
+
+#: routes\customer\detail\detailCtrl.html:281
+msgid ""
+"I wish to receive the {{vm.user.default.brand.code | uppercase}} newsletter"
+msgstr "我想收到关于{{vm.user.default.brand.code | uppercase}}的新闻"
+
+#: routes\customer\detail\detailCtrl.html:273
+msgid ""
+"I would like to receive new information about {{vm.user.default.brand.code | "
+"uppercase}} products and events"
+msgstr "我想收到关于{{vm.user.default.brand.code | uppercase}}的产品和活动信息"
+
+#: routes\dashboard\dashboardCtrl.html:89 shared\templates\main.sidebar.html:33
+msgid "In review Orders"
+msgstr "审核中订单"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:113
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:122
+msgid "inclSalesTax"
+msgstr "包括增值税"
+
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:261
+msgid "label.cancel"
+msgstr "取消"
+
+#: routes\order\detail\orderdetail\personalInfo.html:13
+msgid "label.dob"
+msgstr "出生日期"
+
+#: routes\order\detail\draftorder\cancelDraftOrderPopup.html:10
+msgid "label.no"
+msgstr "否"
+
+#: routes\order\detail\draftorder\cancelDraftOrderConfirmation.html:16
+msgid "label.ok"
+msgstr "好"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:254
+msgid "label.order.date"
+msgstr "订单日期"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:72
+msgid "label.select.date"
+msgstr "选择日期"
+
+#: routes\order\detail\draftorder\cancelDraftOrderPopup.html:11
+msgid "label.yes"
+msgstr "是"
+
+#: routes\dashboard\dashboardCtrl.html:42
+#: shared\global-directives\user-context-bar\user-context-barDirective.html:16
+msgid "Language"
+msgstr "语言"
+
+#: routes\customer\detail\detailCtrl.html:130
+msgid "Language :"
+msgstr "语言 :"
+
+#: routes\customer\search\searchCtrl.html:41
+#: routes\order\create\components\_customerInformation.html:16
+#: routes\order\create\components\_customerSearch.html:21
+#: routes\order\create\components\_customerSearchModal.html:26
+msgid "Last Name"
+msgstr "姓"
+
+#: routes\customer\detail\detailCtrl.html:106
+msgctxt "Last Name 1"
+msgid "Last Name :"
+msgstr "姓（拼音）:"
+
+#: routes\customer\detail\detailCtrl.html:93
+msgctxt "Last Name 2"
+msgid "Last Name :"
+msgstr "姓（中文） :"
+
+#: routes\dashboard\dashboardCtrl.html:231
+msgid "LATEST PLACED ORDERS"
+msgstr "最新订单"
+
+#: routes\customer\detail\detailCtrl.html:50
+#: routes\customer\modify\modifyCtrl.html:22
+msgid "Light Account"
+msgstr "访客帐户"
+
+#: routes\order\create\components\_customerInformation.html:26
+msgid "Login Email"
+msgstr "邮箱登录"
+
+#: routes\customer\detail\detailCtrl.html:325
+msgid "Modify Account"
+msgstr "修改帐户"
+
+#: routes\customer\modify\modifyCtrl.html:11
+msgid "MODIFY CUSTOMER"
+msgstr "修改客户"
+
+#: routes\customer\detail\detailCtrl.html:309
+msgid "Modify Light Account"
+msgstr "修改访客帐户"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:58
+msgid "modifyCustomer.label.personalInformation"
+msgstr "个人信息"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:70
+msgid "modifyCustomer.label.preferredLanguage"
+msgstr "首选语言"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:72
+msgid "modifyCustomer.label.selectLanguage"
+msgstr "选择语言"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:287
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:83
+msgid "modifyCustomer.label.title"
+msgstr "称谓"
+
+#: routes\dashboard\dashboardCtrl.html:560
+msgid "MY LAST PLACED ORDERS"
+msgstr "我上一次的订单"
+
+#: routes\dashboard\dashboardCtrl.html:515
+msgid "MY LAST VIEWED ORDERS"
+msgstr "我最近看过的订单"
+
+#: routes\customer\detail\detailCtrl.html:28
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:10
+msgid "New Order"
+msgstr "新订单"
+
+#: routes\customer\modify\_modals_done.html:56
+#: routes\customer\modify\modifyCtrl.html:85
+msgid "New password not sent."
+msgstr "新密码还未发送"
+
+#: routes\customer\modify\_modals_done.html:40
+#: routes\customer\modify\modifyCtrl.html:84
+msgid "New password will be sent."
+msgstr "新的密码将会发送"
+
+#: routes\order\create\components\_customerInformation.html:40
+msgid "New Search"
+msgstr "重新搜索"
+
+#: routes\customer\detail\detailCtrl.html:348
+msgid "noDraftOrderPlaced"
+msgstr "顾客尚未下达草拟订单"
+
+#: routes\customer\detail\detailCtrl.html:189
+msgid "Number :"
+msgstr ""
+
+#: shared\templates\main.sidebar.html:29
+msgid "Order"
+msgstr "订单"
+
+#: routes\dashboard\dashboardCtrl.html:752
+msgid "ORDER ALLOCATED"
+msgstr "已配货"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:313
+#: routes\order\create\order-comment\order-comment-modal.html:6
+#: routes\order\create\order-comment\order-commentDirective.html:5
+#: routes\order\detail\draftorder\draftOrderShoppingBag.html:48
+msgid "Order Comment"
+msgstr "订单备注"
+
+#: routes\customer\detail\detailCtrl.html:337
+msgid "ORDER DETAIL"
+msgstr "订单明细"
+
+#: shared\templates\main.sidebar.html:13
+msgid "Order ID"
+msgstr "订单号"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:121
+msgid "Order Total"
+msgstr "订单总价"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:37
+msgid "orderdetail.label.authorizationNo"
+msgstr "授权号"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:129
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:120
+#: routes\order\detail\orderdetail\billingAddress.html:3
+msgid "orderdetail.label.billingAddress"
+msgstr "账单地址"
+
+#: routes\order\detail\draftorder\cancelDraftOrderConfirmation.html:5
+#: routes\order\detail\draftorder\cancelDraftOrderInprogress.html:5
+#: routes\order\detail\draftorder\cancelDraftOrderPopup.html:5
+msgid "orderdetail.label.cancelDraftOrder"
+msgstr "取消草拟订单"
+
+#: routes\order\detail\draftorder\cancelDraftOrderInprogress.html:9
+msgid "orderdetail.label.cancellingDraftOrder"
+msgstr "正在取消草拟订单"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:23
+msgid "orderdetail.label.dateOfEndReturn"
+msgstr "退货截止日期"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:178
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:175
+#: routes\order\detail\orderdetail\deliveryAddress.html:4
+msgid "orderdetail.label.deliveryAddress"
+msgstr "送货地址"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:21
+msgid "orderdetail.label.deliveryDate"
+msgstr "送货日期"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:160
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:164
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:154
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:161
+#: routes\order\detail\draftorder\draftOrderInfo.html:19
+#: routes\order\detail\orderdetail\deliveryMethod.html:4
+#: routes\order\detail\orderdetail\deliveryMethod.html:8
+msgid "orderdetail.label.deliveryMethod"
+msgstr "送货方式"
+
+#: routes\order\detail\detailCtrl.html:7
+msgid "orderdetail.label.draftOrderDetail"
+msgstr "草拟订单详情"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:61
+#: routes\order\detail\orderdetail\personalInfo.html:12
+msgid "orderdetail.label.email"
+msgstr "电子邮件"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:29
+msgid "orderdetail.label.enteredBy"
+msgstr "订单创建人"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:33
+msgid "orderdetail.label.invoiceSent"
+msgstr "发票单独配送"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:11
+msgid "orderdetail.label.orderDate"
+msgstr "订单日期"
+
+#: routes\order\detail\detailCtrl.html:8
+msgid "orderdetail.label.orderDetail"
+msgstr "订单详情"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:17
+#: routes\order\detail\draftorder\draftOrderInfo.html:56
+msgid "orderdetail.label.orderStatus"
+msgstr "订单状态"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:31
+msgid "orderdetail.label.orderType"
+msgstr "订单类型"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:35
+msgid "orderdetail.label.paymentAmount"
+msgstr "付款金额"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:214
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:226
+#: routes\order\detail\orderdetail\paymentInfo.html:4
+msgid "orderdetail.label.paymentMethod"
+msgstr "支付方式"
+
+#: routes\order\detail\orderdetail\personalInfo.html:14
+msgid "orderdetail.label.preferredLanguage"
+msgstr "首选语言"
+
+#: routes\order\detail\draftorder\draftOrderInfo.html:47
+msgid "orderdetail.label.vatRefundable"
+msgstr "VAT 增值税发票"
+
+#: routes\dashboard\dashboardCtrl.html:64
+msgid "Orders"
+msgstr "订单"
+
+#: routes\dashboard\dashboardCtrl.html:119
+msgid "ORDERS BEING PROCESSED"
+msgstr "订单正在处理"
+
+#: routes\dashboard\dashboardCtrl.html:409
+msgid "ORDERS ON HOLD"
+msgstr "订单冻结"
+
+#: routes\dashboard\dashboardCtrl.html:476
+msgid "ORDERS PENDING STOCK"
+msgstr "等待库存"
+
+#: routes\customer\detail\_draftorder-list.html:17
+msgid "orderSearch.listing.Email"
+msgstr "顾客/邮箱ID"
+
+#: routes\customer\detail\_draftorder-list.html:13
+msgid "orderSearch.listing.Label"
+msgstr "标签"
+
+#: routes\customer\detail\_draftorder-list.html:11
+msgid "orderSearch.listing.OrderExpiryDate"
+msgstr "到期时间"
+
+#: routes\customer\detail\_draftorder-list.html:15
+msgid "orderSearch.listing.Reservations"
+msgstr "已预留产品"
+
+#: routes\customer\detail\_draftorder-list.html:19
+msgid "orderSearch.listing.StaffID"
+msgstr "客服人员 SAP ID"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:220
+#: routes\order\detail\orderdetail\paymentInfo.html:10
+msgid "payment.bank.name"
+msgstr "银行名称"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:226
+#: routes\order\detail\orderdetail\paymentInfo.html:16
+msgid "payment.status"
+msgstr "状态"
+
+#: routes\dashboard\dashboardCtrl.html:647
+msgid "PENDIND ECOM-MANAGER DECISION"
+msgstr "等待电商经理的决定"
+
+#: routes\dashboard\dashboardCtrl.html:610
+msgid "PENDING ANTI-FRAUD RECOMMENDATION"
+msgstr "等待反欺诈审查的建议"
+
+#: routes\dashboard\dashboardCtrl.html:301
+msgid "PENDING ANTI-FRAUD RECOMMENDATION/NOT REVIEWED"
+msgstr "等待反欺诈审查的建议 / 未审核"
+
+#: shared\templates\main.sidebar.html:35
+msgid "PENDING EXCHANGES"
+msgstr "待换货"
+
+#: routes\dashboard\dashboardCtrl.html:97 shared\templates\main.sidebar.html:34
+msgid "Pending returns"
+msgstr "待退货"
+
+#: routes\customer\detail\detailCtrl.html:167
+msgid "Perfecture :"
+msgstr ""
+
+#: routes\customer\create\_createCtrl_CN.html:13
+#: routes\customer\create\createCtrl.html:21
+#: routes\customer\modify\modifyCtrl.html:17
+msgid "Personal Information"
+msgstr "个人信息"
+
+#: routes\customer\search\searchCtrl.html:54
+#: routes\order\create\components\_customerSearch.html:13
+msgid "Phone"
+msgstr "电话"
+
+#: routes\customer\detail\detailCtrl.html:136
+msgid "Phone 1 :"
+msgstr "电话号码 :"
+
+#: routes\customer\detail\detailCtrl.html:142
+msgid "Phone 2 :"
+msgstr "手机号码 :"
+
+#: routes\order\create\components\_customerInformation.html:18
+msgid "Phone1"
+msgstr "订单联系人电话1"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:91
+msgid ""
+"Please select the font and enter the customer's personal message of up to "
+"125 characters"
+msgstr "请选择字体并输入客户的个人信息（最多125个字符）"
+
+#: shared\global-directives\modal-with-confirmation\modal-with-confirmationDirective.html:21
+msgid "Please wait..."
+msgstr "请稍候..."
+
+#: routes\customer\detail\detailCtrl.html:227
+msgid "PO Box :"
+msgstr "邮政信箱"
+
+#: routes\customer\create\_createCtrl_CN.html:274
+#: routes\customer\create\createCtrl.html:36
+msgid "Privacy Policy"
+msgstr "隐私条款"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:532
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:119
+msgid "proceedToNextStep"
+msgstr "下一步"
+
+#: shared\templates\main.sidebar.html:39
+msgid "Product"
+msgstr "产品"
+
+#: routes\dashboard\dashboardCtrl.html:685
+msgid "PRODUCT RETURNS"
+msgstr "退货"
+
+#: routes\dashboard\dashboardCtrl.html:36
+msgid "Products"
+msgstr "产品"
+
+#: routes\customer\detail\detailCtrl.html:211
+msgid "Province :"
+msgstr "省市 :"
+
+#: shared\templates\main.sidebar.html:5
+msgid "Quick Search"
+msgstr "快速搜索"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:83
+msgid "refNo"
+msgstr "参考号"
+
+#: routes\dashboard\dashboardCtrl.html:721
+msgid "RELEASED ORDERS"
+msgstr "已发送订单"
+
+#: routes\order\create\order-comment\order-comment-modal.html:15
+msgid "Remaining Characters"
+msgstr "剩余字符"
+
+#: routes\customer\modify\modifyCtrl.html:150
+msgid "Resend Confirm Email"
+msgstr "重发账户确认邮件"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:142
+msgid "Reset"
+msgstr "重置"
+
+#: routes\dashboard\dashboardCtrl.html:355
+msgid "REVIEWED ORDERS PROCESSED BY ECOMM MANAGERS"
+msgstr "审核过的订单由电商经理处理"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:118
+msgid "salesTax"
+msgstr "增值税"
+
+#: routes\customer\detail\detailCtrl.html:85
+msgid "Salutation :"
+msgstr ""
+
+#: routes\order\create\components\_customerSearchModal.html:21
+msgid "SAP ID"
+msgstr "客户ID（邮箱 / SWSE ID / SAP ID）"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:145
+msgid "Save Draft Order"
+msgstr "保存草稿订单"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:531
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:118
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:264
+msgid "save.order.button"
+msgstr "保存草拟订单"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:52
+msgid "save.order.pop.cancel"
+msgstr "取消"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:41
+msgid "save.order.pop.draft.label"
+msgstr "草拟订单标签"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:26
+msgid "save.order.pop.expiry.date"
+msgstr "到期时间"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:61
+#: routes\order\create\components\_draftOrderSaveComponent.html:9
+msgid "save.order.pop.header"
+msgstr "保存草拟订单"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:79
+msgid "save.order.pop.ok"
+msgstr "OK"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:69
+msgid "save.order.pop.order.status"
+msgstr "保存订单状态"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:71
+msgid "save.order.pop.order.uid"
+msgstr "草拟订单UID"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:16
+msgid "save.order.pop.preserve.reservation"
+msgstr "预留产品库存"
+
+#: routes\order\create\components\_draftOrderSaveComponent.html:53
+msgid "save.order.pop.save"
+msgstr "保存"
+
+#: routes\customer\search\searchCtrl.html:64
+#: routes\order\create\components\_customerSearch.html:49
+msgid "Search"
+msgstr "搜索"
+
+#: shared\templates\main.sidebar.html:9
+msgid "Search by Order ID"
+msgstr "订单号"
+
+#: shared\global-directives\ec-country-select\ec-country-selectDirective.html:5
+#: shared\global-directives\product-language-select\product-language-selectDirective.html:2
+msgid "Select"
+msgstr "选择"
+
+#: routes\order\create\checkout-delivery\checkout-deliveryCtrl.html:94
+msgid "Select a font style"
+msgstr "选择字体"
+
+#: routes\customer\modify\_modals.html:107
+msgid "Send Confirmation Email"
+msgstr "发送确认电子邮件"
+
+#: routes\customer\modify\modifyCtrl.html:108
+#: routes\customer\modify\modifyCtrl.html:110
+#: routes\customer\modify\modifyCtrl.html:159
+#: routes\customer\modify\modifyCtrl.html:83
+msgid "Send email"
+msgstr "发送电子邮件"
+
+#: routes\customer\modify\_modals_done.html:22
+#: routes\customer\modify\_modals_done.html:37
+#: routes\customer\modify\_modals_done.html:53
+#: routes\customer\modify\_modals_done.html:7
+#: routes\customer\modify\modifyCtrl.html:73
+#: routes\customer\modify\modifyCtrl.html:82
+msgid "Send New Password"
+msgstr "发送新的密码"
+
+#: routes\customer\modify\_modals_done.html:142
+#: routes\customer\modify\_modals_done.html:157
+#: routes\customer\modify\_modals_done.html:172
+#: routes\customer\modify\_modals_done.html:188
+#: routes\customer\modify\modifyCtrl.html:107
+#: routes\customer\modify\modifyCtrl.html:99
+msgid "Send Personal Information"
+msgstr "发送个人信息"
+
+#: routes\customer\modify\_modals_done.html:147
+#: routes\customer\modify\_modals_done.html:160
+#: routes\customer\modify\_modals_done.html:25
+msgid "Sending email"
+msgstr "正发送电子邮件"
+
+#: routes\dashboard\dashboardCtrl.html:39
+#: shared\global-directives\user-context-bar\user-context-barDirective.html:5
+msgid "SHIP TO"
+msgstr "运送至"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:43
+msgid "Shopping Bag"
+msgstr "购物袋"
+
+#: routes\order\create\order-summary\order-summaryDirective.html:5
+#: routes\order\detail\draftorder\draftOrderShoppingBag.html:5
+msgid "shoppingBag"
+msgstr "购物袋"
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:81
+msgid "Size"
+msgstr "大小"
+
+#: routes\customer\detail\detailCtrl.html:249
+msgid "State :"
+msgstr ""
+
+#: routes\order\create\shoppingbag\shoppingbagCtrl.html:112
+msgid "Subtotal"
+msgstr "小计"
+
+#: routes\customer\modify\modifyCtrl.html:28
+msgid "SWSE ID"
+msgstr "SWSE ID"
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:97
+#: routes\order\create\checkout-payment\checkout-paymentCtrl.html:88
+#: routes\order\create\components\_customerInformation.html:12
+msgid "SWSE ID / CDB ID"
+msgstr "SWSE ID / CDB ID"
+
+#: routes\customer\detail\detailCtrl.html:154
+msgid "SWSE ID / SAP ID :"
+msgstr "SWSE ID / SAP ID:"
+
+#: routes\customer\detail\detailCtrl.html:77
+msgid "Title :"
+msgstr "称谓 :"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:289
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:85
+msgid "title.code.0001"
+msgstr "先生"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:291
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:87
+msgid "title.code.0002"
+msgstr "女士"
+
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:293
+#: routes\order\create\checkout-address\checkout-addressCtrl.html:89
+msgid "title.code.0003"
+msgstr "小姐"
+
+#: routes\customer\detail\detailCtrl.html:181
+msgid "Town Chome Banchi Bnago :"
+msgstr ""
+
+#: routes\order\create\checkout-confirmation\checkout-confirmationCtrl.html:223
+#: routes\order\detail\orderdetail\paymentInfo.html:13
+msgid "transaction.id"
+msgstr "交易号码"
+
+#: routes\customer\detail\detailCtrl.html:32
+msgid "Unconfirmed Account"
+msgstr "未确认帐户"
+
+#: routes\dashboard\dashboardCtrl.html:121
+#: routes\dashboard\dashboardCtrl.html:188
+#: routes\dashboard\dashboardCtrl.html:233
+#: routes\dashboard\dashboardCtrl.html:303
+#: routes\dashboard\dashboardCtrl.html:357
+msgid "View All"
+msgstr "查看全部"
+
+#: routes\customer\detail\detailCtrl.html:353
+msgid "WISHLIST"
+msgstr "心愿单"
+
+#: routes\customer\search\searchCtrl.html:59
+#: routes\order\create\components\_customerInformation.html:30
+#: routes\order\create\components\_customerSearch.html:44
+msgid "Zip Code"
+msgstr "邮政编码"
+
+#: routes\customer\detail\detailCtrl.html:242
+msgid "Zip Code :"
+msgstr "邮政编码 :"
+
+#: routes\customer\form\_fields-CN.bak.html:24
+msgid "姓（中文）*"
+msgstr ""
+
+#: routes\customer\form\_fields-CN.bak.html:3
+msgid "称谓*"
+msgstr ""
+
+#~ msgid "Ident.No"
+#~ msgstr "产品货号"
+
+#~ msgid "checkout.addres.no"
+#~ msgstr "数字"
+
+#~ msgid "currency"
+#~ msgstr "人民币"

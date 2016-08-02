@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <!-- TODO: Rules for dynamic title? -->
+    <title>投后+</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="description"
+          content="">
+    <meta name="keywords"
+          content="">
+    <!-- build:css({.tmp,app}) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-tree/dist/angular-ui-tree.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="assets/styles/main.css"/>
+    <!-- endbuild -->
+</head>
+
+<body ng-app="touhou">
+
+  <!-- Main view -->
+  <main ui-view></main>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- build:js({.tmp,app}) scripts/oldieshim.js -->
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<![endif]-->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-strap/dist/angular-strap.js"></script>
+<script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+<script src="bower_components/angular-gettext/dist/angular-gettext.js"></script>
+<script src="bower_components/angularjs-datepicker/dist/angular-datepicker.min.js"></script>
+<script src="bower_components/at-table/dist/angular-table.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/restangular/dist/restangular.js"></script>
+<script src="bower_components/angular-apimock/dist/angular-apimock.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/spin.js/spin.js"></script>
+<script src="bower_components/angular-spinner/angular-spinner.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script src="bower_components/angular-locker/dist/angular-locker.min.js"></script>
+<script src="bower_components/angular-ui-tree/dist/angular-ui-tree.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!-- inject:js -->
+
+<script src="scripts/_app.js"></script>
+
+<script src="scripts/_config.js"></script>
+
+<script src="scripts/constants.js"></script>
+
+<script src="scripts/routes.js"></script>
+
+<script src="scripts/routes/authenticate/authenticateCtrl.js"></script>
+
+<script src="scripts/routes/expert/expertCtrl.js"></script>
+
+<script src="scripts/routes/index/indexCtrl.js"></script>
+
+<script src="scripts/routes/login/loginCtrl.js"></script>
+
+<script src="scripts/routes/manage/manageCtrl.js"></script>
+
+<script src="scripts/routes/recommend/recommendCtrl.js"></script>
+
+<script src="scripts/routes/resource/resourceCtrl.js"></script>
+
+<script src="scripts/shared/global-services/error-interceptorFactory.js"></script>
+
+<script src="scripts/shared/global-services/loading-interceptorFactory.js"></script>
+
+<script src="scripts/shared/global-services/verification/veryInterceptor.js"></script>
+
+<script src="scripts/shared/global-services/verification/veryService.js"></script>
+
+<script src="scripts/shared/templates/header/headerCtrl.js"></script>
+
+<script src="scripts/shared/templates/header/headerService.js"></script>
+
+<!-- endinject -->
+<!-- endbuild -->
+</body>
+</html>

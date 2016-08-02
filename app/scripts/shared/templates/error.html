@@ -1,0 +1,19 @@
+<!-- This is the common view for 404, 500 error pages -->
+<!-- TODO: Difference in views when user is logged in vs logged out -->
+<div class="app">
+	<!-- Common Header -->
+	<header>	
+		<div style="width: 70%;margin-left: auto;margin-right: auto;">
+			<div  align="center"><a href="/"><i class="fa fa-home fa-2x"></i></a></div>
+			<!-- TODO: If authenticated...-->
+			<a class="user" ng-click="logout()">
+				<h4 class="user-name">Logout</h4> <i class="fa fa-sign-out fa-lg"></i>
+			</a>
+		</div>
+	</header>
+	<!-- Main body -->
+	<div style="width: 70%;margin-left: auto;margin-right: auto;">
+		<div align="center"><main ui-view></main></div>
+	</div>
+	<div class="push"></div>
+</div>

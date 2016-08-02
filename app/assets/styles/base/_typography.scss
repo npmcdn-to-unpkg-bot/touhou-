@@ -1,0 +1,45 @@
+h1,h2,h3,h4 {
+    font-family: 'Montserrat-Regular', Arial;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h4 {
+    text-transform: none;
+    letter-spacing: normal;
+}
+.fs-small,.small {
+    font-size: 10px;
+}
+.fs-medium,.medium,h3,h4 {
+    font-size: 12px;
+}
+.fs-large,.large,h2 {
+    font-size: 15px;
+}
+.fs-extra,.extra,h1 {
+    font-size: 19px;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+.font-arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font-times {
+    font-family: 'Times New Roman', Times, serif;
+}
+.capitalize {
+    text-transform: uppercase;
+}
+.text-bold {
+    font-weight: bold;
+}

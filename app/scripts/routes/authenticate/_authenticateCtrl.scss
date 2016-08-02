@@ -1,0 +1,86 @@
+.sousuo{
+	width: 70%;
+	margin: 1rem auto;
+}
+.sousuo div{
+	width: 25%;
+	float: right;
+	background:url(../images/sousuo.png) no-repeat;
+	background-size: 100% 100%;
+}
+.sousuo span{
+	border-right:none;
+	background:none;
+}
+.sousuo input{
+	border-left:none;
+	background:url(../images/sousuo.png) no-repeat;
+	background-size: 100% 100%;
+}
+.zhuangjia h1{
+	text-align: center;
+}
+.ZJ_width{
+	width:70%;
+	margin: 0 auto;
+}
+.ZJ_width ul{
+	width:90%;
+	margin: 2rem 0;
+}
+.ZJ_width .width li{
+	width:18%;
+	border:1px solid #cccccc;
+	margin-left: -1px;
+	margin-top: -1px;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #333333;
+}
+.ZJ_width ul li.ZJ_border{
+	border-bottom: none;
+}
+.jigoulist{
+	margin-top: 3rem;
+}
+.img1{
+	padding-left: 0;
+	width:100%;
+}
+#div h4{
+	margin-top: 0;
+	font-size: 1.4rem;
+	/*font-weight: bold;*/
+	color:#000;
+}
+.imgdaka{
+	position: relative;
+}
+.img_shang{
+	display: block;
+	width:40%;
+	position: absolute;
+	right:-0.7%;
+	bottom: -5%;
+}
+.jinyan{
+	font-size: 1rem;
+	color: #666666;
+}
+.jianli div{
+	margin-top: 0.3rem;
+	color:#18bd9b;
+}
+.jianli div a{
+	color:#18bd9b;
+}
+#pagination > li > span{
+	border:none;
+	color:#7f7c7c;
+	margin-left: 1rem;
+}
+#pagination > .active > span{
+	background:#18bd9b;
+}

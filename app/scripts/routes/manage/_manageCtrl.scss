@@ -1,0 +1,266 @@
+/*.top{
+	width: 100%;
+}
+.nav{
+	height:4.5rem;
+	background:#18bd9b;
+	margin:0.8125rem 0 0 0;
+	position: relative;
+}
+.container-fluid{
+	padding-left:0;
+	padding-right:0;
+}
+.col-md-2{
+	padding-left:0;
+	padding-right:0;
+}
+.welcome{
+	margin-top: 1rem;
+}
+.top_right{
+	margin-top: 1rem
+}
+.login_border{
+	border: 1px solid #bbbbbb;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.login{
+	padding-right: 1rem;
+}
+.login1{
+	padding-left: 1rem;
+	margin-left: -1rem;
+}
+.logo{
+	position: absolute;
+	height:130%;
+	background: url(../images/logo.png) no-repeat;
+	background-size: 100% 100%; 
+	top:-15%;
+	text-indent: -99999em;
+	z-index: 100;
+}
+.nav_nav{
+	margin-left: 7%;
+}
+.nav_nav div{
+	font-size: 1.25rem;
+	line-height: 4.5rem;
+	text-align: center;
+}
+.nav_N2{
+	margin-left:-1.25rem;
+}*/
+
+/*content*/
+.guanli1{
+	width:70%;
+	margin: 2.5rem auto 0;
+	text-align: center;
+}
+.content_zhaopian{
+	width:70%;
+	margin: 1rem auto 0;
+}
+.content_zhaopian img{
+
+}
+.content_p{
+	padding-right: 0;
+}
+.content_p .hexin{
+	color:#000;
+	margin:2rem 0;
+}
+.yunpt p{
+	margin: 0;
+	color: #666666;
+	line-height: 1.6rem;
+}
+.touziren{
+	width:100%;
+	padding: 0.5rem;
+	background-color: #323a47;
+	margin-top: 1rem;
+}
+.touziren h2{
+	color:#fff;
+	text-align: center;
+}
+.content_ul{
+	width:70%;
+	padding: 0;
+	margin:2rem auto 0;
+	color: #fff;
+	position: relative;
+}
+.content_ul li{
+	padding-left: 0;
+	text-align: center;
+}
+.content_ul li h4{
+	margin-top:2.5rem;
+}
+.content_ul li img{
+	width:100%;
+	height:15rem;
+}
+.content_ul li p{
+	margin-top:0.5rem;
+	font-size: 12px;
+	line-height: 24px;
+}
+.goleft1{
+	width:1.5rem;
+	height:3rem;
+	background:url(../images/goleft.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left:-3rem;
+	top:20%;
+}
+.goright1{
+	width:1.5rem;
+	height:3rem;
+	background:url(../images/goright.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right:-2rem;
+	top:20%;
+}
+.houguanli h3{
+	text-align: center;
+	margin: 2rem 0 2rem 0;
+}
+.houguanli ul{
+	width:70%;
+	margin: 0 auto;
+}
+.houguanli ul li h4{
+	font-weight: bold;
+}
+.houguanli ul li .col-md-1{
+	height:5rem;
+	width:4%;
+	background:url(../images/chilun.png) no-repeat;
+	background-size: 100%;
+}
+.houguanli ul li .col-md-10{
+	margin-left: 0.5rem;
+}
+.houguanli ul li p{
+	margin:0 0 0;
+	font-size: 1rem;
+}
+.touhoumokuai{
+	padding: 2.5rem 0;
+	width: 100%;
+	background:#18bd9b;
+	margin-top:1.5rem;
+}
+.touhoumokuai h3{
+	margin-top: 0;
+	text-align: center;
+	font-size: 2rem;
+	color:#fff;
+}
+.touhoumokuai ul{
+	width: 70%;
+	margin: 2rem auto 0;
+	position: relative;
+}
+.touhoumokuai ul li img{
+	width:100%;
+	height:15rem;
+}
+.touhoumokuai ul li{
+	text-align: center;
+	padding-right: 0;
+}
+.touhoumokuai ul li p{
+	font-size: 12px;
+	margin: 0rem 0 0;
+	line-height: 2rem;
+	color:#fff;
+}
+.touhoumokuai ul li h4{
+	color:#fff;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+.touhoumokuai ul li a{
+	display: block;
+	margin: 2rem auto 0;
+	width:60%;
+	height:2.5rem;
+	background-color: #fff;
+	text-align: center;
+	line-height: 2.5rem;
+	border-radius: 2.5rem;
+	color:#333;
+}
+.mokuai_left{
+	position: absolute;
+	width:2%;
+	height:4rem;
+	background:url(../images/goleft1.png) no-repeat;
+	background-size: 100%;
+	left:-1rem;
+	top:20%;
+	cursor: pointer;
+}
+.mokuai_right{
+	position: absolute;
+	width:2%;
+	height:4rem;
+	background:url(../images/goright1.png) no-repeat;
+	background-size: 100%;
+	right:-2rem;
+	top:20%;
+	cursor: pointer;
+}
+.zhibiao{
+	width:100%;
+	background:#323a47;
+	padding: 2rem 0;
+}
+.zhibiao_top{
+	width:70%;
+	margin:0 auto;
+}
+.zhibiao_top img{
+	width:15%;
+	margin-left: 24%;
+	margin-top: 0.3rem;
+}
+.zhibiao_top h3{
+	color:#fff;
+	font-size: 2.2rem;
+	margin: 0;
+}
+.zhibiao ul{
+	width:70%;
+	margin: 3rem auto 1rem;
+}
+.zhibiao ul li{
+	padding-right: 0;
+}
+.zhibiao ul li img{
+	width:100%;
+}
+.zhibiao ul li h4{
+	text-align: center;
+	color: #fff;
+	margin-top: 1.5rem;
+}
+.footer_footer{
+	line-height: 2.5rem;
+	width:100%;
+	background-color: #1e242e;
+	text-align: center;
+	color:#757374;
+	font-size:12px;
+}

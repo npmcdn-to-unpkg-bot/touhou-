@@ -1,0 +1,110 @@
+/*.sousuo{
+	width: 70%;
+	margin: 0 auto;
+}
+.sousuo div{
+	width: 25%;
+	float: right;
+	position: relative;
+}
+.sousuo input{
+	display: block;
+	width:100%;
+	padding-left: 4rem;
+	height:2rem;
+	background:url(images/sousuo.png) no-repeat;
+	background-size: 100% 99%;
+	border:none;
+}
+.sousuo span{
+	font-size: 1rem;
+	position: absolute;
+	line-height: 2rem;
+	top:0;
+	left:1rem;
+}*/
+.sousuo{
+	width: 70%;
+	margin: 1rem auto;
+}
+.sousuo div{
+	width: 25%;
+	float: right;
+	background:url(images/sousuo.png) no-repeat;
+	background-size: 100%;
+}
+.sousuo span{
+	border-right:none;
+	background:none;
+}
+.sousuo input{
+	border-left:none;
+	background:url(images/sousuo.png) no-repeat;
+	background-size: 100%;
+}
+.zhuangjia h1{
+	text-align: center;
+}
+.ZJ_width{
+	width:70%;
+	margin: 0 auto;
+}
+.ZJ_width ul{
+	width:90%;
+	margin: 2rem 0;
+}
+.ZJ_width .width li{
+	width:14.28%;
+	border:1px solid #cccccc;
+	margin-left: -1px;
+	margin-top: -1px;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.ZJ_width ul li.ZJ_border{
+	border-bottom: none;
+}
+.ZJ_list{
+	width:89%;
+}
+.ZJ_details{
+	width:100%;
+	background-color: #f4f3f3;
+	padding:1rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+.Zj_shadow{
+	box-shadow: 0 0 10px #b1b1b1;
+}
+.ZJ_name{
+	font-size: 1rem;
+	color:#000;
+}
+.ZJ_gongs{
+	margin-left: 1rem;
+}
+.ZJ_tigong{
+	margin: 0.5rem 0;
+	color:#666666;
+}
+.ZJ_details p{
+	margin: 0 0 0;
+	line-height: 1.5rem;
+	color:#666666;
+}
+#pagination > li > span{
+	border:none;
+	color:#7f7c7c;
+	margin-left: 1rem;
+}
+#pagination > li.active > span{
+	color: #fff;
+	background-color: #18bd9b;
+}
+body .footer_footer{
+	font-size: 12px;
+	line-height: 2.5rem;
+}
