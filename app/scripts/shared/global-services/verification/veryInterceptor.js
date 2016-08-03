@@ -12,7 +12,7 @@
         .module('touhou')
         .run(function($rootScope, $state) {
             
-            $state.go('index');
+            $state.go('main.index');
             
             /*$rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
                 // Set previous state in rootScope so that it can be accessed in ctrl methods.

@@ -1,8 +1,8 @@
 /**
  * @ngdoc overview
- * @name ccfeFrontend.routes
+ * @name touhou.routes
  * @description
- * # ccfeFrontend.routes
+ * # touhou.routes
  *
  * Routes module. All app states are defined here.
  */
@@ -20,56 +20,58 @@
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            /* Main state: CCFE user logged in state, with common header, footer */
-            .state('index', {
+            .state('main', {
+                templateUrl: 'scripts/shared/templates/main.html'
+            })
+            .state('main.index', {
                 url: '/index',
                 controller: 'IndexCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/index/indexCtrl.html'
             })
-            .state('login', {
+            .state('main.login', {
                 url: '/login',
                 controller: 'LoginCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/login/loginCtrl.html'
             })
-            .state('manage', {
+            .state('main.manage', {
                 url: '/manage',
                 controller: 'ManageCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/manage/manageCtrl.html'
             })
-            .state('recommend', {
+            .state('main.recommend', {
                 url: 'recommend',
                 controller: 'RecommendCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/recommend/recommendCtrl.html'
             })
-            .state('expert', {
+            .state('main.expert', {
                 url: '/expert',
                 controller: 'ExpertCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/expert/expertCtrl.html'
             })
-            .state('authenticate', {
+            .state('main.authenticate', {
                 url: '/authenticate',
                 controller: 'AuthenticateCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/authenticate/authenticateCtrl.html'
             })
-            .state('personalcenter', {
+            .state('main.personalcenter', {
                 url: '/personalcenter',
                 controller: 'PersonalcenterCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/personalcenter/personalcenterCtrl.html'
             })
-            .state('investorshome', {
+            .state('main.investorshome', {
                 url: '/investorshome',
                 controller: 'InvestorshomeCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/investorshome/investorshomeCtrl.html'
             })
-            .state('resource', {
+            .state('main.resource', {
                 url: '/resource',
                 controller: 'ResourceCtrl',
                 controllerAs: 'vm',

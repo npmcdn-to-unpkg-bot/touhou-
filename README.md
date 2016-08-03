@@ -1,7 +1,5 @@
-# CCFE Frontend
-
 ## Project Summary
-This is a HTML5 web client built on AngularJS for Richement CCFE. 
+This is a HTML5 web client built on AngularJS. 
 It compiles to pure HTML, CSS, and Javascript files and communicates with the server via API requests.
 No server/database related code is hosted here.
 
