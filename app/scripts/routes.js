@@ -57,6 +57,18 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/authenticate/authenticateCtrl.html'
             })
+            .state('personalcenter', {
+                url: '/personalcenter',
+                controller: 'PersonalcenterCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/personalcenter/personalcenterCtrl.html'
+            })
+            .state('investorshome', {
+                url: '/investorshome',
+                controller: 'InvestorshomeCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/investorshome/investorshomeCtrl.html'
+            })
             .state('resource', {
                 url: '/resource',
                 controller: 'ResourceCtrl',
