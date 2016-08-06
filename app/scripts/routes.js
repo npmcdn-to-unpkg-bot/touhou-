@@ -65,6 +65,12 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/personalcenter/personalcenterCtrl.html'
             })
+            .state('main.favorites', {
+                url: '/favorites',
+                controller: 'FavoritesCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/favorites/favoritesCtrl.html'
+            })
             .state('main.investorshome', {
                 url: '/investorshome',
                 controller: 'InvestorshomeCtrl',
