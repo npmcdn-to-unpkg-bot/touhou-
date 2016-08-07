@@ -71,6 +71,12 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/favorites/favoritesCtrl.html'
             })
+            .state('main.message', {
+                url: '/message',
+                controller: 'MessageCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/message/messageCtrl.html'
+            })
             .state('main.investorshome', {
                 url: '/investorshome',
                 controller: 'InvestorshomeCtrl',

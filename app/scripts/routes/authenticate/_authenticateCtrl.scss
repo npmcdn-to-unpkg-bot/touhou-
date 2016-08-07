@@ -1,6 +1,6 @@
 .sousuo{
 	width: 70%;
-	margin: 1rem auto;
+	margin: 16px auto;
 }
 .sousuo div{
 	width: 25%;
@@ -17,8 +17,10 @@
 	background:url(../images/sousuo.png) no-repeat;
 	background-size: 100% 100%;
 }
-.zhuangjia h1{
+.zhuangjia h1.renz{
 	text-align: center;
+	font-size:30px;
+	color:#000;
 }
 .ZJ_width{
 	width:70%;
@@ -74,7 +76,9 @@
 	color:#18bd9b;
 }
 .jianli div a{
+	display:block;
 	color:#18bd9b;
+	line-height:15px;
 }
 #pagination > li > span{
 	border:none;
