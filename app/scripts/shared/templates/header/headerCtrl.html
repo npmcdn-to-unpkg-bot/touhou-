@@ -1,41 +1,37 @@
 <header ng-controller="HeaderCtrl as vm">
 	<!-- header -->
 	<div class="header">
-		<div class="container-fluid">
-			<div class="row top">
-				<ul class="welcome col-md-8 row">
-					<li class="col-md-2">丰厚资本入驻[投后+]</li>
-					<li class="col-md-2">欢迎杨守彬入驻[投后+]</li>
-					<li class="col-md-2">欢迎海天会入驻[投后+]</li>
-				</ul>
-				<div class="fr top_right col-md-4 row">
-					<div class="fl weixin col-md-5">微信号:
-						<span>loongp</span>
-					</div>
-					<div class="login  col-md-2">
-						<div class="login_border">登陆</div>
-					</div>
-					<div class="login1 col-md-2">
-						<div class="login_border">注册</div>
-					</div>
+		<div class="row top">
+			<ul class="welcome col-md-8">
+				<li class="col-md-5">丰厚资本入驻[投后+]</li>
+				<li class="col-md-5">欢迎杨守彬入驻[投后+]</li>
+				<li class="col-md-5">欢迎海天会入驻[投后+]</li>
+			</ul>
+			<div class="col-md-5 col-xs-offset-2">
+				<div class="col-md-6">微信号:
+					<span>loongp</span>
+				</div>
+				<div class="col-md-4 login">
+					<div class="btn-default" ui-sref="main.login">登陆</div>
+				</div>
+				<div class="col-md-4 login">
+					<div class="btn-default" ui-sref="main.sign">注册</div>
 				</div>
 			</div>
-			<div class="nav row">
-				<div class="col-md-4 row" style="height:100%">
-					<div class="col-md-6 col-md-push-5 logo">
-						投后+
-					</div>
-				</div>
-				<div class="col-md-7 row nav_nav">
-					<div class="col-md-2">首页</div>
-					<div class="col-md-2 nav_N2">投后管理</div>
-					<div class="col-md-2">精品推荐</div>
-					<div class="col-md-2">投后专家</div>
-					<div class="col-md-2" style="color:#fff;">投后人认证</div>
-					<div class="col-md-2">项目源</div>
+		</div>
+		<div class="row col-md-16 main-menu">
+			<div class="col-md-4 row">
+				<div class="col-md-6 col-md-push-5 logo">投后+</div>
+			</div>
+			<ul class="col-md-9 nav nav-pills">
+				<li class="col-md-2 active"><a href ui-sref="main.index">首页</a></li>
+				<li class="col-md-3"><a href ui-sref="main.manage">投后管理</a></li>
+				<li class="col-md-3"><a href ui-sref="main.recommend">精品推荐</a></li>
+				<li class="col-md-3"><a href ui-sref="main.expert">投后专家</a></li>
+				<li class="col-md-3"><a href ui-sref="main.authenticate">投后人认证</a></li>
+				<li class="col-md-2"><a href ui-sref="main.resource">项目源</a></li>
 
-				</div>
-			</div>
+			</ul>
 		</div> 
 	</div>
 </header>

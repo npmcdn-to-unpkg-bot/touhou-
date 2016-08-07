@@ -89,6 +89,12 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/resource/resourceCtrl.html'
             })
+            .state('main.sign', {
+                url: '/sign',
+                controller: 'SignCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/sign/signCtrl.html'
+            })
             .state('error', {
                 templateUrl: 'scripts/shared/templates/error.html'
             })
