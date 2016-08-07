@@ -1,0 +1,179 @@
+.shoucangjia{
+	margin-top:90px;
+	width:925px;
+	margin:90px auto 0;
+}
+.shoucangjia h2{
+	font-size:39px;
+	font-weight:normal;
+	text-align:center;
+	color:#000000;
+}
+.sc_sousuo{
+	width:400px;
+	margin:30px auto 0;
+}
+.sc_gongs{
+	width:318px;
+	height:40px;
+	border-radius:5px 0 0 5px;
+	border:none;
+	border:1px solid #999999;
+	background:url(../../../assets/images/sousuo.png) no-repeat;
+	background-size:100% 100%;
+	padding-left:20px;
+	color:#000;
+	font-size:12px;
+	line-height:40px;
+}
+.sc_btn{
+	width:80px;
+	height:40px;
+	background:#18bd9b;
+	border:none;
+	border:1px solid #999999;
+	margin-left:-1px;
+	font-size:22px;
+	line-height:40px;
+	color:#fff;
+	border-radius:0 5px 5px 0;
+}
+.sc_tab{
+	margin-top:54px;
+}
+.sc_tab li{
+	float: left;
+	width:125px;
+	height:32px;
+	border:1px solid #cccccc;
+	margin-left:-1px;
+	color:#080808;
+	font-size:17px;
+	line-height:28px;
+	text-align:center;
+	cursor: pointer;
+}
+.sc_tab .sc_tabbottom{
+	border-bottom:none;
+}
+.xm_title{
+	margin-top:40px;
+	padding-left:25px;
+}
+.xm_title div{
+	font-size:23px;
+	width:120px;
+	color:#000;
+	text-align:center;
+}
+.xm_list{
+	margin-top:28px;
+}
+.xm_list li .xm_beij{
+	width:910px;
+	height:68px;
+	padding-top:10px;
+	background:#f2f1f1;
+	box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+    -webkit-box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+    -moz-box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+    -o-box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+}
+.xm_list li img{
+	width:50px;
+	height:50px;
+	margin-left:58px;
+	/* margin-top:10px; */
+}
+.xm_ziben{
+	width:120px;
+	font-size:15px;
+	color:#333333;
+	text-align:center;
+	margin-left:35px;
+	margin-top:10px;
+}
+.xm_name{
+	margin-left:0px;
+}
+.xm_hot{
+	width:64px;
+	height:50px;
+	font-size:12px;
+	color:#666666;
+	background:#fff;
+	text-align:center;
+	line-height:50px;
+	box-shadow:-1px 0 5px #adadac, /*左边阴影*/  
+    1px 0 5px #adadac, /*右边阴影*/   
+    0 1px 5px #adadac;
+    -webkit-box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+    -moz-box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+    -o-box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+    margin-left: 80px;
+    cursor: pointer;
+	/* margin-top:8px; */
+}
+.xm_jiyou{
+	margin-left:10px;
+}
+.xm_back{
+	margin-top:5px;
+	width:925px;
+	height:140px;
+	background:url(../../../assets/images/beijingkuang.png) no-repeat;
+	background-size:100% 100%;
+	padding-top:25px;
+	padding-left:50px;
+}
+.xm_back div{
+	font-size:12px;
+	color:#666;
+	line-height:20px;
+}
+.xm_gongn{
+	width:185px;
+}
+.xm_jieshao{
+	text-indent:2em;
+}
+.xm_xuanz{
+	margin-left:135px;
+	margin-top:33px;
+}
+.xm_xuanz input{
+	width:16px;
+	height:16px;
+}
+.xm_xiajia{
+	font-size:12px;
+	margin-top:2px;
+	margin-left:10px;
+}
+.xm_back .xm_fufei{
+	font-size:18px;
+	background:#26a757;
+	width:90px;
+	height:30px;
+	color:#fff;
+	text-align:center;
+	line-height:30px;
+	border-radius:3px;
+	margin-left:154px;
+	margin-top:40px;
+	cursor:pointer;
+}

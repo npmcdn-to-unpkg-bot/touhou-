@@ -65,6 +65,12 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/personalcenter/personalcenterCtrl.html'
             })
+            .state('main.favorites', {
+                url: '/favorites',
+                controller: 'FavoritesCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/favorites/favoritesCtrl.html'
+            })
             .state('main.investorshome', {
                 url: '/investorshome',
                 controller: 'InvestorshomeCtrl',
@@ -76,6 +82,12 @@
                 controller: 'ResourceCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/resource/resourceCtrl.html'
+            })
+            .state('main.sign', {
+                url: '/sign',
+                controller: 'SignCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/sign/signCtrl.html'
             })
             .state('error', {
                 templateUrl: 'scripts/shared/templates/error.html'

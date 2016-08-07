@@ -1,6 +1,6 @@
 /**
  * @ngdoc controller
- * @name touhou.controller:HeaderCtrl
+ * @name touhou.controller:SignCtrl
  * @description
  * Navigation header with brand selection and user role display, 
  * logout functions.
@@ -11,10 +11,10 @@
 
     angular
         .module('touhou')
-        .controller('HeaderCtrl', HeaderCtrl);
+        .controller('SignCtrl', SignCtrl);
 
     /* @ngInject */
-    function HeaderCtrl($rootScope, $state) {
-        var vm = this;
+    function SignCtrl($rootScope, $state) {
+        
     }
 })();

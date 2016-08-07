@@ -1,0 +1,257 @@
+.invest-page{
+	.content{
+		width:925px;
+		margin:0 auto;
+	}
+	.shoucang div{
+		font-size:15px;
+		width:60px;
+		height:30px;
+		line-height:30px;
+		text-align:center;
+		color:#fff;
+		float: right;
+		background:#01983b;
+		margin-top: 9px;
+	}
+	.cont_person{
+		width:100%;
+		background:#f2f2f2;
+		border:1px solid #dadada;
+		box-shadow: 1px 1px 1px;
+		-webkit-box-shadow: 1px 1px 1px;
+		-o-box-shadow:1px 1px 1px;
+		-moz-box-shadow:1px 1px 1px;
+		padding: 8px 16px;
+		margin-top:10px;
+	}
+	.cont_da{
+		position: relative;
+	}
+	.cont_da img{
+		width:145px;
+		height:133px;
+	}
+	.cont_da div{
+		width:76px;
+		height:68px;
+		background:url(../../../assets/images/dakazhang.png) no-repeat;
+		background-size:100% 100%;
+		position:absolute;
+		bottom:0;
+		right:-28px;
+	}
+	.cont_shenf{
+		margin-left: 25px;
+	}
+	.cont_shenf h3{
+		color:#000;
+		font-size: 29px;
+	}
+	.cont_shenf p{
+		font-size: 12px;
+		line-height:20px;
+		color:#333;
+	}
+	.cont_shenf div{
+		font-size: 12px;
+		color:#333;
+		margin-top:20px;
+	}
+	.jieduan{
+		margin-left: 70px;
+	}
+	.touzi{
+		font-size: 17px;
+		color:#333;
+		line-height: 17px;
+		margin-bottom:10px;
+	}
+	.toujie{
+		font-size: 12px;
+		color:#333;
+		line-height: 20px;
+	}
+	.margin-left{
+		margin-left: 34px;
+	}
+	.cont_jigou{
+		padding:12px;
+		background:#f2f2f2;
+		border:1px solid #dadada;
+		box-shadow: 1px 1px 1px;
+		-webkit-box-shadow: 1px 1px 1px;
+		-o-box-shadow:1px 1px 1px;
+		-moz-box-shadow:1px 1px 1px;
+		height: 375px;
+		width:455px;
+		margin-top: 23px;
+		position:relative;
+	}
+	.cont_jies{
+		width: 128px;
+		height: 36px;
+		font-size: 18px;
+		text-align: center;
+		line-height: 36px;
+		background:#18bd9b;
+		margin-left:4px;
+		color:#fff;
+	}
+	.jieshao_top{
+		border-top: 1px solid #cccccc;
+		width: 100%;
+		margin-top: 17px;
+		padding-left: 11px;
+		padding-right: 11px;
+	}
+	.jieshao_top p{
+		margin-top: 5px;
+		font-size: 12px;
+		line-height: 22px;
+	}
+	.jieshao_top img{
+		width: 392px;
+		height: 220px;
+		margin-top: 5px;
+	}
+	.xiabiao{
+		width:28px;
+		height:35px;
+		background:url(../../../assets/images/xiaobiao1.png) no-repeat;
+		background-size:100% 100%;
+		position:absolute;
+		bottom:-3px;
+		right:-3px;
+	}
+	.cont_bor{
+		height:240px;
+		border-left:1px solid #cccccc;
+		margin-top: 15px;
+		position:relative;
+	}
+	.cont_span{
+		display: block;
+		width: 12px;
+		height:12px;
+		border-radius:50%;
+		background:#666;
+		position:absolute;
+		top:20px;
+		left:-6px;
+	}
+	.cont_span1{
+		top:110px;
+	}
+	.cont_span2{
+		top:206px;
+	}
+	.cont_xiangm{
+		margin-left: 35px;
+	}
+	.cont_ul{
+		margin-top: 20px;
+	}
+	.cont_dache{
+		width:280px;
+		height: 30px;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		background:#18bd9b;
+		color:#fff;
+	}
+	.cont_touzi{
+		/* margin-top: 5px; */
+		color:#666;
+	}
+	.cont_touzi span{
+		width:60px;
+		font-size: 12px;
+	}
+	.cont_jianli{
+		margin:27px 0 6px;
+		font-weight: normal;
+		color:#000;
+		font-size: 17px;
+	}
+	.cont_geren p{
+		color: #000;
+		text-indent: 2em;
+		font-size: 12px;
+		line-height: 24px;
+	}
+	.cont_marg{
+		margin-top:45px;
+	}
+	.cont_zhanshi{
+		width:450px;
+		border:1px solid #ccc;
+		box-shadow: 1px 1px 1px;
+		-webkit-box-shadow: 1px 1px 1px;
+		-o-box-shadow:1px 1px 1px;
+		-moz-box-shadow:1px 1px 1px;
+		padding: 12px 20px;
+	}
+	.ciangm_head{
+		width:185px;
+		height:36px;
+		font-size: 17px;
+		line-height: 36px;
+		color: #fff;
+		text-align: center;
+		background:#18bd9b;
+	}
+	.xiangm_list li{
+		float: left;
+		width:194px;
+		height:90px;
+		background:#e7e7e7;
+		margin-top: 25px;
+		padding:7px 15px 10px 10px;
+	}
+	.xiangm_list li img{
+		width:66px;
+		height:34px;
+	}
+	.xiangm_list li:nth-child(even){
+		margin-left: 20px;
+	}
+	.cont_list{
+		font-size: 16px;
+		line-height: 34px;
+		color:#010101;
+		margin-left: 18px;
+	}
+	.hanshui{
+		font-size: 12px;
+		line-height: 19px;
+		color:#222222;
+		margin-top: 6px;
+	}
+	.cont_dong{
+		margin-left: 30px;
+	}
+	.cont_guandian{
+		width:160px;
+		background:#18bd9b;
+		height:35px;
+		font-size: 17px;
+		color: #fff;
+		line-height: 35px;
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 6px;
+	}
+	.cont_chuangye{
+		color:#000000;
+		font-size: 14px;
+		line-height: 40px;
+	}
+	.cont_xiangxia{
+		width: 61px;
+		height: 22px;
+		margin: 30px auto;
+		
+	}
+}
