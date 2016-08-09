@@ -42,7 +42,7 @@
                 templateUrl: 'scripts/routes/manage/manageCtrl.html'
             })
             .state('main.recommend', {
-                url: 'recommend',
+                url: '/recommend',
                 controller: 'RecommendCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/recommend/recommendCtrl.html'
