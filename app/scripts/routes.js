@@ -47,6 +47,18 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/recommend/recommendCtrl.html'
             })
+            .state('main.tochannel', {
+                url: '/tochannel',
+                controller: 'TochannelCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/tochannel/tochannelCtrl.html'
+            })
+            .state('main.addinformation', {
+                url: '/addinformation',
+                controller: 'AddinformationCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/addinformation/addinformationCtrl.html'
+            })
             .state('main.expert', {
                 url: '/expert',
                 controller: 'ExpertCtrl',
