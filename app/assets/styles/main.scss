@@ -41,6 +41,7 @@ IMPORTANT NOTE:
 @import  'base/_tables.scss';
 @import  'base/_thumbnail.scss';
 @import  'base/_typography.scss';
+@import  '../../scripts/routes/addinformation/addinformationCtrl.scss';
 @import  '../../scripts/routes/authenticate/_authenticateCtrl.scss';
 @import  '../../scripts/routes/expert/_expertCtrl.scss';
 @import  '../../scripts/routes/favorites/_favoritesCtrl.scss';
@@ -53,5 +54,6 @@ IMPORTANT NOTE:
 @import  '../../scripts/routes/recommend/_recommendCtrl.scss';
 @import  '../../scripts/routes/resource/_resourceCtrl.scss';
 @import  '../../scripts/routes/sign/_signCtrl.scss';
+@import  '../../scripts/routes/tochannel/tochannelCtrl.scss';
 @import  '../../scripts/shared/templates/header/_headerCtrl.scss';
 // endinject
