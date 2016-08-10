@@ -14,11 +14,20 @@
         .controller('HeaderCtrl', HeaderCtrl);
 
     /* @ngInject */
-    function HeaderCtrl($document, ElementService) {
+    function HeaderCtrl($state, $document, ElementService) {
         var vm = this;
 
         //main menu switch effect
         var navPills = ElementService.getByClass('ul', 'nav-pills');
+        var liArr = angular.element(navPills).find('li');
+        angular.forEach(liArr, function(item, index) {
+        	if(angular.element(item).children().attr('ui-sref') === $state.current.name) {
+        		var liActive = ElementService.getByClass('li', 'active', 'nav-pills');
+        		angular.element(liActive).removeClass('active');
+        		angular.element(item).addClass('active');
+        		return;
+        	}
+        });
         angular.element(navPills).find('li').on('click', function(e) {
         	if(angular.element(e.target).parent().hasClass('active')) {
         		return;
@@ -31,6 +40,10 @@
         var loginBtn = ElementService.getByClass('div', 'login');
         var signBtn = ElementService.getByClass('div', 'sign');
         angular.element(loginBtn).on('click', function(e) {
+        	var liActive = ElementService.getByClass('li', 'active', 'nav-pills');
+        	angular.element(liActive).removeClass('active');
+        });
+        angular.element(signBtn).on('click', function(e) {
         	var liActive = ElementService.getByClass('li', 'active', 'nav-pills');
         	angular.element(liActive).removeClass('active');
         });
