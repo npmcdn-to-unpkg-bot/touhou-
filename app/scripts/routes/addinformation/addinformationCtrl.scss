@@ -34,10 +34,10 @@
 	padding-left:45px;
 	width:537px;
 }
-.add_message .add_div div{
+.add_div div{
 	margin-bottom:5px;
 }
-.add_message .add_div span{
+.add_div span{
 	font-size:18px;
 	color:#000;
 }
@@ -94,4 +94,17 @@
 	line-height:35px;
 	text-align:center;
 	background:#e7e6e6;
+}
+.add_guquan span{
+	font-size:17px;
+	float: left;
+}
+.add_guquan img{
+	float: left;
+	margin-top:-46px;
+	margin-left:18px;
+}
+input.add_shangchuan{
+	width:73px;
+	display:inline;
 }
