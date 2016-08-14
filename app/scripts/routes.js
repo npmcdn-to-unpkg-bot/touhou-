@@ -71,6 +71,18 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/expertsshow/expertsshowCtrl.html'
             })
+            .state('main.become', {
+                url: '/become',
+                controller: 'BecomeCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/become/becomeCtrl.html'
+            })
+            .state('main.wallet', {
+                url: '/wallet',
+                controller: 'WalletCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/wallet/walletCtrl.html'
+            })
             .state('main.expert', {
                 url: '/expert',
                 controller: 'ExpertCtrl',

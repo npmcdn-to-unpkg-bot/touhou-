@@ -43,6 +43,7 @@ IMPORTANT NOTE:
 @import  'base/_typography.scss';
 @import  '../../scripts/routes/addinformation/addinformationCtrl.scss';
 @import  '../../scripts/routes/authenticate/_authenticateCtrl.scss';
+@import  '../../scripts/routes/become/becomeCtrl.scss';
 @import  '../../scripts/routes/expert/_expertCtrl.scss';
 @import  '../../scripts/routes/expertsshow/expertsshowCtrl.scss';
 @import  '../../scripts/routes/favorites/_favoritesCtrl.scss';
@@ -57,5 +58,6 @@ IMPORTANT NOTE:
 @import  '../../scripts/routes/sign/_signCtrl.scss';
 @import  '../../scripts/routes/tochannel/tochannelCtrl.scss';
 @import  '../../scripts/routes/topup/topupCtrl.scss';
+@import  '../../scripts/routes/wallet/walletCtrl.scss';
 @import  '../../scripts/shared/templates/header/_headerCtrl.scss';
 // endinject
