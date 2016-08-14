@@ -59,6 +59,18 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/addinformation/addinformationCtrl.html'
             })
+            .state('main.topup', {
+                url: '/topup',
+                controller: 'TopupCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/topup/topupCtrl.html'
+            })
+            .state('main.expertsshow', {
+                url: '/expertsshow',
+                controller: 'ExpertsshowCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/expertsshow/expertsshowCtrl.html'
+            })
             .state('main.expert', {
                 url: '/expert',
                 controller: 'ExpertCtrl',
