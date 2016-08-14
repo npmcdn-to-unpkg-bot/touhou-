@@ -1,32 +1,32 @@
 {
     "local": {
-        "baseURL": "http://127.0.0.1:8080/ccfe/"
+        "baseURL": "http://127.0.0.1:8080/touhou/"
     },
     "localdev": {
-        "baseURL": "http://ccfe.richemont.d1m.cn:8086/ccfe/"
+        "baseURL": "http://115.29.163.20/"
     },
     "dev": {
-        "baseURL": "http://dev-ccfe5.intranet.rccad.net/api/"
+        "baseURL": "http://115.29.163.20/"
     },
     "dev-cn": {
-        "baseURL": "http://dev-ccfe5-cn.intranet.rccad.net/api/"
+        "baseURL": "http://115.29.163.20/"
     },
     "quality": {
-        "baseURL": "http://quality-ccfe5.intranet.rccad.net/api/"
+        "baseURL": "http://115.29.163.20/"
     },
     "quality-cn": {
-        "baseURL": "http://quality-ccfe5-cn.intranet.rccad.net/api/"
+        "baseURL": "http://115.29.163.20/"
     },
     "prepod": {
-        "baseURL": "http://preprod-ccfe5.intranet.rccad.net/api/"
+        "baseURL": "http://115.29.163.20/"
     },
     "prepod-cn": {
-        "baseURL": "http://preprod-ccfe5-cn.intranet.rccad.net/api/"
+        "baseURL": "http://115.29.163.20/"
     },
     "production-cn": {
-        "baseURL": "http://ccfe5.intranet.rccad.net/api/"
+        "baseURL": "http://115.29.163.20/"
     },
     "production": {
-        "baseURL": "http://ccfe5-cn.intranet.rccad.net/api/"
+        "baseURL": "http://115.29.163.20/"
     }
 }
