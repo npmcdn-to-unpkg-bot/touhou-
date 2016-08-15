@@ -24,7 +24,7 @@
             });
         	Restangular.all('api/user/signIn/' + vm.phone + '/' + vm.password).customGET().then(function(res) {
                 if(res.success) {
-                    debugger
+                    
                 }
         	});
         }
