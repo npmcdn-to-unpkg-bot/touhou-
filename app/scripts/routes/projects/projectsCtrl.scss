@@ -1,0 +1,26 @@
+.pr_back{
+	width:262px;
+	height:230px;
+	background:#fff;
+	padding:3px 3px;
+	box-shadow:0 2px 2px #666; 
+	-webkit-box-shadow:0 2px 2px #666; 
+	-moz-box-shadow:0 2px 2px #666; 
+	-o-box-shadow:0 2px 2px #666; 
+	margin-top:-175px;
+	z-index:3;
+	position: relative;
+}
+.pr_back img{
+	width:255px;
+	height:225px;
+}
+.pr_guimo{
+	line-height:12px;
+	margin-top:10px;
+}
+.pr_guimo label,.pr_guimo span{
+	font-size:12px;
+	color:#666;
+	line-height:12px;
+}
