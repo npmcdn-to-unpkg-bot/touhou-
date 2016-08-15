@@ -77,7 +77,25 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/become/becomeCtrl.html'
             })
-            .state('main.wallet', {
+            .state('main.module', {
+                url: '/module',
+                controller: 'ModuleCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/module/moduleCtrl.html'
+            })
+            .state('main.mdcneter', {
+                url: '/mdcneter',
+                controller: 'MdcneterCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/mdcneter/mdcneterCtrl.html'
+            })
+            .state('main.projects', {
+                url: '/projects',
+                controller: 'ProjectsCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/projects/projectsCtrl.html'
+            })
+             .state('main.wallet', {
                 url: '/wallet',
                 controller: 'WalletCtrl',
                 controllerAs: 'vm',

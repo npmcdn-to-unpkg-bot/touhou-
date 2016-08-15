@@ -3,10 +3,10 @@
 
     angular
         .module('touhou')
-        .controller('WalletCtrl', WalletCtrl);
+        .controller('ProjectsCtrl', ProjectsCtrl);
 
     /* @ngInject */
-    function WalletCtrl($http, $state, $window) {
+    function ProjectsCtrl($http, $state, $window) {
         var vm = this;
     }
 })();

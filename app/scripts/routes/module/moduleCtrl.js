@@ -3,10 +3,10 @@
 
     angular
         .module('touhou')
-        .controller('WalletCtrl', WalletCtrl);
+        .controller('BecomeCtrl', BecomeCtrl);
 
     /* @ngInject */
-    function WalletCtrl($http, $state, $window) {
+    function BecomeCtrl($http, $state, $window) {
         var vm = this;
     }
 })();
