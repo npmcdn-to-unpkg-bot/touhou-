@@ -109,6 +109,7 @@
 		font-weight: normal;
 	}
 	.touhoumokuai{
+		position: relative;
 		padding: 50px 0;
 		width: 100%;
 		background: #18bd9b;
@@ -146,14 +147,15 @@
 		font-size: 20px;
 	}
 	.touhoumokuai ul li a{
+		position: relative;
 		display: block;
-		margin: 40px auto 0;
 		width: 60%;
-		height: 50px;
+		height: 40px;
+		margin: 0 auto;
 		background-color: #fff;
 		text-align: center;
-		line-height: 50px;
-		border-radius: 50px;
+		line-height: 40px;
+		border-radius: 40px;
 		color: #333;
 	}
 	.mokuai_left{
@@ -188,11 +190,11 @@
 	.zhibiao_top img{
 		width:15%;
 		margin-left: 24%;
-		margin-top: 6px;
+		margin-top: 20px;
 	}
 	.zhibiao_top h3{
 		color:#fff;
-		font-size: 44px;
+		font-size: 42px;
 		margin: 0;
 	}
 	.zhibiao ul{
@@ -209,6 +211,7 @@
 		text-align: center;
 		color: #fff;
 		margin-top: 30px;
+		font-size: 24px;
 	}
 	.footer_footer{
 		line-height: 50px;
