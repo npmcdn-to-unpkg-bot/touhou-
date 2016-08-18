@@ -95,6 +95,12 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/projects/projectsCtrl.html'
             })
+            .state('main.fuhuaqi', {
+                url: '/fuhuaqi',
+                controller: 'PuhuaqiCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/fuhuaqi/fuhuaqiCtrl.html'
+            })
              .state('main.wallet', {
                 url: '/wallet',
                 controller: 'WalletCtrl',
