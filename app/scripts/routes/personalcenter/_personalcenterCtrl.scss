@@ -27,15 +27,17 @@
 		margin-top: 1.5rem;
 	}
 	.tx_nav{
-		width:40%;
-		height:2.4rem;
-		font-size:1.5rem;
-		line-height: 2.4rem;
-		border:1px solid #01983b;
+		width: 40%;
+		height: 40px;
+		min-width: 160px;
+		font-size: 28px;
+		line-height: 40px;
+		border: 1px solid #01983b;
 		text-align: center;
-		margin: 1.5rem auto 0;
+		margin: 30px auto 0;
+		padding: 0 5px;
 		border-radius: 5px;
-		color:#000;
+		color: #000;
 		position: relative;
 		cursor: pointer;
 	}
@@ -53,12 +55,14 @@
 		margin-top: 2rem;
 	}
 	.chaxun{
-		font-size: 12px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
 		color: #fff;
 		background:#01983b;
 		border-radius: 5px;
 		cursor: pointer;
-		padding:0.3rem 0.2rem;
+		padding: 0 5px;
 	}
 	.guanli_bor{
 		text-align: center;
@@ -66,7 +70,7 @@
 		background-size: 100% 100%;
 		width: 45%;
 		height:10rem;
-		font-size: 2rem;
+		font-size: 36px;
 		line-height: 10rem;
 		color: #000;
 		margin-left: 4%;
@@ -81,7 +85,7 @@
 		line-height: 0;
 		text-align: left;
 		position: absolute;
-		font-size: 1.5rem;
+		font-size: 24px;
 		top:2.5rem;
 		left:2rem;
 	}
@@ -89,23 +93,26 @@
 		line-height: 0;
 		text-align: right;
 		position: absolute;
-		right:2rem;
-		bottom:2.5rem;
-		font-size: 1.5rem;
+		right: 2rem;
+		bottom: 2.5rem;
+		font-size: 24px;
 	}
 	.soucangj{
+		height: 40px;
+		line-height: 40px;
+		padding: 0 10px;
 		background:#01983b;
-		padding: 0.5rem 0.3rem 0.5rem 0.2rem;
 		border-radius: 5px;
 	}
 	.soucangj span{
-		width:1.5rem;
-		height:1.5rem;
-		background:url(../images/wuxing.png) no-repeat;
+		width: 24px;
+		height: 24px;
+		margin-top: 10px;
+		background: url(../images/wuxing.png) no-repeat;
 		background-size: 100% 100%;
 	}
 	.soucangj div{
-		font-size: 1rem;
+		font-size: 20px;
 		color: #fff;
 		margin-left: 0.2rem;
 	}
@@ -113,14 +120,41 @@
 		padding:3rem 0 2.5rem;
 	}
 	.geren{
-		font-size: 2.2rem;
+		font-size: 36px;
 		color: #000;
 		text-align:center;
 	}
 	.bianji .guanli_bor,.bianji .guanli_bor1{
-		font-size: 1.4rem;
+		font-size: 24px;
 	}
 	.bianji{
 		margin-bottom: 12rem;
+	}
+	.without-role{
+		h3{
+			margin-top: 40px;
+			font-size: 48px;
+		}
+		h5{
+			font-size: 24px;
+			color: #666666;
+			font-weight: normal;
+		}
+		a{
+			font-size: 24px;
+		}
+		.btn{
+			font-size: 24px;
+		}
+		.btn.normal,.btn.normal:hover,.btn.normal:focus,.btn.normal:active{
+			color: #000000;
+			// border-radius: 0px;
+			background: #ffffff;
+		}
+		.btn.selected,.btn.selected:hover,.btn.selected:focus,.btn.selected:active{
+			color: #ffffff;
+			// border-radius: 0px;
+			background: #019836;
+		}
 	}
 }
