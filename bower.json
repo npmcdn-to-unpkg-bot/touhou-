@@ -32,7 +32,8 @@
     "angular-messages": "^1.5.5",
     "angular-toastr": "^1.7.0",
     "angular-locker": "^2.0.4",
-    "angular-ui-tree": "^2.15.0"
+    "angular-ui-tree": "^2.15.0",
+    "js-md5": "latest"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.5",
@@ -46,6 +47,11 @@
       "main": [
         "./dist/angular-datepicker.min.js",
         "./dist/angular-datepicker.sourcemap.map"
+      ]
+    },
+    "js-md5": {
+      "main": [
+        "./js/md5.js"
       ]
     }
   },

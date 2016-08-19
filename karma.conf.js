@@ -35,6 +35,7 @@ module.exports = function(config) {
             'app/bower_components/angular-toastr/dist/angular-toastr.tpls.js',
             'app/bower_components/angular-locker/dist/angular-locker.min.js',
             'app/bower_components/angular-ui-tree/dist/angular-ui-tree.js',
+            'app/bower_components/js-md5/js/md5.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
             'app/bower_components/karma-read-json/karma-read-json.js',
             // endbower
