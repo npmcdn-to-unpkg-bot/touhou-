@@ -1,6 +1,6 @@
 <div class="personal-page">
 	<!-- content -->
-	<ng-include src="'scripts/routes/personalcenter/_without-role.html'"  scope="" onload=""></ng-include>
+	<ng-include ng-if="!vm.currentUser.role" src="'scripts/routes/user/detail/_without-role.html'"  scope="" onload=""></ng-include>
 	
 	<div class="clearFix conter_width">
 		<div class="col-xs-6">

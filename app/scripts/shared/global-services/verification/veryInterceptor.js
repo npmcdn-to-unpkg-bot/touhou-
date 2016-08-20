@@ -13,21 +13,9 @@
         .run(function($rootScope, $state) {
             
             $state.go('main.index');
-            
-            /*$rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
-                // Set previous state in rootScope so that it can be accessed in ctrl methods.
-                // Used currently in CustomerSearch (back button from Detail page)
-                $rootScope.previousState = {
-                    name: fromState.name,
-                    params: fromParams
-                };
 
-                var isLogin = toState.name === 'login';
-                if(isLogin){
-                   return; // no need to redirect 
-                }
-                e.preventDefault(); // stop current execution
-                $state.go('index'); // go to login
+            /*$rootScope.$on('$stateChangeStart', function(e) {
+                debugger
             });*/
         });
 })();

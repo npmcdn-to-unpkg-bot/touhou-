@@ -14,8 +14,22 @@
         .controller('HeaderCtrl', HeaderCtrl);
 
     /* @ngInject */
-    function HeaderCtrl($state, $document, ElementService) {
+    function HeaderCtrl($rootScope, $state, $document, ElementService, User) {
         var vm = this;
+        vm.current_user = User.getUser();
+        
+        $rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
+            $rootScope.previousState = {
+                name: fromState.name,
+                params: fromParams
+            };
+
+            var isUserDetail = (toState.name === 'main.user.detail');
+            if(isUserDetail) {
+                vm.current_user = User.getUser();
+            }
+        });
+        
 
         //main menu switch effect
         var navPills = ElementService.getByClass('ul', 'nav-pills');

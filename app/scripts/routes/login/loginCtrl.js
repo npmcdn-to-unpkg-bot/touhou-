@@ -12,10 +12,9 @@
         .controller('LoginCtrl', LoginCtrl);
 
     /* @ngInject */
-    function LoginCtrl($http, $state, $window, Restangular) {
+    function LoginCtrl($state, Restangular, User) {
         var vm = this;
         vm.login = login;
-        console.log(md5(vm.password));
 
         // login
         function login() {
@@ -25,7 +24,8 @@
 
         	Restangular.all('api/user/signIn/' + vm.phone + '/' + vm.password).customGET().then(function(res) {
                 if(res.success) {
-                    console.log(res);
+                    User.setUser(res.content);
+                    $state.go('main.user.detail', res.content); //turn to personal center
                 }
         	});
         }

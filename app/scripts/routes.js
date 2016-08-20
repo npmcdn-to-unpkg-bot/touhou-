@@ -119,11 +119,14 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/authenticate/authenticateCtrl.html'
             })
-            .state('main.personalcenter', {
-                url: '/personalcenter',
-                controller: 'PersonalcenterCtrl',
+            .state('main.user',{
+                templateUrl: ''
+            })
+            .state('main.user.detail', {
+                url: '/user/detail',
+                controller: 'UserDetailCtrl',
                 controllerAs: 'vm',
-                templateUrl: 'scripts/routes/personalcenter/personalcenterCtrl.html'
+                templateUrl: 'scripts/routes/user/detail/detailCtrl.html'
             })
             .state('main.favorites', {
                 url: '/favorites',
