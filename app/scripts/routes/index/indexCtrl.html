@@ -1,8 +1,8 @@
 <div class="index-page">
 	<!-- content -->
 	<div class="index_content">
-		<div class="index_banner">
-			<ul>
+		<div class="index_banner" ng-mouseenter="vm.mouser()" ng-mouseleave="vm.mouseleave()">
+			<ul id="index_banner">
 				<li>
 					<a href="javascript:;" title="">
 						<img src="assets/images/banner1.jpg" alt="">
@@ -14,10 +14,10 @@
 					</a>
 				</li>
 			</ul>
-			<div class="index_left">
+			<div class="index_left" ng-click="vm.leftClick()">
 				<div></div>
 			</div>
-			<div class="index_right">
+			<div class="index_right" ng-click="vm.rightClick()">
 				<div></div>
 			</div>
 		</div>

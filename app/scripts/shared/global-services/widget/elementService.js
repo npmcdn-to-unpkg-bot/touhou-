@@ -20,7 +20,8 @@
     function ElementService($rootScope, Restangular) {
         // Initialize ElementService
         var service = {
-            getByClass: getByClass
+            getByClass: getByClass,
+            getStyle: getStyle
         };
         return service;
 
@@ -48,6 +49,11 @@
                 }
             });
             return target;
+        }
+
+        //get computed style
+        function getStyle(obj, name){
+            return (obj.currentStyle ? obj.currentStyle[name] : getComputedStyle(obj, false)[name]);
         }
     }
 

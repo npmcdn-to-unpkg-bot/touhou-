@@ -1,1 +1,26 @@
 [0813/131118:ERROR:settings.cc(261)] Settings magic is not 1129342067
+[0820/204335:ERROR:process_info.cc(608)] range at 0x8d2e27fc00000000, size 0x261 fully unreadable
+[0820/204335:ERROR:process_info.cc(608)] range at 0x8d2e281c00000000, size 0x261 fully unreadable
+[0820/204335:ERROR:process_info.cc(608)] range at 0x0, size 0x261 fully unreadable
+[0820/204335:WARNING:in_range_cast.h(38)] value 2618158688816 out of range
+[0820/204335:WARNING:in_range_cast.h(38)] value 2618158691614 out of range
+[0820/204335:WARNING:in_range_cast.h(38)] value 2618158688366 out of range
+[0820/204335:WARNING:in_range_cast.h(38)] value 2618158691874 out of range
+[0820/204335:WARNING:in_range_cast.h(38)] value 2618158690936 out of range
+[0820/204335:WARNING:in_range_cast.h(38)] value 2618003972784 out of range
+[0820/204335:WARNING:in_range_cast.h(38)] value 108084205055182070 out of range
+[0820/204335:WARNING:in_range_cast.h(38)] value 2618004117056 out of range
+[0820/204335:WARNING:in_range_cast.h(38)] value 2618004130576 out of range
+[0820/204612:ERROR:process_info.cc(608)] range at 0x6ceb27fc00000000, size 0x18a fully unreadable
+[0820/204612:ERROR:process_info.cc(608)] range at 0x6ceb281c00000000, size 0x18a fully unreadable
+[0820/204612:ERROR:process_info.cc(608)] range at 0x0, size 0x18a fully unreadable
+[0820/204612:WARNING:in_range_cast.h(38)] value 1694186631422 out of range
+[0820/204612:WARNING:in_range_cast.h(38)] value 1694186634220 out of range
+[0820/204612:WARNING:in_range_cast.h(38)] value 1694186630972 out of range
+[0820/204612:WARNING:in_range_cast.h(38)] value 1694186634480 out of range
+[0820/204612:WARNING:in_range_cast.h(38)] value 1694186633542 out of range
+[0820/204612:WARNING:in_range_cast.h(38)] value 1694044743456 out of range
+[0820/204612:WARNING:in_range_cast.h(38)] value 108084205055182070 out of range
+[0820/204612:WARNING:in_range_cast.h(38)] value 1694045094608 out of range
+[0820/204612:WARNING:in_range_cast.h(38)] value 1694153910112 out of range
+[0820/204612:WARNING:in_range_cast.h(38)] value 1694044890576 out of range
