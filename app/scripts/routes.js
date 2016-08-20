@@ -101,6 +101,24 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/fuhuaqi/fuhuaqiCtrl.html'
             })
+             .state('main.fuhuaqilist', {
+                url: '/fuhuaqilist',
+                controller: 'FuhuaqilistCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/fuhuaqilist/fuhuaqilistCtrl.html'
+            })
+             .state('main.huoban', {
+                url: '/huoban',
+                controller: 'HuobanCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/huoban/huobanCtrl.html'
+            })
+             .state('main.feiyong', {
+                url: '/feiyong',
+                controller: 'FeiyongCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/feiyong/feiyongCtrl.html'
+            })
              .state('main.wallet', {
                 url: '/wallet',
                 controller: 'WalletCtrl',

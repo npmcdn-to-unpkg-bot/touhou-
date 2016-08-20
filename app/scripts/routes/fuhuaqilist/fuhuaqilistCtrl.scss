@@ -1,0 +1,80 @@
+.ql_change{
+	margin-top:0px;
+	line-height:30px;
+}
+.ql_top{
+	margin-top:10px;
+}
+.ql_ziben{
+	width:80px;
+}
+.ql_hangye{
+	width:630px;
+}
+.ql_hangye li{
+	float: left;
+	font-size:15px;
+	line-height:30px;
+	margin-left:10px;
+	cursor:pointer;
+}
+.ql_hangye .active{
+	color:#18bd9b;
+}
+.ql_sousuo{
+	width:239px;
+	border-radius:5px;
+}
+.ql_sousuo .form-control{
+	border-left:none;
+}
+.ql_sousuo span{
+	border-radius:5px 0 0 5px;
+}
+.ql_sousuo input{
+	border-radius:0px 5px 5px 0px;
+}
+.ql_tuijian{
+	font-size:36px;
+	line-height:36px;
+	margin-top:10px;
+	color:#000;
+	text-align:center;
+}
+.ql_xlist{
+	margin-top:30px;
+	width:295px;
+	height:370px;
+	position:relative;
+	margin-right:20px;
+}
+.ql_xlist img{
+	width:100%;
+	height:170px;
+}
+
+.ql_xlist h3{
+	margin-top:45px;
+	font-size:20px;
+	text-align:center;
+}
+.ql_xlist p{
+	font-size:14px;
+	line-height:24px;
+	color:#707070;
+	text-align:center;
+}
+.ql_xlist a{
+	position:absolute;
+	width:108px;
+	height:34px;
+	border:none;
+	background:#18bd9b;
+	border-radius:17px;
+	bottom:0;
+	left:50%;
+	margin-left:-54px;
+	color:#fff;
+	text-align:center;
+	line-height:34px;
+}

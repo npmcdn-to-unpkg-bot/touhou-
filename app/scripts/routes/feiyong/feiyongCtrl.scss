@@ -1,0 +1,24 @@
+.fu_xiangm .fei_tuijian{
+	font-size:24px;
+}
+.fei_xiangq span{
+	display:inline-block;
+}
+.fei_table{
+	margin-top:15px;
+}
+.fei_table th,.fei_table td{
+	border:1px solid #ccc;
+	color:#ccc;
+	font-size:18px;
+	width:84px;
+}
+.fei_table td{
+	border-bottom:none;
+}
+.fei_table tbody tr:last-child td{
+	border-bottom:1px solid #ccc;
+}
+.fei_table thead,.fei_table tbody tr{
+	background:#fff;
+}
