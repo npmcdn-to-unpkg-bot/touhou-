@@ -1,0 +1,32 @@
+<div class="touxiang">
+	<img src="assets/images/chengrong.png" alt="" class="tx_back" id="tx_back">
+	<img ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" src="assets/images/renzheng.png" alt="" class="tx_yinzhang">
+</div>
+<h4 class="tx_name">{{vm.currentUser.name}}</h4>
+<ul>
+	<li ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="tx_nav" style="color:#f11400;">
+		大咖
+		<span></span>
+	</li>
+	<li ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="tx_nav">
+		已认证
+	</li>
+	<li ng-if="vm.userRole.authenticated === false" class="tx_nav">
+		未认证
+	</li>
+	<li class="tx_nav">
+		编辑资料
+	</li>
+	<li class="tx_nav">
+		投后预警
+	</li>
+	<li class="tx_nav">
+		BP文件
+	</li>
+	<li class="tx_nav">
+		上传文章
+	</li>
+	<li class="tx_nav">
+		我的钱包
+	</li>
+</ul>

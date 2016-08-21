@@ -18,11 +18,12 @@
 
         // login
         function login() {
-        	 Restangular.setDefaultHeaders({
-                'Content-Type'  : 'application/json;charset=UTF-8'
+        	Restangular.setDefaultHeaders({
+                'Content-Type'  : 'application/json;charset=UTF-8',
+                'Access-Control-Allow-Origin': '*'
             });
 
-        	Restangular.all('api/user/signIn/' + vm.phone + '/' + vm.password).customGET().then(function(res) {
+        	Restangular.all('api/user/signIn/' + vm.phone + '/' + md5(vm.password)).customGET().then(function(res) {
                 if(res.success) {
                     User.setUser(res.content);
                     $state.go('main.user.detail', res.content); //turn to personal center
