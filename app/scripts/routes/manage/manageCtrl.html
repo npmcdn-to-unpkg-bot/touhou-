@@ -14,33 +14,35 @@
 		</div>
 		<div class="touziren">
 			<h2>最新知名投资人/投资机构入驻</h2>
-			<div>
-				<ul class="row content_ul">
-					<li class="col-xs-4">
-						<img src="assets/images/xuxiaop.png" alt="">
-						<h4>徐小平</h4>
-						<p>企业寄语：能把小事干好的人，成功的几率更大。永远不要抱怨工作有多么无聊、渺小，只要开始工作,就有改进提升和扩充自己的机会。</p>
-					</li>
-					<li class="col-xs-4">
-						<img src="assets/images/chengrong.png" alt="">
-						<h4>陈荣</h4>
-						<p>企业寄语：有钱并不是最终目的，人活着要有追求，要干一番事业。</p>
-					</li>
-					<li class="col-xs-4">
-						<img src="assets/images/huatong.png" alt="">
-						<h4>王利杰</h4>
-						<p>企业寄语：没增加一条退路，失败的几率就增大一倍。</p>
-					</li>
-					<li class="col-xs-4">
-						<img src="assets/images/shoubing.png" alt="">
-						<h4>杨守彬</h4>
-						<p>丰厚资本合伙人，黑马投资学院创始人</p>
-						<p>所投明星项目：骑鹤旅行、疯狂老师、云商店、青藤云安全</p>
-						<p>企业寄语：创业就是从地狱到天堂，路过人间而已</p>
-					</li>
-				</ul>
-				<div class="goleft1"></div>
-				<div class="goright1"></div>
+			<div class="dakadaka" ng-mouseenter="vm.mouser1()" ng-mouseleave="vm.mouseleave1()">
+				<div class="dakalist">
+					<ul class="row content_ul">
+						<li class="col-xs-4">
+							<img src="assets/images/xuxiaop.png" alt="">
+							<h4>徐小平</h4>
+							<p>企业寄语：能把小事干好的人，成功的几率更大。永远不要抱怨工作有多么无聊、渺小，只要开始工作,就有改进提升和扩充自己的机会。</p>
+						</li>
+						<li class="col-xs-4">
+							<img src="assets/images/chengrong.png" alt="">
+							<h4>陈荣</h4>
+							<p>企业寄语：有钱并不是最终目的，人活着要有追求，要干一番事业。</p>
+						</li>
+						<li class="col-xs-4">
+							<img src="assets/images/huatong.png" alt="">
+							<h4>王利杰</h4>
+							<p>企业寄语：没增加一条退路，失败的几率就增大一倍。</p>
+						</li>
+						<li class="col-xs-4">
+							<img src="assets/images/shoubing.png" alt="">
+							<h4>杨守彬</h4>
+							<p>丰厚资本合伙人，黑马投资学院创始人</p>
+							<p>所投明星项目：骑鹤旅行、疯狂老师、云商店、青藤云安全</p>
+							<p>企业寄语：创业就是从地狱到天堂，路过人间而已</p>
+						</li>
+					</ul>
+				</div>
+				<div class="goleft1" ng-click="vm.leftClick1()"></div>
+				<div class="goright1" ng-click="vm.rightClick1()"></div>
 			</div>
 		</div>
 		<div class="houguanli">
@@ -78,54 +80,58 @@
 		</div>
 		<div class="touhoumokuai">
 			<h3>知名投资人投后模块</h3>
-			<ul class="row">
-				<li class="col-xs-4">
-					<img src="assets/images/shoubing.jpg" alt="">
-					<h4>
-						杨守彬
-					</h4>
-					<div class="description">
-						<p>丰厚资本合伙人，黑马投资学院创始人</p>
-						<p>所投明星项目：骑鹤旅行、疯狂老师、云商店、青藤云安全</p>
-					</div>
-					<a href="javascript:;" title="">查看投后模块</a>
-				</li>
-				<li class="col-xs-4">
-					<img src="assets/images/taochuang.jpg" alt="">
-					<h4>
-						陶闯
-					</h4>
-					<div>
-						<p>海天会会长知卓资本与网络创始人</p>
-						<p>PPTV 聚力传媒创世合伙人和前CEO</p>
-					</div>
-					<a href="javascript:;" title="">查看投后模块</a>
-				</li>
-				<li class="col-xs-4">
-					<img src="assets/images/yishujia.jpg" alt="">
-					<h4>
-						麦刚
-					</h4>
-					<div>
-						<p>中国青年天使会会长</p>
-						<p>所投明星项目：易宝支付，中文在线，泡泡玛特，HeyJuice，等一百多家公司</p>
-					</div>
-					<a href="javascript:;" title="">查看投后模块</a>
-				</li>
-				<li class="col-xs-4">
-					<img src="assets/images/ciya.jpg" alt="">
-					<h4>
-						童伟亮
-					</h4>
-					<div>
-						<p>梧桐树资本合作人，中国TMT商会</p>
-						<p>常务理事，曾任隔壁投资合伙人，投资了Camera360[5]，粉粉日记、大咦吗等项目</p>
-					</div>
-					<a href="javascript:;" title="">查看投后模块</a>
-				</li>
-				<li class="mokuai_left"></li>
-				<li class="mokuai_right"></li>
-			</ul>
+			<div class="touzilist" ng-mouseenter="vm.mouser1()" ng-mouseleave="vm.mouseleave1()">
+				<div class="touziman">
+					<ul class="row">
+						<li class="col-xs-4">
+							<img src="assets/images/shoubing.jpg" alt="">
+							<h4>
+								杨守彬
+							</h4>
+							<div class="description">
+								<p>丰厚资本合伙人，黑马投资学院创始人</p>
+								<p>所投明星项目：骑鹤旅行、疯狂老师、云商店、青藤云安全</p>
+							</div>
+							<a href="javascript:;" title="">查看投后模块</a>
+						</li>
+						<li class="col-xs-4">
+							<img src="assets/images/taochuang.jpg" alt="">
+							<h4>
+								陶闯
+							</h4>
+							<div>
+								<p>海天会会长知卓资本与网络创始人</p>
+								<p>PPTV 聚力传媒创世合伙人和前CEO</p>
+							</div>
+							<a href="javascript:;" title="">查看投后模块</a>
+						</li>
+						<li class="col-xs-4">
+							<img src="assets/images/yishujia.jpg" alt="">
+							<h4>
+								麦刚
+							</h4>
+							<div>
+								<p>中国青年天使会会长</p>
+								<p>所投明星项目：易宝支付，中文在线，泡泡玛特，HeyJuice，等一百多家公司</p>
+							</div>
+							<a href="javascript:;" title="">查看投后模块</a>
+						</li>
+						<li class="col-xs-4">
+							<img src="assets/images/ciya.jpg" alt="">
+							<h4>
+								童伟亮
+							</h4>
+							<div>
+								<p>梧桐树资本合作人，中国TMT商会</p>
+								<p>常务理事，曾任隔壁投资合伙人，投资了Camera360[5]，粉粉日记、大咦吗等项目</p>
+							</div>
+							<a href="javascript:;" title="">查看投后模块</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mokuai_left" ng-click="vm.leftClick1()"></div>
+				<div class="mokuai_right"  ng-click="vm.rightClick1()"></div>
+			</div>
 		</div>
 		<div class="zhibiao">
 			<div class="row zhibiao_top">

@@ -24,3 +24,16 @@
 [0820/204612:WARNING:in_range_cast.h(38)] value 1694045094608 out of range
 [0820/204612:WARNING:in_range_cast.h(38)] value 1694153910112 out of range
 [0820/204612:WARNING:in_range_cast.h(38)] value 1694044890576 out of range
+[0821/212555:ERROR:process_info.cc(608)] range at 0x89cd280c00000000, size 0x208 fully unreadable
+[0821/212555:ERROR:process_info.cc(608)] range at 0x89cd282c00000000, size 0x208 fully unreadable
+[0821/212555:ERROR:process_info.cc(608)] range at 0x0, size 0x208 fully unreadable
+[0821/212555:WARNING:in_range_cast.h(38)] value 2235767437650 out of range
+[0821/212555:WARNING:in_range_cast.h(38)] value 2235767440448 out of range
+[0821/212555:WARNING:in_range_cast.h(38)] value 2235767437200 out of range
+[0821/212555:WARNING:in_range_cast.h(38)] value 2235767440708 out of range
+[0821/212555:WARNING:in_range_cast.h(38)] value 2235767439770 out of range
+[0821/212555:WARNING:in_range_cast.h(38)] value 2235695201696 out of range
+[0821/212555:WARNING:in_range_cast.h(38)] value 108084205055182070 out of range
+[0821/212555:WARNING:in_range_cast.h(38)] value 2235764909456 out of range
+[0821/212555:WARNING:in_range_cast.h(38)] value 2235695948080 out of range
+[0821/212555:WARNING:in_range_cast.h(38)] value 2235695316816 out of range
