@@ -8,6 +8,19 @@
 		overflow: hidden;
 		position:relative;
 	}
+	.in_banner{
+		width:310px;
+		height:370px;
+	}
+	.in_list{
+		width:920px;
+		height:370px;
+		overflow: hidden;
+	}
+	.in_list ul{
+		width:930px;
+		position:absolute;
+	}
 	.index_banner ul{
 		width:200%;
 		height:100%;
@@ -61,6 +74,21 @@
 		background:url(../images/bannerright.png) no-repeat;
 		background-size:100% 100%;
 		margin:10px 0 0 15px;
+	}
+	.in_xiangm{
+		position:relative;
+		width:652px;
+		height:270px;
+		overflow: hidden;
+	}
+	.in_xilist{
+		position:relative;
+		width: 652px;
+	}
+	.in_xiangm ul{
+		position:absolute;
+		top:0;
+		left:0;
 	}
 	.texe-center{
 		text-align: center;

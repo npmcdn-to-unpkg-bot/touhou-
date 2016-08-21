@@ -10,27 +10,33 @@
 		text-align: center;
 	}
 	.content_zhaopian{
-		width:70%;
+		width:925px;
 		margin: 20px auto 0;
 	}
 	.content_zhaopian img{
-
+		width:400px;
+		height:265px;
 	}
 	.content_p{
 		padding-right: 0;
+		width:510px;
 	}
 	.content_p .hexin{
 		color:#000;
+		font-size: 20px;
+		line-height: 30px;
 		margin:2rem 0;
 	}
 	.yunpt p{
+		font-size: 18px;
+		line-height: 29px;
 		margin: 0;
 		color: #666666;
-		line-height: 32px;
 	}
 	.touziren{
 		width:100%;
-		padding: 10px;
+		height:650px;
+		padding: 40px 10px 10px 10px;
 		background-color: #323a47;
 		margin-top: 20px;
 	}
@@ -40,7 +46,7 @@
 		text-align: center;
 	}
 	.content_ul{
-		width:70%;
+		width:925px;
 		padding: 0;
 		margin:20px auto 0;
 		color: #fff;
@@ -48,6 +54,7 @@
 	}
 	.content_ul li{
 		padding-left: 0;
+		width:215px;
 		text-align: center;
 	}
 	.content_ul li h4{
@@ -56,6 +63,7 @@
 	}
 	.content_ul li img{
 		width: 100%;
+		height:260px;
 		// height: 300px;
 	}
 	.content_ul li p{
