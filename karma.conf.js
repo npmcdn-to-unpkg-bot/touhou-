@@ -36,6 +36,10 @@ module.exports = function(config) {
             'app/bower_components/angular-locker/dist/angular-locker.min.js',
             'app/bower_components/angular-ui-tree/dist/angular-ui-tree.js',
             'app/bower_components/js-md5/js/md5.js',
+            'app/bower_components/chart.js/dist/Chart.min.js',
+            'app/bower_components/angular-chart.js/dist/angular-chart.js',
+            'app/bower_components/ng-img-crop/compile/minified/ng-img-crop.js',
+            'app/bower_components/angular-upload/angular-upload.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
             'app/bower_components/karma-read-json/karma-read-json.js',
             // endbower

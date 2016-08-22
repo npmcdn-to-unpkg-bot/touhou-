@@ -27,6 +27,9 @@
             'ui.bootstrap',
             'angular-locker', // Easy methods for session/local storage
             'toastr', // Nice 'toastr' popup messages
-            'ui.tree'
+            'ui.tree',
+            'chart.js',
+            'ngImgCrop',
+            'lr.upload'
         ]);
 })();
