@@ -11,13 +11,6 @@
         vm.currentUser = User.getUser();
        	console.log(vm.currentUser);
 
-       	Restangular.setDefaultHeaders({
-            'Content-Type'  : 'application/json;charset=UTF-8',
-            // 'Access-Control-Allow-Origin': '*'
-        });
-		Restangular.setDefaultHttpFields({withCredentials: true});
-
-
         Restangular.all('api/user/role/info').customGET().then(function(res) {
             if(res.success) {
                 vm.userRole = res.content;
