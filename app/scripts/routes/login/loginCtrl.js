@@ -18,7 +18,7 @@
 
         // login
         function login() {
-        	Restangular.all('api/user/signIn/' + vm.phone + '/' + md5(vm.password)).customGET().then(function(res) {
+        	Restangular.all('api/user/signUp/' + vm.phone + '/' + md5(vm.password)).customGET().then(function(res) {
                 if(res.success) {
                     User.setUser(res.content);
                     $state.go('main.user.detail', res.content); //turn to personal center
