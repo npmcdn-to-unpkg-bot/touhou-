@@ -77,7 +77,7 @@
             }
        }
        banner1('div', 'ul', 'li', 'in_list');
-       banner1('div', 'ul', 'li', 'in_xiangm');
+       banner2('div', 'ul', 'li', 'in_xiangm');
        function banner1(obj, obj1, obj2, className) {
             var a = 0;
             var oDiv = ElementService.getByClass(obj, className);
@@ -139,6 +139,66 @@
                 time1()
             }
        }
-        
+        function banner2(obj, obj1, obj2, className) {
+            var b = 0;
+            var oDiv = ElementService.getByClass(obj, className);
+            var oUl = angular.element(oDiv).find(obj1)[0];//angular.element(oDiv).find('ul')
+            oUl.innerHTML = oUl.innerHTML + oUl.innerHTML;
+            var aLi = angular.element(oUl).find(obj2);
+            var oWidth = ElementService.getStyle(aLi[0],'width');
+            angular.element(oUl).css({width: parseFloat(oWidth) * aLi.length+'px'})//angular.element(oUl).css()
+            for (var i = 0; i < aLi.length; i++) {
+                aLi[i].style.width = oWidth;
+            }
+            vm.rightClick2 = rightClick2;
+            vm.leftClick2 = leftClick2;
+            vm.mouser2 = mouser2;
+            vm.mouseleave2 = mouseleave2;
+            time2()
+            var bl = true;
+            var timer2;
+            function rightClick2() {
+                if (bl) {
+                    b--;
+                    bl = !bl
+                     if (b == -1) {
+                            b = aLi.length/2-1;
+                            oUl.style.left = -(b+1) * parseFloat(oWidth) + 'px';
+                        }
+                    MoveService.move(oUl, {'left': -b * parseFloat(oWidth)},{fn:function(){
+                       
+                        bl = !bl;
+                    }})
+                }
+                //debugger
+            }
+            function leftClick2(){
+                if (bl) {
+                    bl=!bl;
+                    tab();
+                }
+            }
+            function tab(){
+                b++;
+                MoveService.move(oUl, {'left': -b * parseFloat(oWidth)},{fn:function(){
+                       if (b == aLi.length/2) {
+                            b = 0;
+                            oUl.style.left = -b * parseFloat(oWidth) + 'px';
+                       }
+                        bl = true;
+                    }})
+            }
+            function time2(){
+                timer2 = setInterval(function(){
+                    tab();
+                },2000)
+            }
+            function mouser2() {
+                clearInterval(timer2)
+            }
+            function mouseleave2(){
+                time2()
+            }
+       }
     }
 })();
