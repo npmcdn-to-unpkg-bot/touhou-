@@ -14,9 +14,10 @@
         .controller('HeaderCtrl', HeaderCtrl);
 
     /* @ngInject */
-    function HeaderCtrl($rootScope, $state, $document, ElementService, User) {
+    function HeaderCtrl($rootScope, $state, $document, ElementService, User, Restangular) {
         var vm = this;
         vm.current_user = User.getUser();
+        vm.logout = logout;
         
         $rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
             $rootScope.previousState = {
@@ -29,7 +30,6 @@
                 vm.current_user = User.getUser();
             }
         });
-        
 
         //main menu switch effect
         var navPills = ElementService.getByClass('ul', 'nav-pills');
@@ -61,5 +61,15 @@
         	var liActive = ElementService.getByClass('li', 'active', 'nav-pills');
         	angular.element(liActive).removeClass('active');
         });
+
+        function logout() {
+            Restangular.all('api/user/logout').customGET().then(function(res) {
+                if(res.success) {
+                    $state.go('main.login'); // turn to login
+                    User.setUser({}); // clear user session
+                    vm.current_user = User.getUser(); // get user again
+                }
+            });
+        }
     }
 })();

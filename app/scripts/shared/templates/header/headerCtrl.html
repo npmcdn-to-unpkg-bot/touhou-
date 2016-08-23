@@ -9,7 +9,7 @@
 			<div class="col-xs-6">微信号:
 				<span>{{vm.current_user.name}}</span>
 			</div>
-			<div class="col-xs-4 login">
+			<div ng-if="!vm.current_user.id" class="col-xs-4 login">
 				<div class="btn-default" ui-sref="main.login">登陆</div>
 			</div>
 			<div ng-if="!vm.current_user.id" class="col-xs-4 sign">
@@ -17,6 +17,9 @@
 			</div>
 			<div ng-if="vm.current_user.id" class="col-xs-4 personal">
 				<div class="btn-default" ui-sref="main.user.detail">个人中心</div>
+			</div>
+			<div ng-if="vm.current_user.id" class="col-xs-4 personal">
+				<div class="btn-default" ng-click="vm.logout()">登出</div>
 			</div>
 		</div>
 	</div>
