@@ -14,13 +14,12 @@
         .controller('SignCtrl', SignCtrl);
 
     /* @ngInject */
-    function SignCtrl($rootScope, $state, Restangular) {
+    function SignCtrl($rootScope, $state, Restangular, User) {
        	var vm = this;
         vm.sign = sign;
         vm.getcode = getcode;
 
        function sign() {
-       	debugger
        		if (!vm.phone || vm.phone === '') {
        			alert('请输入手机号');
        			return;
@@ -38,9 +37,17 @@
        			return;
        		}
         	Restangular.all('api/user/signUp/').customPOST({smsId:vm.verifyId,smsCode:vm.code,user:{phone: vm.phone,password: md5(vm.password1)}}).then(function(res) {
-                if(res.success) {debugger
-                   /* User.setUser(res.content);
-                    $state.go('main.user.detail', res.content);*/ //turn to personal center
+                if(res.success) {
+                   User.setUser(res.content);
+                   $state.go('main.user.detail', res.content);
+                }
+                if (!res.success) {
+                	if (res.errMessage == 'ERR_SMS_CODE') {
+                		alert('验证码不正确')
+                	}
+                	if (res.errMessage == 'ERR_PHONE') {
+                		alert('手机号不正确')
+                	}
                 }
         	});
         } 
@@ -50,7 +57,7 @@
         	setTimeout(function() {
         		oCode.disabled = false;
         	},60000)
-        	if (vm.phone === '') {
+        	if (!vm.phone || vm.phone === '') {
        			alert('请输入手机号')
        			return;
        		}
