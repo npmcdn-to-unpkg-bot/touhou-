@@ -71,12 +71,6 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/expertsshow/expertsshowCtrl.html'
             })
-            .state('main.become', {
-                url: '/become',
-                controller: 'BecomeCtrl',
-                controllerAs: 'vm',
-                templateUrl: 'scripts/routes/become/becomeCtrl.html'
-            })
             .state('main.module', {
                 url: '/module',
                 controller: 'ModuleCtrl',
@@ -146,17 +140,17 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/user/detail/detailCtrl.html'
             })
+            .state('main.user.create', {
+                url: '/user/create?:role',
+                controller: 'UserCreateCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/user/create/createCtrl.html'
+            })
             .state('main.favorites', {
                 url: '/favorites',
                 controller: 'FavoritesCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/favorites/favoritesCtrl.html'
-            })
-            .state('main.message', {
-                url: '/message',
-                controller: 'MessageCtrl',
-                controllerAs: 'vm',
-                templateUrl: 'scripts/routes/message/messageCtrl.html'
             })
             .state('main.investorshome', {
                 url: '/investorshome',

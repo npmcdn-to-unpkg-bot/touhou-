@@ -3,13 +3,13 @@
 	<h5 class="text-center">请你选择以下一种身份</h5>
 	<div class="clo-xs-16 text-center row" style="margin-top: 45px;">
 		<div class="col-xs-3 col-xs-offset-3">
-			<button type="button" class="btn btn-default selected col-xs-16">申请成为投资人</button>
+			<button type="button" class="btn btn-default selected col-xs-16" ui-sref="main.user.create({role: 'INVESTOR'})">申请成为投资人</button>
 		</div>
 		<div class="col-xs-3 col-xs-offset-1">
-			<button type="button" class="btn btn-default normal col-xs-16">申请成为创始人</button>
+			<button type="button" class="btn btn-default normal col-xs-16" ui-sref="main.user.create({role: 'FOUNDER'})">申请成为创始人</button>
 		</div>
 		<div class="col-xs-3 col-xs-offset-1">
-			<button type="button" class="btn btn-default normal col-xs-16">申请成为投后专家</button>
+			<button type="button" class="btn btn-default normal col-xs-16" ui-sref="main.user.create({role: 'EXPERT'})">申请成为投后专家</button>
 		</div>
 	</div>
 	<div class="col-xs-16 text-center row" style="margin-top: 100px;">
@@ -17,10 +17,10 @@
 	</div>
 	<div class="col-xs-16 text-center row" style="margin-top: 25px;">
 		<div class="col-xs-4 col-xs-offset-4">
-			<button type="button" class="btn btn-default normal col-xs-16">申请成为[投后+]战略伙伴</button>
+			<button type="button" class="btn btn-default normal col-xs-16" ng-click="">申请成为[投后+]战略伙伴</button>
 		</div>
 		<div class="col-xs-4">
-			<button type="button" class="btn btn-default normal col-xs-16">申请成为孵化器战略伙伴</button>
+			<button type="button" class="btn btn-default normal col-xs-16" ng-click="">申请成为孵化器战略伙伴</button>
 		</div>
 	</div>
 
