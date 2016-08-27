@@ -67,6 +67,7 @@
                 if(res.success) {
                     $state.go('main.login'); // turn to login
                     User.setUser({}); // clear user session
+                    User.setRole({}); // clear user role
                     vm.current_user = User.getUser(); // get user again
                 }
             });
