@@ -7,7 +7,7 @@
 			<ng-include ng-if="vm.currentUser.role === 'INVESTOR' || vm.currentUser.role === 'COOPERATOR' || vm.currentUser.role === 'INCUBATOR'" src="'scripts/routes/user/detail/sidebar/_side-bar1.html'"></ng-include>
 			<ng-include ng-if="vm.currentUser.role === 'FOUNDER' || vm.currentUser.role === 'EXPERT'" src="'scripts/routes/user/detail/sidebar/_side-bar2.html'"></ng-include>
 		</div>
-		<div class="col-xs-10">
+		<div class="col-xs-10" ng-if="vm.displayMyWallet === false">
 			<ng-include ng-if="vm.currentUser.role === 'INVESTOR'" src="'scripts/routes/user/detail/role/_role-investor.html'"></ng-include>
 
 			<ng-include ng-if="vm.currentUser.role === 'FOUNDER'" src="'scripts/routes/user/detail/role/_role-founder.html'"></ng-include>
@@ -18,5 +18,9 @@
 
 			<ng-include ng-if="vm.currentUser.role === 'INCUBATOR'" src="'scripts/routes/user/detail/role/_role-incubator.html'"></ng-include>
 		</div>
+		<div class="col-xs-10">
+			<ng-include ng-if="vm.displayMyWallet === true" src="'scripts/routes/user/detail/wallet/_my-wallet.html'"  scope="" onload=""></ng-include>
+		</div>
 	</div>
+
 </div>

@@ -1,22 +1,22 @@
 <div class="fl wa_left ">
 	<img src="assets/images/huahong.jpg" alt="">
-	<input type="button" name="" value="为开店">
+	<input type="button" name="" value="{{vm.userRole.enableShop ? '已开店' : '未开店'}}">
 	<div class="wa_cont">
 		<div class="wa_list">
 			<label>姓名：</label>
-			<label>程阔</label>
+			<label>{{vm.currentUser.name?vm.currentUser.name:'未登记'}}</label>
 		</div>
 		<div class="wa_list">
 			<label>公司：</label>
-			<label>滴滴出行</label>
+			<label>{{vm.userRole.company?vm.userRole.company:'未知'}}</label>
 		</div>
 		<div class="wa_list">
 			<label>职位：</label>
-			<label>CEO</label>
+			<label>{{vm.currentUser.position?vm.currentUser.position:'未登记'}}</label>
 		</div>
 		<div class="wa_list">
 			<label>地区：</label>
-			<label>北京</label>
+			<label>{{vm.userRole.address ? vm.userRole.address : '未知'}}</label>
 		</div>
 		<div class="wa_list">
 			<label>个人简介：</label>

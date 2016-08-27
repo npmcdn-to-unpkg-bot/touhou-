@@ -3,10 +3,13 @@
 	<img ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" src="assets/images/renzheng.png" alt="" class="tx_yinzhang">
 </div>
 <h4 class="tx_name">{{vm.currentUser.name}}</h4>
-<ul>
+<ul id="tab_ul">
 	<li ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="tx_nav" style="color:#f11400;">
 		大咖
 		<span></span>
+	</li>
+	<li ng-if="vm.userRole.authenticated === false" class="tx_nav"  style="width:72%">
+		{{vm.userRole.institutionName ? vm.userRole.institutionName : '未登记'}}
 	</li>
 	<li ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="tx_nav">
 		已认证
@@ -17,16 +20,19 @@
 	<li class="tx_nav">
 		编辑资料
 	</li>
-	<li class="tx_nav">
+	<li ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="tx_nav" ui-sref="main.wdxiangmu">
 		投后预警
 	</li>
-	<li class="tx_nav">
+	<li ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="tx_nav">
 		BP文件
+	</li>
+	<li ng-if="vm.userRole.authenticated === false" class="tx_nav" style="width:72%">
+		查看公司信息
 	</li>
 	<li class="tx_nav">
 		上传文章
 	</li>
-	<li class="tx_nav">
+	<li ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="tx_nav" ng-click="vm.trunToMyWallet($event)">
 		我的钱包
 	</li>
 </ul>

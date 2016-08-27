@@ -1,0 +1,54 @@
+<div class="shoucangjia">
+	<h2>我的项目收藏夹</h2>
+	<input type="button" class="zhongx" name="" value="我的投后管理中心">
+	<div class="sc_sousuo clearFix">
+		<input class="sc_gongs fl" type="text" name="" value="" placeholder="搜索公司名/创始人">
+		<input type="button" class="fl sc_btn" name="" value="搜索">
+	</div>
+	<ul class="sc_tab clearFix">
+		<li class="sc_tabbottom">按红绿灯分</li>
+		<li>按轮次分</li>
+		<li>按行业分</li>
+	</ul>
+	<div class="clearFix">
+		<input type="button" name="" class="daoru fr" value="导入投后项目">
+	</div>
+	<div class="clearFix xm_title">
+		<div class="fl">状态</div>
+		<div class="fl">项目名</div>
+		<div class="fl">创始人</div>
+		<div class="fl">轮次</div>
+		<div class="fl">行业</div>
+	</div>
+	<ul class="xm_list">
+		<li class="">
+			<div class="clearFix xm_beij">
+				<img src="../../../assets/images/greendeng.png" alt="" class="fl">
+				<div class="fl xm_ziben">丰厚资本</div>
+				<div class="fl xm_ziben xm_name">梁润龙</div>
+				<div class="fl xm_ziben xm_name">天使轮</div>
+				<div class="fl xm_ziben xm_name">文化行业</div>
+				<div class="fl xm_hot">
+					<div class="fl gongkai" id="gongkai" ng-click='vm.selectlist($event)'>公开度</div>
+					<div class="fl xiangxia"></div>
+					<div class="selectlist" id='xze' hidden>
+						<div>不公开</div>
+						<div>项目池</div>
+						<div>优选项目</div>
+						<div>精选项目</div>
+					</div>
+				</div>
+				<div class="fl xm_hot xm_jiyou">
+					<div class="fl gongkai">已退出</div>
+					<div class="fl xiangxia"></div>
+					<div class="selectlist" hidden>
+						<div>投后观察中</div>
+						<div>已退出</div>
+						<div>寻找接盘</div>
+						<div>已死亡</div>
+					</div>
+				</div>
+				<div class="fl xm_hot xm_jiyou" style="width:50px;">详情</div>
+			</div>
+		</li>
+</div>
