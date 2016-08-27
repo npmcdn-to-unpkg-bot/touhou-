@@ -13,7 +13,8 @@
 
         Restangular.all('api/user/role/info').customGET().then(function(res) {
             if(res.success) {
-                vm.userRole = res.content;
+                User.setRole(res.content);
+                vm.userRole = User.getRole();
                 console.log(vm.userRole);
             }
     	});

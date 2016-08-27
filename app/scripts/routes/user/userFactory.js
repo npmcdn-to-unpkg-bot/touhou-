@@ -22,7 +22,9 @@
         
         var service = {
             setUser: setUser,
-            getUser: getUser
+            getUser: getUser,
+            setRole: setRole,
+            getRole: getRole
         };
 
         return service;
@@ -33,6 +35,14 @@
 
         function getUser() {
             return current_user.get('user');
+        }
+
+        function setRole(role) {
+            current_user.put('role', role);
+        }
+
+        function getRole() {
+            return current_user.get('role');
         }
         
     }
