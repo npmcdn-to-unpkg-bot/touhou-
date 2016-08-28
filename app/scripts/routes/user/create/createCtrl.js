@@ -11,9 +11,12 @@
         vm.role = $stateParams && $stateParams.role;
         vm.current_user = User.getUser();
         vm.filter = {};
+        vm.displayCompany = false;
 
         vm.openUploadImgModal = openUploadImgModal;
         vm.uploadQRCode = uploadQRCode;
+        vm.nextStep = nextStep;
+        vm.submit = submit;
         
         function openUploadImgModal(type) {
         	var ModalCtrl = ['$scope', function($scope) {
@@ -79,9 +82,6 @@
         }
 
         function uploadQRCode(files, errFiles) {
-        	debugger
-        	/*$scope.files = files;
-	        $scope.errFiles = errFiles;*/
 	        angular.forEach(files, function(file) {
 	        	debugger
 	            file.upload = Upload.upload({
@@ -96,6 +96,14 @@
 	            	}
 	            });
 	        });
+        }
+
+        function nextStep() {
+        	vm.displayCompany = true;
+        }
+
+        function submit() {
+        	$state.go('main.user.detail');
         }
 
     }
