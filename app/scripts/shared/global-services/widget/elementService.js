@@ -21,7 +21,8 @@
         // Initialize ElementService
         var service = {
             getByClass: getByClass,
-            getStyle: getStyle
+            getStyle: getStyle,
+            getByClassarr:getByClassarr
         };
         return service;
 
@@ -50,6 +51,19 @@
             });
             return target;
         }
+        function getByClassarr(oParent,sClass){
+        var aEle=oParent.getElementsByTagName('*'); 
+        var result=[];
+        for(var i=0;i<aEle.length;i++){
+            var arr=aEle[i].className.split(' ')    
+            for(var j=0;j<arr.length;j++){
+                if(arr[j]==sClass){
+                    result.push(aEle[i]);   
+                }
+            }
+        }
+        return result;
+    }
 
         //get computed style
         function getStyle(obj, name){

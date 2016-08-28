@@ -1,26 +1,28 @@
 <div class="border_left">
-	<div class="clearFix">
+	<div class="clearFix" ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true">
 		<div class="fr chaxun">查询全国中小企业信息平台</div>
 	</div>
+	<div ng-if="vm.userRole.authenticated === false" class="bor_zhongx">投资人个人专属中心</div>
 	<div class="clearFix" style="margin-top: 4rem;">
 		<div class="col-xs-6 guanli_bor">投后管理</div>
-		<div class="col-xs-6 guanli_bor">我的团队</div>
+		<div class="{{vm.userRole.authenticated ? 'col-xs-6 guanli_bor' : 'col-xs-6 guanli_bor gl_moban'}}">我的团队</div>
 	</div>
 	<div class="clearFix" style="margin-top: 0.5rem;">
-		<div class="col-xs-6 guanli_bor">我的模板</div>
-		<div class="col-xs-6 guanli_bor guanli_bor1">
+		<div ng-if="vm.userRole.authenticated === false" class="col-xs-6 guanli_bor">项目池</div>
+		<div class="{{vm.userRole.authenticated ? 'col-xs-6 guanli_bor' : 'col-xs-6 guanli_bor gl_moban'}}">我的模板</div>
+		<div ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="col-xs-6 guanli_bor guanli_bor1">
 			<div class="jingp">精品项目</div>
 			<div class="youxuan">优选项目</div>
 		</div>
 	</div>
-	<div class="clearFix scjia">
-		<div class="fr soucangj">
+	<div class="clearFix scjia" ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true">
+		<div class="fr soucangj" ng-click="vm.goshoucang()">
 			<span class="fl"></span>
 			<div class="fl">我的项目搜藏夹</div>
 		</div>
 	</div>
 </div>
-<div class="bianji">
+<div class="bianji" ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true">
 	<h3 class="geren">个人专属网页编辑</h3>
 	<div class="clearFix" style="margin-top: 4rem;">
 		<div class="col-xs-6 guanli_bor">首页精品项目编辑</div>

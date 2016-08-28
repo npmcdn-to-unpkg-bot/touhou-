@@ -65,6 +65,12 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/topup/topupCtrl.html'
             })
+            .state('main.wdxiangmu', {
+                url: '/wdxiangmu',
+                controller: 'WdxiangmuCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/wdxiangmu/wdxiangmuCtrl.html'
+            })
             .state('main.expertsshow', {
                 url: '/expertsshow',
                 controller: 'ExpertsshowCtrl',

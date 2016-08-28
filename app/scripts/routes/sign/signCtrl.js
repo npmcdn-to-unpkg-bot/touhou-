@@ -43,11 +43,15 @@
                 }
                 if (!res.success) {
                 	if (res.errMessage === 'ERR_SMS_CODE') {
-                		alert('验证码不正确')
+                		alert('验证码不正确');
+                    return;
                 	}
                 	if (res.errMessage === 'ERR_PHONE') {
-                		alert('手机号不正确')
-                	}
+                		alert('手机号不正确');
+                    return;
+                	}else{
+                    alert(res.errMessage);
+                  }
                 }
         	});
         } 
