@@ -36,7 +36,7 @@
        			alert('请确认密码');
        			return;
        		}
-        	Restangular.all('api/user/signUp/').customPOST({smsId:vm.verifyId,smsCode:vm.code,user:{phone: vm.phone,password: md5(vm.password1)}}).then(function(res) {
+        	Restangular.all('user/signUp/').customPOST({smsId:vm.verifyId,smsCode:vm.code,user:{phone: vm.phone,password: md5(vm.password1)}}).then(function(res) {
                 if(res.success) {
                    User.setUser(res.content);
                    $state.go('main.user.detail', res.content);
@@ -65,7 +65,7 @@
        			alert('请输入手机号')
        			return;
        		}
-        	Restangular.all('/api/sms/send/' + vm.phone + '/VERIFICATION').customGET().then(function(res) {
+        	Restangular.all('sms/send/' + vm.phone + '/VERIFICATION').customGET().then(function(res) {
                 if(res.success) {
                 	vm.verifyId = res.content;
                 }

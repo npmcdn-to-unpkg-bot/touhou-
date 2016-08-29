@@ -29,13 +29,13 @@
         		getlist.size = size;
         	}
         	
-        	Restangular.all('api/investor/project/invested/list').customPOST({
+        	Restangular.all('investor/project/invested/list').customPOST({
 				  "page": 1,
 				  "size": 1
 	        }).then(function(res) {debugger;
 	               console.log(res)
 	        	});
         }
-        getfavor()
+        getfavor()  
     }
 })();

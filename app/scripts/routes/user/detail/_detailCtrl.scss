@@ -329,16 +329,22 @@
 		margin:40px auto 0;
 		display: block;
 	}
-	.bor_zhongx{
-		font-size: 35px;
-		text-align: center;
-		margin:100px 0px;
-	}
-	div.gl_moban{
-		color:#ccc;
-	}
-	li.active{
-		background: #01983b;
-		color:#fff;
-	}
+}
+.cropArea {
+  background: #E4E4E4;
+  overflow: hidden;
+  width: 100%;
+  height:350px;
+}
+.bor_zhongx{
+	font-size: 35px;
+	text-align: center;
+	margin:100px 0px;
+}
+div.gl_moban{
+	color:#ccc;
+}
+li.active{
+	background: #01983b;
+	color:#fff;
 }

@@ -8,43 +8,44 @@
 	</div>
 	<div class="clearFix mg_shangchuan">
 		<div class="fl mg_touxiang">
-			<img src="assets/images/chengrong.png" alt="">
+			<img src="{{vm.filter.photo ? 'http://' + vm.filter.photo : 'assets/images/chengrong.png'}}" alt="">
 			<div class="clearFix mg_xuanz">
-				<div class="fl">上传头像</div>
-				<input type="file" class="fl" name="" value="" placeholder="">
+				<button type="button" ng-click="vm.openUploadImgModal('head')">自定义头像</button>
 			</div>
+			
 		</div>
 		<div class="fl mg_touxiang" style="width: 207px;">
-			<img src="assets/images/erweima1.jpg" alt="" style="margin:0 auto;border-radius: 0;">
+			<img src="{{vm.filter.qrCode ? 'http://' + vm.filter.qrCode : 'assets/images/erweima1.jpg'}}" alt="" style="margin:0 auto;border-radius: 0;">
 			<div class="mg_yaoq">（仅限大型活动邀请使用）</div>
 			<div class="clearFix mg_xuanz">
 				<div class="fl">上传微信二维码</div>
-				<input type="file" class="fl" name="" value="" placeholder="">
+				<button ngf-select="vm.uploadQRCode($files, $invalidFiles)" multiple accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">请选择文件</button>
+				<!-- <input type="file" class="fl" name="" value="" placeholder=""> -->
 			</div>
 		</div>
 	</div>
 	<ul class="mg_luguo">
 		<li>
 			<label>用户名：</label>
-			<input type="text" name="" value="" placeholder="">
+			<input type="text" ng-model="vm.filter.name" name="" placeholder="">
 		</li>
 		<li>
 			<label>投资机构：</label>
-			<input type="text" name="" value="" placeholder="">
+			<input type="text" ng-model="vm.filter.position" name="" placeholder="">
 		</li>
-		<li>
+		<!-- <li>
 			<label>手机号：</label>
 			<input type="text" name="" value="" placeholder="*请输入手机号">
-		</li>
+		</li> -->
 		<li>
 			<label>邮箱：</label>
-			<input type="text" name="" value="" placeholder="*请输入邮箱">
+			<input type="text" ng-model="vm.filter.mail" name="" placeholder="*请输入邮箱">
 		</li>
 		<li>
 			<label style="color:#18bd9b;">邀请码：</label>
-			<input type="text" name="" value="" placeholder="选择输入">
+			<input type="text" ng-model="vm.filter.inviteCode" name="" placeholder="选择输入">
 			<span>(知名机构为您备书)</span>
 		</li>
 	</ul>
-	<input type="button" name="" class="mg_queding" value="保存并下一步">
+	<input type="button" name="" class="mg_queding" value="保存并下一步" ng-click="vm.nextStep()">
 </div>

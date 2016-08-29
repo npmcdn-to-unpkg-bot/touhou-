@@ -30,6 +30,7 @@
             'ui.tree',
             'chart.js',
             'ngImgCrop',
-            'lr.upload'
+            'lr.upload',
+            'ngFileUpload'
         ]);
 })();

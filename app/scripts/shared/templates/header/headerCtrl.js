@@ -63,7 +63,7 @@
         });
 
         function logout() {
-            Restangular.all('api/user/logout').customGET().then(function(res) {
+            Restangular.all('user/logout').customGET().then(function(res) {
                 if(res.success) {
                     $state.go('main.login'); // turn to login
                     User.setUser({}); // clear user session
