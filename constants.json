@@ -3,28 +3,28 @@
         "baseURL": "http://127.0.0.1:8080/touhou/"
     },
     "localdev": {
-        "baseURL": "http://115.29.163.20/"
+        "baseURL": "http://115.29.163.20/api/"
     },
     "dev": {
-        "baseURL": "http://115.29.163.20/"
+        "baseURL": "http://115.29.163.20/api/"
     },
     "dev-cn": {
-        "baseURL": "http://115.29.163.20/"
+        "baseURL": "http://115.29.163.20/api/"
     },
     "quality": {
-        "baseURL": "http://115.29.163.20/"
+        "baseURL": "http://115.29.163.20/api/"
     },
     "quality-cn": {
-        "baseURL": "http://115.29.163.20/"
+        "baseURL": "http://115.29.163.20/api/"
     },
     "prepod": {
-        "baseURL": "http://115.29.163.20/"
+        "baseURL": "http://115.29.163.20/api/"
     },
     "prepod-cn": {
-        "baseURL": "http://115.29.163.20/"
+        "baseURL": "http://115.29.163.20/api/"
     },
     "production-cn": {
-        "baseURL": "http://115.29.163.20/"
+        "baseURL": "http://115.29.163.20/api/"
     },
     "production": {
         "baseURL": "http://115.29.163.20/"
