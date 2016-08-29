@@ -16,6 +16,7 @@
         vm.goshoucang = goshoucang;
         Restangular.all('api/user/role/info').customGET().then(function(res) {
             if(res.success) {
+                res.content.authenticated = true;
                 User.setRole(res.content);
                 vm.userRole = User.getRole();
                 console.log(vm.userRole);
