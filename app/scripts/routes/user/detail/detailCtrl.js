@@ -6,7 +6,7 @@
         .controller('UserDetailCtrl', UserDetailCtrl);
 
     /* @ngInject */
-    function UserDetailCtrl($state, $stateParams, User, Restangular, ElementService) {
+    function UserDetailCtrl($state, $stateParams, User, Restangular, ElementService, $http) {
         var vm = this;
         vm.currentUser = User.getUser();
        	console.log(vm.currentUser);
@@ -19,8 +19,25 @@
                 User.setRole(res.content);
                 vm.userRole = User.getRole();
                 console.log(vm.userRole);
+
+                /*Restangular.all('investor/project/invested/list').customPOST({page: 0, size: 1}).then(function(res) {
+                    debugger;
+                    console.log(res);
+                });*/
+
             }
     	});
+
+        $http({
+            method: 'POST',
+            url: 'http://115.29.163.20/api/investor/project/invested/list',
+            headers: {
+               'Content-Type': 'application/json;charset=UTF-8'
+            },
+            withCredentials: true,
+            data: {page: 0, size: 1}
+        });
+
         function tabactive(dom){
             var oUl = document.getElementById("tab_ul")
             var aLi = ElementService.getByClassarr(oUl, 'tx_nav');

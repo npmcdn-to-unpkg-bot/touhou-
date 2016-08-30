@@ -5,7 +5,13 @@
 		<input type="button" class="fl sc_btn" name="" value="搜索">
 	</div>
 	<ul class="sc_tab clearFix">
-		<li class="sc_tabbottom">按红绿灯分</li>
+		<li class="sc_tabbottom">
+			<select name="">
+				<option value="">按红绿灯分</option>
+				<option value="">红灯</option>
+				<option value="">绿灯</option>
+				<option value="">黄灯</option>
+			</select></li>
 		<li>按轮次分</li>
 		<li>按行业分</li>
 	</ul>
@@ -16,19 +22,19 @@
 		<div class="fl">轮次</div>
 		<div class="fl">行业</div>
 	</div>
-	<ul class="xm_list">
-		<li class="">
+	<ul class="xm_list" id="xm_list">
+		<li class="" ng-repeat="item in vm.favoriteList">
 			<div class="clearFix xm_beij">
-				<img src="../../../assets/images/greendeng.png" alt="" class="fl">
-				<div class="fl xm_ziben">丰厚资本</div>
-				<div class="fl xm_ziben xm_name">梁润龙</div>
-				<div class="fl xm_ziben xm_name">天使轮</div>
-				<div class="fl xm_ziben xm_name">文化行业</div>
+				<img src="../../../assets/images/{{item.integrity}}.png" alt="" class="fl">
+				<div class="fl xm_ziben">{{item.name}}</div>
+				<div class="fl xm_ziben xm_name">{{item.occupiedUser}}</div>
+				<div class="fl xm_ziben xm_name">{{vm.json[item.financingPhase]}}</div>
+				<div class="fl xm_ziben xm_name">{{item.industry}}</div>
 				<div class="fl xm_hot">火热度</div>
-				<div class="fl xm_hot xm_jiyou">占为己有</div>
+				<div class="fl xm_hot xm_jiyou" ng-click="vm.showZhan($index)">占为己有</div>
 				<div class="fl xm_hot xm_jiyou" style="width:50px;">详情</div>
 			</div>
-			<div class="clearFix xm_back" hidden>
+			<div class="clearFix xm_back" id="zhanweijiyou" ng-show="item.displayOccupy === true">
 				<div class="fl xm_gongn">
 					<div class="">占为己有功能介绍：</div>
 					<div class="xm_jieshao">提供追踪式投后管理工具，示方式，让投资人清晰省力了解企业情况，首创的投后预警系统，自动提醒投资人关注重要变化，模版。</div>
@@ -88,4 +94,56 @@
 				</div>
 			</div>
 		</li>
+	</ul>
+	<nav style="width:660px;margin:20px auto;">
+		  <ul class="pagination" id="pagination">
+		    <li class="">
+		      <span>
+		        <span>上一页</span>
+		      </span>
+		    </li>
+		    <li class="">
+		      <span>
+		        <span aria-hidden="true">第</span>
+		      </span>
+		    </li>
+		    <li class="">
+		      <span>1</span>
+		    </li>
+		    <li class="active">
+		      <span>2</span>
+		    </li>
+		    <li class="">
+		      <span>3</span>
+		    </li>
+		    <li class="">
+		      <span>4</span>
+		    </li>
+		    <li class="">
+		      <span>5</span>
+		    </li>
+		    <li class="">
+		      <span>6</span>
+		    </li>
+		    <li class="">
+		      <span>7</span>
+		    </li>
+		    <li class="">
+		      <span>8</span>
+		    </li>
+		    <li class="">
+		      <span>9</span>
+		    </li>
+		    <li class="">
+		      <span>
+		        <span>页</span>
+		      </span>
+		    </li>
+		    <li class="">
+		      <span>
+		        <span aria-hidden="true">下一页</span>
+		      </span>
+		    </li>
+		  </ul>
+		</nav>
 </div>
