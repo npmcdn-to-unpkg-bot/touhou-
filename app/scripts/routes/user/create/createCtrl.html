@@ -1,2 +1,7 @@
-<ng-include ng-show="vm.role !== 'COOPERATOR' &&  vm.role !== 'INCUBATOR' && vm.displayCompany === false" src="'scripts/routes/user/create/_person-information.html'"></ng-include>
-<ng-include ng-show="vm.role !== 'COOPERATOR' &&  vm.role !== 'INCUBATOR' && vm.displayCompany === true" src="'scripts/routes/user/create/_company-information.html'"></ng-include>
+<div class="mg_content">
+	<h1 class="mg_touzi">
+		{{vm.role === 'INVESTOR' ? '投资人' : ''}}{{vm.role === 'FOUNDER' ? '创业者' : ''}}{{vm.role === 'EXPERT' ? '专家' : ''}}信息
+	</h1>
+	<ng-include ng-show="vm.role !== 'COOPERATOR' &&  vm.role !== 'INCUBATOR' && vm.displayCompany === false" src="'scripts/routes/user/create/_person-information.html'"></ng-include>
+	<ng-include ng-show="vm.role !== 'COOPERATOR' &&  vm.role !== 'INCUBATOR' && vm.displayCompany === true" src="'scripts/routes/user/create/_company-information.html'"></ng-include>
+</div>
