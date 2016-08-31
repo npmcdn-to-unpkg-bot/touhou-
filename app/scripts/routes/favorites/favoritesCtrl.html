@@ -2,18 +2,33 @@
 	<h2>我的项目收藏夹</h2>
 	<div class="sc_sousuo clearFix">
 		<input class="sc_gongs fl" type="text" name="" value="" placeholder="搜索公司名/创始人">
-		<input type="button" class="fl sc_btn" name="" value="搜索">
+		<input type="button" class="fl sc_btn" name="" value="搜索" ng-model='vm.gongsi' ng-click="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
 	</div>
 	<ul class="sc_tab clearFix">
 		<li class="sc_tabbottom">
-			<select name="">
+			<select name="" ng-model='vm.deng' ng-change="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
 				<option value="">按红绿灯分</option>
-				<option value="">红灯</option>
-				<option value="">绿灯</option>
-				<option value="">黄灯</option>
-			</select></li>
-		<li>按轮次分</li>
-		<li>按行业分</li>
+				<option value="RED">红灯</option>
+				<option value="GREEN">绿灯</option>
+				<option value="YELLOW">黄灯</option>
+			</select>
+		</li>
+		<li>
+			<select name="" ng-model='vm.lunci' ng-change="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
+				<option value="">按轮次分</option>
+				<option value="SEED">种子轮</option>
+				<option value="ANGEL">天使轮</option>
+				<option value="PRE_A">Pre-A轮</option>
+				<option value="A">A</option>
+				<option value="B">B</option>
+				<option value="C">C</option>
+			</select>
+		</li>
+		<li>
+			<select name="" ng-model='vm.hangye' ng-change="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
+				<option value="">按行业分</option>
+			</select>
+		</li>
 	</ul>
 	<div class="clearFix xm_title">
 		<div class="fl">状态</div>
@@ -110,7 +125,8 @@
 		    <li class="">
 		      <span>1</span>
 		    </li>
-		    <li class="active">
+
+		    <!-- <li class="active">
 		      <span>2</span>
 		    </li>
 		    <li class="">
@@ -133,7 +149,7 @@
 		    </li>
 		    <li class="">
 		      <span>9</span>
-		    </li>
+		    </li> -->
 		    <li class="">
 		      <span>
 		        <span>页</span>

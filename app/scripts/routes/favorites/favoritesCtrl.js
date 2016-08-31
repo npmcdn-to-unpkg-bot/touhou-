@@ -10,6 +10,7 @@
     function FavoritesCtrl($http, $state, $window, Restangular) {
         var vm = this;
         vm.favoriteList = [];
+        vm.getfavor = getfavor;
         vm.json = {
         	SEED:'种子轮',
         	ANGEL:'天使轮',
@@ -89,6 +90,8 @@
         	}
         	if (page) {
         		getlist.page = page;
+        	}else{
+        		getlist.page = 0;
         	}
         	if (query) {
         		getlist.query = query;
@@ -96,15 +99,13 @@
         	if (round) {
         		getlist.round = round;
         	}
-        	if (size) {
-        		getlist.size = size;
-        	}
+        		getlist.size = 10;
         	Restangular.setDefaultHeaders({
                 'Content-Type'  : 'application/json;charset=UTF-8',
                 // 'Access-Control-Allow-Origin': '*'
             });
             Restangular.setDefaultHttpFields({withCredentials: true});
-        	Restangular.all('investor/project/invested/list').customPOST({page: 1, size: 1}).then(function(res) {
+        	Restangular.all('investor/project/invested/list').customPOST(getlist).then(function(res) {
         			
 	               console.log(res);
 	           });
