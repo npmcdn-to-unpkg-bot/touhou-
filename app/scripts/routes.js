@@ -29,6 +29,12 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/routes/index/indexCtrl.html'
             })
+            .state('main.jingpingku', {
+                url: '/jingpingku',
+                controller: 'JingpingkuCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/routes/jingpingku/jingpingkuCtrl.html'
+            })
             .state('main.login', {
                 url: '/login',
                 controller: 'LoginCtrl',

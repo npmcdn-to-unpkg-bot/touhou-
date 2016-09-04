@@ -1,0 +1,102 @@
+.jp_title{
+	margin-top:95px;
+	font-size:40px;
+	line-height:40px;
+}
+.jp_soucangjia{
+	width:160px;
+	height:50px;
+	color:#fff;
+	line-height:50px;
+	font-size:22px;
+	background:#01a13b;
+	border-radius:5px;
+	cursor: pointer;
+}
+.jp_soucangjia div{
+	line-height:50px;
+	font-size:22px;
+}
+.jp_wuxing{
+	width:26px;
+	height:24px;
+	background:url(../images/wuxing.png) no-repeat;
+	background-size:100% 100%;
+	margin-top:13px;
+	margin-left:9px;
+	margin-right:5px;
+}
+.jp_boss{
+	width:100%;
+	height:280px;
+	margin-top:20px;
+	box-shadow:-1px 0 5px #adadac, /*左边阴影*/  
+    1px 0 5px #adadac, /*右边阴影*/   
+    0 1px 5px #adadac;
+    -webkit-box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+    -moz-box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+    -o-box-shadow:-1px 0 10px #adadac, /*左边阴影*/  
+    2px 0 10px #adadac, /*右边阴影*/   
+    0 2px 10px #adadac;
+    position: relative;
+}
+.jp_ul{
+	width:100%;
+}
+.jp_ul li{
+	width:100%;
+}
+.jp_touxiang{
+	width:410px;
+}
+.jp_touxiang img{
+	width:180px;
+	height:180px;
+	border-radius:50%;
+	margin:30px 0 0 50px;
+}
+.jp_touxiang p{
+	font-size:12px;
+	line-height:24px;
+	color:#666666;
+	margin-top:10px;
+	text-align:center;
+	width:280px;
+	margin-left:18px;
+}
+.shoucangjia .jp_jijin{
+	font-size:28px;
+	color:#000;
+	line-height:28px;
+	margin:30px 0 10px 0;
+}
+.jp_cont{
+	width:450px;
+}
+.jp_touzi{
+	margin-top:45px;
+}
+.jp_goleft{
+	width:15px;
+	height:25px;
+	background:url(../images/bannerleft.png) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	top:50%;
+	margin-top:-12px;
+	left:10px;
+}
+.jp_goright{
+	width:15px;
+	height:25px;
+	background:url(../images/bannerright.png) no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	top:50%;
+	margin-top:-12px;
+	right:10px;
+}

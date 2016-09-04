@@ -11,8 +11,10 @@
 		<div ng-if="vm.userRole.authenticated === false" class="col-xs-6 guanli_bor">项目池</div>
 		<div class="{{vm.userRole.authenticated ? 'col-xs-6 guanli_bor' : 'col-xs-6 guanli_bor gl_moban'}}">我的模板</div>
 		<div ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="col-xs-6 guanli_bor guanli_bor1">
-			<div class="jingp">精品项目</div>
-			<div class="youxuan">优选项目</div>
+			<div ui-sref="main.user.detail">
+				<div class="jingp">精品项目</div>
+				<div class="youxuan">优选项目</div>
+			</div>
 		</div>
 	</div>
 	<div class="clearFix scjia" ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true">

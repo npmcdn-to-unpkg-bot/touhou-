@@ -1,0 +1,132 @@
+<div class="invest-page shoucangjia dr_width">
+	<h2 class="jp_title">大咖精品项目库</h2>
+	<div class="sc_sousuo clearFix">
+		<input class="sc_gongs fl" type="text" name="" value="" placeholder="搜索公司名 /创始人">
+		<input type="button" class="fl sc_btn" name="" value="搜索" ng-model='vm.gongsi' ng-click="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
+	</div>
+	<ul class="sc_tab clearFix">
+		<li class="sc_tabbottom">
+			<select name="" ng-model='vm.deng' ng-change="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
+				<option value="">按红绿灯分</option>
+				<option value="RED">红灯</option>
+				<option value="GREEN">绿灯</option>
+				<option value="YELLOW">黄灯</option>
+			</select>
+		</li>
+		<li>
+			<select name="" ng-model='vm.lunci' ng-change="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
+				<option value="">按轮次分</option>
+				<option value="SEED">种子轮</option>
+				<option value="ANGEL">天使轮</option>
+				<option value="PRE_A">Pre-A轮</option>
+				<option value="A">A</option>
+				<option value="B">B</option>
+				<option value="C">C</option>
+			</select>
+		</li>
+		<li>
+			<select name="" ng-model='vm.hangye' ng-change="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
+				<option value="">按行业分</option>
+				<option value="媒体">媒体</option>
+				<option value="网红经济">网红经济</option>
+				<option value="营销广告">营销广告</option>
+				<option value="VR/AR">VR/AR</option>
+				<option value="医疗">医疗</option>
+				<option value="机器人/无人机">机器人/无人机</option>
+				<option value="O2O">O2O</option>
+				<option value="社交">社交</option>
+				<option value="工具类">工具类</option>
+				<option value="其他">其他</option>
+			</select>
+		</li>
+	</ul>
+	<div class="clearFix">
+		<div class="fr jp_soucangjia">
+			<div class="fl jp_wuxing"></div>
+			<div class="fl">我的收藏夹</div>
+		</div>
+	</div>
+	<div class="jp_boss">
+		<ul class="clearFix jp_ul">
+			<li class="fl">
+				<div class="fl jp_touxiang">
+					<img src="assets/images/xiaoping.png" alt="">
+					<p>已投明星项目：聚美优品、兰亭集序、世纪佳缘、PAPI酱、易到用车、大咦吗</p>
+				</div>
+				<div class="fl jp_cont">
+					<h2 class="jp_jijin">真格基金创始人</h2>
+					<p>中国著名天使投资人。曾获得“2010年最受尊敬天使投资人”、“2011年度天使投资人”、“2012最佳天使基金”、“2013年最佳天使投资人”、“2013年中关村天使投资领军人物”等荣誉</p>
+					<p class="jp_touzi">中国著名天使投资人。曾获得“2010年最受尊敬天使投资人”、“2011年度天使投资人”、“2012最佳天使基金”、“2013年最佳天使投资人”、“2013年中关村天使投资领军人物”等荣誉</p>
+				</div>
+			</li>
+		</ul>
+		<div class="jp_goleft"></div>
+		<div class="jp_goright"></div>
+	</div>
+	<ul class="xm_list" id="xm_list">
+		<li class="" ng-repeat="item in vm.favoriteList">
+			<div class="clearFix xm_beij">
+				<img src="../../../assets/images/{{item.integrity}}.png" alt="" class="fl">
+				<div class="fl xm_ziben">{{item.name}}</div>
+				<div class="fl xm_ziben xm_name">{{item.occupiedUser}}</div>
+				<div class="fl xm_ziben xm_name">{{vm.json[item.financingPhase]}}</div>
+				<div class="fl xm_ziben xm_name">{{item.industry}}</div>
+				<div class="fl xm_hot" ng-click="vm.showren($index)">火热度</div>
+				<div class="fl xm_hot xm_jiyou" ng-click="vm.showZhan($index)">占为己有</div>
+				<div class="fl xm_hot xm_jiyou" style="width:50px;">详情</div>
+			</div>
+			<div class="clearFix xm_back" id="zhanweijiyou" ng-show="item.displayOccupy === true">
+				<div class="fl xm_gongn">
+					<div class="">占为己有功能介绍：</div>
+					<div class="xm_jieshao">提供追踪式投后管理工具，示方式，让投资人清晰省力了解企业情况，首创的投后预警系统，自动提醒投资人关注重要变化，模版。</div>
+				</div>
+				<div class="fl xm_xuanz">
+					<div class="clearFix">
+							<input class="fl" type="radio" name="Theprice" value="">
+							<span class="fl xm_xiajia">500元下架15天</span>
+					</div>
+					<div class="clearFix">
+							<input class="fl" type="radio" name="Theprice" value="">
+							<span class="fl xm_xiajia">1000元下架30天</span>
+					</div>
+					<div class="clearFix">
+							<input class="fl" type="radio" name="Theprice" value="">
+							<span class="fl xm_xiajia">2000元下架75天</span>
+					</div>
+				</div>
+				<div class="fl xm_fufei">确认付费</div>
+			</div>
+			<div class="clearFix xm_back xm_back1" ng-show="item.displaylist === true">
+				<div class="fl xm_width">
+					<div class="renshu">
+						大咖：<span>{{vm.degreeUsers[0].total}}</span>人
+					</div>
+					<div class="clearFix" ng-repeat='peritem in vm.degreeUsers[0].users'>
+						<img src="{{peritem.photo}}" alt="" class="fl xm_touxiang">
+					</div>
+				</div>
+				<div class="fl xm_width" style="width:250px;">
+					<div class="renshu">
+						认证投资人：<span>{{vm.degreeUsers[3].total}}</span>人
+					</div>
+					<div class="clearFix" ng-repeat='peritem1 in vm.degreeUsers[3].users'>
+						<img src="{{peritem1.photo}}" alt="" class="fl xm_touxiang">
+					</div>
+				</div>
+				<div class="fl xm_width" style="width:260px;">
+					<div class="renshu">
+						未认证投资人：<span>{{vm.degreeUsers[5].total}}</span>人
+					</div>
+					<div class="clearFix xm_jigou" ng-repeat='peritem2 in vm.degreeUsers[5].users'>
+						<span>{{peritem1.name}}</span>
+					</div>
+				</div>
+				<div class="fl" style="">
+					<div class="renshu renshu1">
+						<span>{{vm.total}}</span>人收藏
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
