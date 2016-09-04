@@ -1,9 +1,10 @@
 <div class="shoucangjia">
 	<h2>我的项目收藏夹</h2>
 	<div class="sc_sousuo clearFix">
-		<input class="sc_gongs fl" type="text" name="" value="" placeholder="搜索公司名/创始人">
+		<input class="sc_gongs fl" type="text" name="" value="" placeholder="搜索公司名 /创始人">
 		<input type="button" class="fl sc_btn" name="" value="搜索" ng-model='vm.gongsi' ng-click="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
 	</div>
+	<input type="button" name="" value="我的投后管理中心" class="glzx" ui-sref="main.user.detail">
 	<ul class="sc_tab clearFix">
 		<li class="sc_tabbottom">
 			<select name="" ng-model='vm.deng' ng-change="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
@@ -27,6 +28,16 @@
 		<li>
 			<select name="" ng-model='vm.hangye' ng-change="vm.getfavor(vm.deng,vm.hangye,'',vm.gongsi,vm.lunci,10)">
 				<option value="">按行业分</option>
+				<option value="媒体">媒体</option>
+				<option value="网红经济">网红经济</option>
+				<option value="营销广告">营销广告</option>
+				<option value="VR/AR">VR/AR</option>
+				<option value="医疗">医疗</option>
+				<option value="机器人/无人机">机器人/无人机</option>
+				<option value="O2O">O2O</option>
+				<option value="社交">社交</option>
+				<option value="工具类">工具类</option>
+				<option value="其他">其他</option>
 			</select>
 		</li>
 	</ul>
@@ -45,7 +56,7 @@
 				<div class="fl xm_ziben xm_name">{{item.occupiedUser}}</div>
 				<div class="fl xm_ziben xm_name">{{vm.json[item.financingPhase]}}</div>
 				<div class="fl xm_ziben xm_name">{{item.industry}}</div>
-				<div class="fl xm_hot">火热度</div>
+				<div class="fl xm_hot" ng-click="vm.showren($index)">火热度</div>
 				<div class="fl xm_hot xm_jiyou" ng-click="vm.showZhan($index)">占为己有</div>
 				<div class="fl xm_hot xm_jiyou" style="width:50px;">详情</div>
 			</div>
@@ -70,41 +81,34 @@
 				</div>
 				<div class="fl xm_fufei">确认付费</div>
 			</div>
-			<div class="clearFix xm_back xm_back1" hidden>
+			<div class="clearFix xm_back xm_back1" ng-show="item.displaylist === true">
 				<div class="fl xm_width">
 					<div class="renshu">
-						大咖：<span>35</span>人
+						大咖：<span>{{vm.degreeUsers[0].total}}</span>人
 					</div>
-					<div class="clearFix">
-						<img src="../../../assets/images/xiaoxiaoping.png" alt="" class="fl xm_touxiang">
-						<img src="../../../assets/images/xiaoxiaoping.png" alt="" class="fl xm_touxiang">
+					<div class="clearFix" ng-repeat='peritem in vm.degreeUsers[0].users'>
+						<img src="{{peritem.photo}}" alt="" class="fl xm_touxiang">
 					</div>
 				</div>
 				<div class="fl xm_width" style="width:250px;">
 					<div class="renshu">
-						认证投资人：<span>36</span>人
+						认证投资人：<span>{{vm.degreeUsers[3].total}}</span>人
 					</div>
-					<div class="clearFix">
-						<img src="../../../assets/images/xiaoxiaoping.png" alt="" class="fl xm_touxiang">
-						<img src="../../../assets/images/xiaoxiaoping.png" alt="" class="fl xm_touxiang">
-						<img src="../../../assets/images/xiaoxiaoping.png" alt="" class="fl xm_touxiang">
-						<img src="../../../assets/images/xiaoxiaoping.png" alt="" class="fl xm_touxiang">
+					<div class="clearFix" ng-repeat='peritem1 in vm.degreeUsers[3].users'>
+						<img src="{{peritem1.photo}}" alt="" class="fl xm_touxiang">
 					</div>
 				</div>
 				<div class="fl xm_width" style="width:260px;">
 					<div class="renshu">
-						未认证投资人：<span>122</span>人
+						未认证投资人：<span>{{vm.degreeUsers[5].total}}</span>人
 					</div>
-					<div class="clearFix xm_jigou">
-						<span>袁月</span>
-						<span>老鹰基金</span>
-						<span>丰厚资本</span>
-						<span>领岸</span>
+					<div class="clearFix xm_jigou" ng-repeat='peritem2 in vm.degreeUsers[5].users'>
+						<span>{{peritem1.name}}</span>
 					</div>
 				</div>
 				<div class="fl" style="">
 					<div class="renshu renshu1">
-						<span>1440</span>人收藏
+						<span>{{vm.total}}</span>人收藏
 					</div>
 				</div>
 			</div>
@@ -126,7 +130,7 @@
 		      <span>1</span>
 		    </li>
 
-		    <!-- <li class="active">
+		    <li class="active">
 		      <span>2</span>
 		    </li>
 		    <li class="">
@@ -149,7 +153,7 @@
 		    </li>
 		    <li class="">
 		      <span>9</span>
-		    </li> -->
+		    </li>
 		    <li class="">
 		      <span>
 		        <span>页</span>

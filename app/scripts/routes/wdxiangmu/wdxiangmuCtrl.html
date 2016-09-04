@@ -1,14 +1,45 @@
 <div class="shoucangjia">
-	<h2>我的项目收藏夹</h2>
-	<input type="button" class="zhongx" name="" value="我的投后管理中心">
+	<h2>我的投后项目</h2>
+	<input type="button" class="zhongx" name="" ui-sref="main.user.detail" value="我的投后管理中心">
 	<div class="sc_sousuo clearFix">
-		<input class="sc_gongs fl" type="text" name="" value="" placeholder="搜索公司名/创始人">
-		<input type="button" class="fl sc_btn" name="" value="搜索">
+		<input class="sc_gongs fl" type="text" name="" value="" placeholder="搜索公司名/创始人" ng-model="vm.gongs">
+		<input type="button" class="fl sc_btn" name="" value="搜索" ng-click="vm.xiamgmulist(vm.hongdeng,vm.hang,'',vm.gongs,vm.rongz,10)">
 	</div>
 	<ul class="sc_tab clearFix">
-		<li class="sc_tabbottom">按红绿灯分</li>
-		<li>按轮次分</li>
-		<li>按行业分</li>
+		<li class="sc_tabbottom">
+			<select name="" ng-model="hongdeng" ng-change="vm.xiamgmulist(vm.hongdeng,vm.hang,'',vm.gongs,vm.rongz,10)">
+				<option value="">按红绿灯分</option>
+				<option value="RED">红灯</option>
+				<option value="GREEN">绿灯</option>
+				<option value="YELLOW">黄灯</option>
+			</select>
+		</li>
+		<li>
+		<select name="" ng-model="vm.rongz" ng-modle="hongdeng" ng-change="vm.xiamgmulist(vm.hongdeng,vm.hang,'',vm.gongs,vm.rongz,10)">
+			<option value="">按轮次分</option>
+			<option value="SEED">种子轮</option>
+			<option value="ANGEL">天使轮</option>
+			<option value="PRE_A">Pre-A轮</option>
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+		</select>
+		</li>
+		<li>
+			<select ng-model="vm.hang" ng-modle="hongdeng" ng-change="vm.xiamgmulist(vm.hongdeng,vm.hang,'',vm.gongs,vm.rongz,10)">
+				<option value="">按行业分</option>
+				<option value="媒体">媒体</option>
+				<option value="网红经济">网红经济</option>
+				<option value="营销广告">营销广告</option>
+				<option value="VR/AR">VR/AR</option>
+				<option value="医疗">医疗</option>
+				<option value="机器人/无人机">机器人/无人机</option>
+				<option value="O2O">O2O</option>
+				<option value="社交">社交</option>
+				<option value="工具类">工具类</option>
+				<option value="其他">其他</option>
+			</select>
+		</li>
 	</ul>
 	<div class="clearFix">
 		<input type="button" name="" class="daoru fr" value="导入投后项目">
@@ -21,13 +52,13 @@
 		<div class="fl">行业</div>
 	</div>
 	<ul class="xm_list">
-		<li class="">
+		<li class="" ng-repeat="item in vm.projectEntity">
 			<div class="clearFix xm_beij">
-				<img src="../../../assets/images/greendeng.png" alt="" class="fl">
-				<div class="fl xm_ziben">丰厚资本</div>
+				<img src="../../../assets/images/{{item.integrity }}.png" alt="" class="fl">
+				<div class="fl xm_ziben">{{item.name}}</div>
 				<div class="fl xm_ziben xm_name">梁润龙</div>
-				<div class="fl xm_ziben xm_name">天使轮</div>
-				<div class="fl xm_ziben xm_name">文化行业</div>
+				<div class="fl xm_ziben xm_name">{{vm.json[item.financingPhase]}}</div>
+				<div class="fl xm_ziben xm_name">{{item.industry}}</div>
 				<div class="fl xm_hot">
 					<!-- <div class="fl gongkai" id="gongkai" ng-click='vm.selectlist($event)'>公开度</div>
 					<div class="fl xiangxia"></div>
@@ -37,12 +68,12 @@
 						<div>优选项目</div>
 						<div>精选项目</div>
 					</div> -->
-					<select name="" >
+					<select name="" ng-model="item.publicity">
 						<option value="">公开度</option>
-						<option value="">不公开</option>
-						<option value="">项目池</option>
-						<option value="">优选项目</option>
-						<option value="">精选项目</option>
+						<option value="不公开">不公开</option>
+						<option value="项目池">项目池</option>
+						<option value="优选项目">优选项目</option>
+						<option value="精选项目">精选项目</option>
 					</select>
 				</div>
 				<div class="fl xm_hot xm_jiyou">
@@ -54,12 +85,11 @@
 						<div>寻找接盘</div>
 						<div>已死亡</div>
 					</div> -->
-					<select name="" >
-						<option value="">已退出</option>
-						<option value="">投后观察中</option>
-						<option value="">已退出</option>
-						<option value="">寻找接盘</option>
-						<option value="">已死亡</option>
+					<select name="" ng-model="item.status">
+						<option value="OBSERVATION">投后观察中</option>
+						<option value="EXITED">已退出</option>
+						<option value="FIND_TAKER">寻找接盘</option>
+						<option value="DIED">已死亡</option>
 					</select>
 				</div>
 				<div class="fl xm_hot xm_jiyou" style="width:50px;">详情</div>

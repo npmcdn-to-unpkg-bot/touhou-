@@ -11,6 +11,7 @@
         var vm = this;
         vm.favoriteList = [];
         vm.getfavor = getfavor;
+        vm.showren = showren;
         vm.json = {
         	SEED:'种子轮',
         	ANGEL:'天使轮',
@@ -72,10 +73,6 @@
 		if(res.success){
 			var oUl = document.getElementById('xm_list');
 			vm.favoriteList = res.content.content;
-			function showzhan() {
-				var oZan = document.getElementById('zhanweijiyou');
-			}
-			
 		}
 
 		vm.showZhan = showZhan;
@@ -105,9 +102,11 @@
                 // 'Access-Control-Allow-Origin': '*'
             });
             Restangular.setDefaultHttpFields({withCredentials: true});
-        	Restangular.all('investor/project/invested/list').customPOST(getlist).then(function(res) {
+        	Restangular.all('investor/project/favorites').customPOST(getlist).then(function(res) {
         			
-	               console.log(res);
+	             if (res.success) {
+
+                 }
 	           });
         }
         getfavor();
@@ -116,7 +115,24 @@
         	if(vm.favoriteList[index].displayOccupy) {
         		vm.favoriteList[index].displayOccupy = false;
         	}else {
+        		vm.favoriteList[index].displaylist = false;
         		vm.favoriteList[index].displayOccupy = true;
+        	}
+        	
+        }
+        function showren(index){
+        	if(vm.favoriteList[index].displaylist) {
+        		vm.favoriteList[index].displaylist = false;
+        	}else {
+        		vm.favoriteList[index].displayOccupy = false;
+        		vm.favoriteList[index].displaylist = true;
+        		Restangular.all('project/{projectId}/hotDegrees').customPOST({projectId:vm.favoriteList[index].id}).then(function(res) {
+        			
+	               if (res.success) {
+	               	vm.total = res.content.total;
+	               	vm.degreeUsers = res.content.degreeUsers;
+	               }
+	           });
         	}
         	
         }

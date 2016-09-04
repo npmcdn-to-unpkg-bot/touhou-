@@ -48,7 +48,13 @@
         }
         function trunToMyWallet(click) {
             tabactive(click);
-            
+            Restangular.all('wallet/balance').customGET().then(function(res) {
+                    if(res.success) {
+                      vm.money = res.content;
+                    }else{
+                        console.log(res.errMessage)
+                    }
+                });
             vm.displayMyWallet = true;
         }
         function goshoucang(){
