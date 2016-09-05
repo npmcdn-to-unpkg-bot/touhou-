@@ -86,17 +86,17 @@
 			<div style="position: relative;"  ng-mouseenter="vm.mouser1()" ng-mouseleave="vm.mouseleave1()">
 				<div style="position: relative;" class="in_list">
 					<ul class="clearFix" >
-						<li class="in_banner fl">
+						<li class="in_banner fl" ng-repeat="item in vm.perlist">
 							<div class="zhenge">
-								<img src="assets/images/jijin.jpg" alt="">
-								<h3>真格基金创始人</h3>
-								<div>已投明星项目：聚美优品、兰亭集序、</div>
-								<div>世纪佳缘、PAPI酱、</div>
-								<div>易到用车、大咦吗</div>
+								<img src="http://{{item.photoUrl}}" alt="">
+								<h3>{{item.companyName}}</h3>
+								<div>已投明星项目：
+									<span ng-repeat="items in item.projects">{{items.name}}、</span>
+								</div>
 								<a href="javascript:;" title="" class="readmore">READ MORE</a>
 							</div>
 						</li>
-						<li class="in_banner fl">
+						<!-- <li class="in_banner fl">
 							<div class="zhenge">
 								<img src="assets/images/Angel.jpg" alt="">
 								<h3>Pre-Angle创始人</h3>
@@ -135,7 +135,7 @@
 								<div>资本指数</div>
 								<a href="javascript:;" title="" class="readmore">READ MORE</a>
 							</div>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 				<div class="goleft" ng-click="vm.leftClick1()"></div>
@@ -143,36 +143,36 @@
 			</div>
 			<div class="clearFix xiangqing"   ng-mouseenter="vm.mouser2()" ng-mouseleave="vm.mouseleave2()">
 				<div class="fl" style="width:273px;height:273px;">
-					<img src="assets/images/daka.jpg" alt="" style="width:100%;height:100%;">
+					<img src="http://{{vm.xmlist.photoUrl}}" alt="" style="width:100%;height:100%;">
 				</div>
 				<div class="fl in_xilist">
 					<div class="in_xiangm">
 						<ul class="clearFix">
-							<li class="fl" style="position: relative;width:652px;">
-								<div class="beijing fl">
+							<li class="fl" style="position: relative;width:652px;" ng-repeat="item in vm.listarr">
+								<div class="beijing fl" ng-repeat="items in item">
 									<div class="clearFix" style="padding-left: 0;">
-										<img src="assets/images/wurenj.png" class="fl yihang" alt="">
+										<img src="http://{{items.logo}}" class="fl yihang" alt="">
 										<div class="fl clearFix yiwurenj">
 											<div class="clearFix">
-												<h4 class="fl">亿航无人机</h4>
+												<h4 class="fl">{{items.projectName}}</h4>
 												<div class="fr yihrenshu clearFix">
 													<img src="assets/images/zhuxingt.png" alt="" style="">
-													<div>500</div>
+													<div>{{items.visitCount}}</div>
 												</div>
 											</div>
 											<div class="clearFix tianshi">
-												<div class="fl" style="">项目阶段：天使轮</div>
-												<div class="fl" style="margin-left: 20px;">本机构股份：6%</div>
+												<div class="fl" style="">项目阶段：{{vm.json[items.enterPhase]}}</div>
+												<div class="fl" style="margin-left: 20px;">本机构股份：{{items.stock}}</div>
 											</div>
 											<div class="clearFix tianshi" style="">
-												<div class="fl" style="text-align: left;">需融金额：200~500万</div>
-												<div class="fl" style="margin-left: 10px;">出让股份：10%</div>
+												<div class="fl" style="text-align: left;">需融金额：{{items.fundraising}}</div>
+												<div class="fl" style="margin-left: 10px;">出让股份：{{items.transferStock}}</div>
 											</div>
 										</div>
 									</div>
-									<p class="jumei">聚美优品是一家化妆品限时特卖商城，其前身为团美网。</p>
+									<p class="jumei">{{items.description}}</p>
 								</div>
-								<div class="beijing fl">
+								<!-- <div class="beijing fl">
 									<div class="clearFix" style="padding-left: 0;">
 										<img src="assets/images/yingtaow.png" class="fl yihang" alt="">
 										<div class="fl clearFix yiwurenj">
@@ -240,7 +240,7 @@
 										</div>
 									</div>
 									<p class="jumei">聚美优品是一家化妆品限时特卖商城，其前身为团美网。</p>
-								</div>
+								</div> -->
 							</li>
 						</ul>
 					</div>

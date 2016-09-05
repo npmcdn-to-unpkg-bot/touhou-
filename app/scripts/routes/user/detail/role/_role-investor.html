@@ -9,9 +9,9 @@
 	</div>
 	<div class="clearFix" style="margin-top: 0.5rem;">
 		<div ng-if="vm.userRole.authenticated === false" class="col-xs-6 guanli_bor">项目池</div>
-		<div class="{{vm.userRole.authenticated ? 'col-xs-6 guanli_bor' : 'col-xs-6 guanli_bor gl_moban'}}">我的模板</div>
+		<div class="{{vm.userRole.authenticated ? 'col-xs-6 guanli_bor' : 'col-xs-6 guanli_bor gl_moban'}}" ui-sref="main.module">我的模板</div>
 		<div ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="col-xs-6 guanli_bor guanli_bor1">
-			<div ui-sref="main.user.detail">
+			<div ui-sref="main.jingpingku">
 				<div class="jingp">精品项目</div>
 				<div class="youxuan">优选项目</div>
 			</div>
