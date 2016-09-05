@@ -9,45 +9,62 @@
 	</div>
 </div>
 <ul class="mg_luguo">
-	<li>
-		<img src="" alt="">
+	<li ng-show="vm.role === 'INVESTOR'">
+		<img src="{{vm.filter.idCard ? 'http://' + vm.filter.idCard : ''}}" alt="" width="250">
 		<label>请上传身份证正面照：</label>
-		<button ngf-select="vm.uploadQRCode($files, $invalidFiles)" multiple accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">选择文件</button>
+		<button ngf-select="vm.uploadIdCard($files, $invalidFiles)" multiple accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">选择文件</button>
 	</li>
-	<li>
-		<img src="" alt="">
+	<li ng-show="vm.role === 'INVESTOR'">
+		<img src="{{vm.filter.businessCard ? 'http://' + vm.filter.businessCard : ''}}" alt="" width="250">
 		<label>请上传你的名片：</label>
-		<button ngf-select="vm.uploadQRCode($files, $invalidFiles)" multiple accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">选择文件</button>
+		<button ngf-select="vm.uploadBussinessCard($files, $invalidFiles)" multiple accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">选择文件</button>
 	</li>
 	<li>
 		<label>地址：</label>
-		<input type="text" name="" value="" placeholder="*请输入详细地址">
+		<input type="text" name="" ng-model="vm.filter.address"  placeholder="*请输入详细地址">
 	</li>
-	<li>
+	<li ng-show="vm.role === 'FOUNDER'">
 		<label>行业：</label>
-		<select name="" class="be_chuanz">
-			<option value="财务专家">财务专家</option>
-			<option value="财务专家">法务专家</option>
-			<option value="财务专家">人力专家</option>
-			<option value="财务专家">软件专家</option>
+		<select name="" class="be_chuanz" ng-model='vm.filter.industry'>
+			<option value="媒体">媒体</option>
+			<option value="网红经济">网红经济</option>
+			<option value="营销广告">营销广告</option>
+			<option value="VR/AR">VR/AR</option>
+			<option value="医疗">医疗</option>
+			<option value="机器人/无人机">机器人/无人机</option>
+			<option value="O2O">O2O</option>
+			<option value="社交">社交</option>
+			<option value="工具类">工具类</option>
+			<option value="其他">其他</option>
 		</select>
 	</li>
-	<li>
+	<li ng-show="vm.role === 'EXPERT'">
+		<label>行业：</label>
+		<select name="" class="be_chuanz" ng-model='vm.filter.industry'>
+			<option value="FINANCIAL">财务专家</option>
+			<option value="LEGAL">法务专家</option>
+			<option value="IT">IT专家</option>
+			<option value="PR">PR专家</option>
+			<option value="HR">HR专家</option>
+			<option value="FA">FA专家</option>
+		</select>
+	</li>
+	<li ng-show="vm.role === 'INVESTOR' || vm.role === 'FOUNDER'">
 		<label>{{vm.role === 'INVESTOR' ? '所投轮次' : ''}}{{vm.role === 'FOUNDER' ? '融资阶段' : ''}}：</label>
-		<input type="checkbox" name="investRounds" value="SEED">种子轮
-		<input type="checkbox" name="investRounds" value="ANGEL">天使轮
-		<input type="checkbox" name="investRounds" value="PRE_A">Pre-A轮
-		<input type="checkbox" name="investRounds" value="A">A
-		<input type="checkbox" name="investRounds" value="B">B
-		<input type="checkbox" name="investRounds" value="C">C
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value1" ng-true-value="'SEED'" ng-false-value="">种子轮
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value2" ng-true-value="'ANGEL'" ng-false-value="">天使轮
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value3" ng-true-value="'PRE_A'" ng-false-value="">Pre-A轮
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value4" ng-true-value="'A'" ng-false-value="">A
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value5" ng-true-value="'B'" ng-false-value="">B
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value6" ng-true-value="'C'" ng-false-value="">C
 	</li>
-	<li >
+	<li ng-show="vm.role === 'FOUNDER'">
 		<label>融资机构：</label>
-		<input type="text" name="" value="" placeholder="*">
+		<input type="text" name=""  placeholder="*">
 	</li>
-	<li >
+	<li ng-show="vm.role === 'EXPERT'">
 		<label>提供服务：</label>
-		<input type="text" name="" value="" placeholder="*">
+		<input type="text" name=""  placeholder="*" ng-model='vm.filter.service'>
 	</li>
 </ul>
 <input type="button" name="" class="mg_queding" value="提交" ng-click="vm.submit()">

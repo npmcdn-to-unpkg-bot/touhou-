@@ -6,7 +6,7 @@
         .controller('UserCreateCtrl', UserCreateCtrl);
 
     /* @ngInject */
-    function UserCreateCtrl($state, $stateParams, User, Restangular, $modal, ElementService, Upload) {
+    function UserCreateCtrl($state, $stateParams, User, Restangular, $modal, ElementService, Upload, $filter) {
         var vm = this;
         vm.role = $stateParams && $stateParams.role;
         vm.current_user = User.getUser();
@@ -17,6 +17,8 @@
         vm.uploadQRCode = uploadQRCode;
         vm.nextStep = nextStep;
         vm.submit = submit;
+        vm.uploadBussinessCard = uploadBussinessCard;
+        vm.uploadIdCard = uploadIdCard;
         
         function openUploadImgModal(type) {
         	var ModalCtrl = ['$scope', function($scope) {
@@ -83,7 +85,6 @@
 
         function uploadQRCode(files, errFiles) {
 	        angular.forEach(files, function(file) {
-	        	debugger
 	            file.upload = Upload.upload({
 	                url: 'http://115.29.163.20/api/file/upload',
 	                methods: 'POST',
@@ -98,12 +99,131 @@
 	        });
         }
 
+        function uploadBussinessCard(files, errFiles) {
+	        angular.forEach(files, function(file) {
+	            file.upload = Upload.upload({
+	                url: 'http://115.29.163.20/api/file/upload',
+	                methods: 'POST',
+	                headers: {'Content-Type'  : 'multipart/form-data'},
+	                withCredentials: true,
+	                data: {file: file}
+	            }).then(function (res) {
+	            	if(res.data.success) {
+	            		vm.filter.businessCard = res.data.content;
+	            	}
+	            });
+	        });
+        }
+
+        function uploadIdCard(files, errFiles) {
+	        angular.forEach(files, function(file) {
+	            file.upload = Upload.upload({
+	                url: 'http://115.29.163.20/api/file/upload',
+	                methods: 'POST',
+	                headers: {'Content-Type'  : 'multipart/form-data'},
+	                withCredentials: true,
+	                data: {file: file}
+	            }).then(function (res) {
+	            	if(res.data.success) {
+	            		vm.filter.idCard = res.data.content;
+	            	}
+	            });
+	        });
+        }
+
         function nextStep() {
         	vm.displayCompany = true;
         }
 
         function submit() {
-        	$state.go('main.user.detail');
+        	console.log(vm.role);
+        	console.log(vm.filter);
+        	var req = {};
+
+        	if(vm.role === 'INVESTOR') {
+        		req = {
+        			businessCard: vm.filter.businessCard,
+				  	company: {
+				    	address: vm.filter.address,
+				    	investRounds: [],
+				    	name: vm.filter.companyName
+				  	},
+				  	idCard: vm.filter.idCard,
+				  	inviteCode: vm.filter.inviteCode,
+				  	user: {
+				    	address: vm.filter.address,
+				    	companyName: vm.filter.companyName,
+				    	email: vm.filter.mail,
+				    	name: vm.filter.name,
+				    	password: vm.current_user.password,
+				    	phone: vm.current_user.phone,
+				    	photo: vm.filter.photo,
+				    	position: vm.filter.position,
+				    	role: vm.role,
+				    	wechat: vm.filter.qrCode
+				  	}
+        		};
+        		for(var key in vm.filter.rounds) {
+     				req.company.investRounds.push(vm.filter.rounds[key]);
+     			}
+        	}else if(vm.role === 'FOUNDER') {
+        		req = {
+        			inviteCode: vm.filter.inviteCode,
+				  	project: {
+				    	address:  vm.filter.address,
+				    	financingPhase: "",
+				    	industry: vm.filter.industry,
+				    	name: vm.filter.companyName
+				  	},
+				  	user: {
+				    	address:  vm.filter.address,
+				    	companyName: vm.filter.companyName,
+				    	email: vm.filter.mail,
+				    	name: vm.filter.name,
+				    	password: vm.current_user.password,
+				    	phone: vm.filter.phone,
+				    	photo: vm.filter.photo,
+				    	position: vm.filter.position,
+				    	role: vm.role,
+				    	wechat: vm.filter.qrCode
+				  	}
+        		};
+        		for(var key in vm.filter.rounds) {
+        			if(!req.project.financingPhase){
+        				req.project.financingPhase = vm.filter.rounds[key];
+        			}else{
+        				req.project.financingPhase = req.project.financingPhase+"|"+vm.filter.rounds[key];
+        			}
+     				
+     			}
+        	}else if(vm.role === 'EXPERT') {
+        		req = {
+        			address: vm.filter.address,
+				  	industry: vm.filter.industry,
+				  	service: vm.filter.service,
+				  	user: {
+				    	address: vm.filter.address,
+				    	companyName: vm.filter.companyName,
+				    	email: vm.filter.mail,
+				    	name: vm.filter.name,
+				    	password: vm.current_user.password,
+				    	phone: vm.current_user.phone,
+				    	photo: vm.filter.photo,
+				    	position: vm.filter.position,
+				    	role: vm.role,
+				    	wechat: vm.filter.qrCode
+				  	}
+        		};
+        	}
+        	Restangular.all($filter('lowercase')(vm.role) + '/signUp').customPOST(req).then(function(res) {
+	        		if(res.success) {
+		        		vm.current_user.role = vm.role;
+		        		User.settUser(vm.current_user);
+		        		$state.go('main.user.detail');
+	        		}
+	        	});
+        	
+
         }
 
     }

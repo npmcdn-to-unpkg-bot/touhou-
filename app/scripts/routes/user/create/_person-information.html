@@ -27,7 +27,7 @@
 	</li>
 	<li>
 		<label>{{vm.role === 'INVESTOR' ? '投资机构' : ''}}{{vm.role === 'FOUNDER' ? '项目' : ''}}{{vm.role === 'EXPERT' ? '公司' : ''}}名称：</label>
-		<input type="text" name="" value="" placeholder="">
+		<input type="text" name="" ng-model="vm.filter.companyName" placeholder="">
 	</li>
 	<li>
 		<label>职位：</label>
