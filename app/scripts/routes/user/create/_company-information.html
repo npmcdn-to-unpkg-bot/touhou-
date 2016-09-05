@@ -19,6 +19,10 @@
 		<label>请上传你的名片：</label>
 		<button ngf-select="vm.uploadBussinessCard($files, $invalidFiles)" multiple accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">选择文件</button>
 	</li>
+	<li ng-if="vm.role === 'FOUNDER'">
+		<label>项目名称：</label>
+		<input type="text" name="" ng-model="vm.filter.projectName" placeholder="">
+	</li>
 	<li>
 		<label>地址：</label>
 		<input type="text" name="" ng-model="vm.filter.address"  placeholder="*请输入详细地址">

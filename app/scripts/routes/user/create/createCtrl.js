@@ -173,7 +173,7 @@
 				    	address:  vm.filter.address,
 				    	financingPhase: '',
 				    	industry: vm.filter.industry,
-				    	name: vm.filter.companyName
+				    	name: vm.filter.projectName
 				  	},
 				  	user: {
 				    	address:  vm.filter.address,
