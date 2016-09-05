@@ -171,7 +171,7 @@
         			inviteCode: vm.filter.inviteCode,
 				  	project: {
 				    	address:  vm.filter.address,
-				    	financingPhase: "",
+				    	financingPhase: '',
 				    	industry: vm.filter.industry,
 				    	name: vm.filter.companyName
 				  	},
@@ -189,12 +189,9 @@
 				  	}
         		};
         		for(var key in vm.filter.rounds) {
-        			if(!req.project.financingPhase){
+        			if(vm.filter.rounds[key]) {
         				req.project.financingPhase = vm.filter.rounds[key];
-        			}else{
-        				req.project.financingPhase = req.project.financingPhase+"|"+vm.filter.rounds[key];
         			}
-     				
      			}
         	}else if(vm.role === 'EXPERT') {
         		req = {
@@ -217,8 +214,8 @@
         	}
         	Restangular.all($filter('lowercase')(vm.role) + '/signUp').customPOST(req).then(function(res) {
 	        		if(res.success) {
-		        		vm.current_user.role = vm.role;
-		        		User.settUser(vm.current_user);
+		        		vm.current_user = res.content;
+		        		User.setUser(vm.current_user);
 		        		$state.go('main.user.detail');
 	        		}
 	        	});
