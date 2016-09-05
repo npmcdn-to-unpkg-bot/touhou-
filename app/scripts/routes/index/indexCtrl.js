@@ -12,8 +12,16 @@
         .controller('IndexCtrl', IndexCtrl);
 
     /* @ngInject */
-    function IndexCtrl($http, $state, $window, ElementService, MoveService) {
+    function IndexCtrl($http, $state, $window, ElementService, MoveService, Restangular) {
         var vm = this;
+        vm.json = {
+            SEED:'种子轮',
+            ANGEL:'天使轮',
+            PRE_A:'Pre-A轮',
+            A:'A',
+            B:'B',
+            C:'C'
+        };
         banner('div', 'ul', 'li', 'index_banner');
        function banner(obj, obj1, obj2, className) {
             var n = 0;
@@ -76,8 +84,8 @@
                 time()
             }
        }
-       banner1('div', 'ul', 'li', 'in_list');
-       banner2('div', 'ul', 'li', 'in_xiangm');
+       //banner1('div', 'ul', 'li', 'in_list');
+       //banner2('div', 'ul', 'li', 'in_xiangm');
        function banner1(obj, obj1, obj2, className) {
             var a = 0;
             var oDiv = ElementService.getByClass(obj, className);
@@ -200,5 +208,43 @@
                 time2()
             }
        }
+       Restangular.all('common/home/investor').customGET().then(function(res) {
+            console.log(res)
+            if(res.success) {
+                vm.perlist = res.content;
+                vm.touzixm = '';
+                setTimeout(function() {
+                   banner1('div', 'ul', 'li', 'in_list');
+                },50)
+            }else{
+                alert(res.errMessage)
+            }
+        });
+       Restangular.all('common/home/projects').customGET().then(function(res) {
+            console.log(res)
+            if(res.success) {
+                vm.xmlist = res.content;
+                vm.listarr = [];
+                var listarr1 = [];
+                var number = 0;
+                for (var i = 0; i < vm.xmlist.projects.length; i++) {
+                    number++;
+                    listarr1.push(vm.xmlist.projects[i]);
+                    if (number == 4) {
+                        vm.listarr.push(listarr1)
+                        listarr1 = [];
+                    }
+                    if (i == vm.xmlist.projects.length-1) {
+                        vm.listarr.push(listarr1)
+                    }
+                }
+                console.log(vm.listarr);
+                setTimeout(function() {
+                    banner2('div', 'ul', 'li', 'in_xiangm')
+                },2000)
+            }else{
+                alert(res.errMessage)
+            }
+        });
     }
 })();

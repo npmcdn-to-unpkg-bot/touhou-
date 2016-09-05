@@ -3,10 +3,10 @@
 
     angular
         .module('touhou')
-        .controller('BecomeCtrl', BecomeCtrl);
+        .controller('ModuleCtrl', ModuleCtrl);
 
     /* @ngInject */
-    function BecomeCtrl($http, $state, $window) {
+    function ModuleCtrl($http, $state, $window) {
         var vm = this;
     }
 })();
