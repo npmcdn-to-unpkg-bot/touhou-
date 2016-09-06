@@ -17,7 +17,7 @@
 	<li ng-if="vm.userRole.authenticated === false" class="tx_nav">
 		未认证
 	</li>
-	<li class="tx_nav">
+	<li class="tx_nav" ui-sref="main.user.create({role: vm.currentUser.role})">
 		编辑资料
 	</li>
 	<li ng-if="vm.userRole.authenticated && vm.userRole.authenticated === true" class="tx_nav" ui-sref="main.wdxiangmu">

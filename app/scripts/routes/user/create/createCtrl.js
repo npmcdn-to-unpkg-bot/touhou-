@@ -10,7 +10,30 @@
         var vm = this;
         vm.role = $stateParams && $stateParams.role;
         vm.current_user = User.getUser();
-        vm.filter = {};
+        vm.user_role = User.getRole();
+        vm.filter = {
+        	photo: vm.current_user.photo,
+			qrCode: vm.current_user.wechat,
+			name: vm.current_user.name,
+			companyName: vm.current_user.companyName,
+			position: vm.current_user.position,
+			mail: vm.current_user.email,
+			inviteCode: vm.user_role && vm.user_role.inviteCode ,
+			idCard: vm.user_role && vm.user_role.idCard,
+			businessCard: vm.user_role && vm.user_role.businessCard,
+			projectName: vm.user_role && vm.user_role.name,
+			address: vm.current_user.address,
+			industry: vm.user_role && vm.user_role.industry,
+			rounds: {},
+			financingPhase: vm.user_role && vm.user_role.financingPhase,
+			service: vm.user_role && vm.user_role.services
+        };
+        /*if(vm.role === 'FOUNDER') {
+        	if(vm.user_role && vm.user_role.financingPhase) {
+        		vm.filter.rounds[vm.user_role.financingPhase] = vm.user_role.financingPhase;
+        	}
+        }*/
+        console.log(vm.filter);
         vm.displayCompany = false;
 
         vm.openUploadImgModal = openUploadImgModal;

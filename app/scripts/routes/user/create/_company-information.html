@@ -55,29 +55,30 @@
 	</li>
 	<li ng-show="vm.role === 'INVESTOR'">
 		<label>所投轮次：</label>
-		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value1" ng-true-value="'SEED'" ng-false-value="">种子轮
-		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value2" ng-true-value="'ANGEL'" ng-false-value="">天使轮
-		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value3" ng-true-value="'PRE_A'" ng-false-value="">Pre-A轮
-		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value4" ng-true-value="'A'" ng-false-value="">A
-		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value5" ng-true-value="'B'" ng-false-value="">B
-		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value6" ng-true-value="'C'" ng-false-value="">C
-	</li>
-	<li ng-show="vm.role === 'FOUNDER'">
-		<label> 融资阶段：</label>
-		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value1" ng-true-value="'SEED'" ng-false-value="">种子轮
-		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value2" ng-true-value="'ANGEL'" ng-false-value="">天使轮
-		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value3" ng-true-value="'PRE_A'" ng-false-value="">Pre-A轮
-		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value4" ng-true-value="'A'" ng-false-value="">A
-		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value5" ng-true-value="'B'" ng-false-value="">B
-		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value6" ng-true-value="'C'" ng-false-value="">C
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.SEED" ng-true-value="'SEED'" ng-false-value="">种子轮
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.ANGEL" ng-true-value="'ANGEL'" ng-false-value="">天使轮
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.PRE_A" ng-true-value="'PRE_A'" ng-false-value="">Pre-A轮
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.A" ng-true-value="'A'" ng-false-value="">A
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.B" ng-true-value="'B'" ng-false-value="">B
+		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.C" ng-true-value="'C'" ng-false-value="">C
 	</li>
 	<li ng-show="vm.role === 'FOUNDER'">
 		<label>融资机构：</label>
 		<input type="text" name=""  placeholder="*">
+	</li>
+	<li ng-show="vm.role === 'FOUNDER'">
+		<label> 融资阶段：</label>
+		<input type="radio" name="investRounds" ng-model="vm.filter.financingPhase" value="SEED">种子轮
+		<input type="radio" name="investRounds" ng-model="vm.filter.financingPhase" value="ANGEL">天使轮
+		<input type="radio" name="investRounds" ng-model="vm.filter.financingPhase" value="PRE_A">Pre-A轮
+		<input type="radio" name="investRounds" ng-model="vm.filter.financingPhase" value="A" >A
+		<input type="radio" name="investRounds" ng-model="vm.filter.financingPhase" value="B">B
+		<input type="radio" name="investRounds" ng-model="vm.filter.financingPhase" value="C">C
 	</li>
 	<li ng-show="vm.role === 'EXPERT'">
 		<label>提供服务：</label>
 		<input type="text" name=""  placeholder="*" ng-model='vm.filter.service'>
 	</li>
 </ul>
+
 <input type="button" name="" class="mg_queding" value="提交" ng-click="vm.submit()">
