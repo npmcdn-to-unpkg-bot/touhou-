@@ -19,6 +19,10 @@
 		<label>请上传你的名片：</label>
 		<button ngf-select="vm.uploadBussinessCard($files, $invalidFiles)" multiple accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">选择文件</button>
 	</li>
+	<li ng-if="vm.role === 'FOUNDER'">
+		<label>项目名称：</label>
+		<input type="text" name="" ng-model="vm.filter.projectName" placeholder="">
+	</li>
 	<li>
 		<label>地址：</label>
 		<input type="text" name="" ng-model="vm.filter.address"  placeholder="*请输入详细地址">
@@ -49,14 +53,23 @@
 			<option value="FA">FA专家</option>
 		</select>
 	</li>
-	<li ng-show="vm.role === 'INVESTOR' || vm.role === 'FOUNDER'">
-		<label>{{vm.role === 'INVESTOR' ? '所投轮次' : ''}}{{vm.role === 'FOUNDER' ? '融资阶段' : ''}}：</label>
+	<li ng-show="vm.role === 'INVESTOR'">
+		<label>所投轮次：</label>
 		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value1" ng-true-value="'SEED'" ng-false-value="">种子轮
 		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value2" ng-true-value="'ANGEL'" ng-false-value="">天使轮
 		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value3" ng-true-value="'PRE_A'" ng-false-value="">Pre-A轮
 		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value4" ng-true-value="'A'" ng-false-value="">A
 		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value5" ng-true-value="'B'" ng-false-value="">B
 		<input type="checkbox" name="investRounds" ng-model="vm.filter.rounds.value6" ng-true-value="'C'" ng-false-value="">C
+	</li>
+	<li ng-show="vm.role === 'FOUNDER'">
+		<label> 融资阶段：</label>
+		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value1" ng-true-value="'SEED'" ng-false-value="">种子轮
+		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value2" ng-true-value="'ANGEL'" ng-false-value="">天使轮
+		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value3" ng-true-value="'PRE_A'" ng-false-value="">Pre-A轮
+		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value4" ng-true-value="'A'" ng-false-value="">A
+		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value5" ng-true-value="'B'" ng-false-value="">B
+		<input type="radio" name="investRounds" ng-model="vm.filter.rounds.value6" ng-true-value="'C'" ng-false-value="">C
 	</li>
 	<li ng-show="vm.role === 'FOUNDER'">
 		<label>融资机构：</label>
