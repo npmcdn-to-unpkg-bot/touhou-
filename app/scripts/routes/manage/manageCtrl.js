@@ -13,10 +13,10 @@
         .controller('ManageCtrl', ManageCtrl);
 
     /* @ngInject */
-    function ManageCtrl($http, $state, $window, ElementService, MoveService) {
+    function ManageCtrl($http, $state, $window, ElementService, MoveService, Restangular) {
         var vm = this;
-        banner1('div', 'ul', 'li', 'dakadaka');
-        banner2('div', 'ul', 'li', 'touzilist')
+        //banner1('div', 'ul', 'li', 'dakadaka');
+        //banner2('div', 'ul', 'li', 'touzilist')
        function banner1(obj, obj1, obj2, className) {
             var a = 0;
             var oDiv = ElementService.getByClass(obj, className);
@@ -34,7 +34,7 @@
             vm.mouseleave1 = mouseleave1;
             time1()
             var bl = true;
-            var timer1;
+            var timer3;
             function rightClick1() {
                 if (bl) {
                     a--;
@@ -67,12 +67,13 @@
                     }})
             }
             function time1(){
-                timer1 = setInterval(function(){
+                timer3 = setInterval(function(){
+                    console.log(1)
                     tab();
                 },2000)
             }
             function mouser1() {
-                clearInterval(timer1)
+                clearInterval(timer3)
             }
             function mouseleave1(){
                 time1()
@@ -139,5 +140,27 @@
                 time2()
             }
        }
+        Restangular.all('common/newest/famous/investors').customGET().then(function(res) {
+            console.log(res)
+            if(res.success) {
+               vm.newlist = res.content;
+              setTimeout(function() {
+                banner1('div', 'ul', 'li', 'dakadaka');
+              },50)
+            }else{
+                alert(res.errMessage)
+            }
+        });
+         Restangular.all('common/famous/templates').customGET().then(function(res) {
+            console.log(res)
+            if(res.success) {
+               vm.modulelist = res.content;
+              setTimeout(function() {
+                banner2('div', 'ul', 'li', 'touzilist');
+              },50)
+            }else{
+                alert(res.errMessage)
+            }
+        });
     }
 })();

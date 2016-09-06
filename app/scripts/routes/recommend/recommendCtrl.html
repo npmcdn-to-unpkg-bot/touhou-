@@ -1,77 +1,50 @@
 <div class="auth-page">
 	<div class="sousuo clearFix">
 		<div class="input-group">
-		  <span class="input-group-addon">搜索：</span>
-		  <input type="text" class="form-control" placeholder="">
+		  <span class="input-group-addon" style="cursor: pointer;" ng-click='vm.getjigou("","",vm.gsi,9)'>搜索：</span>
+		  <input type="text" class="form-control" ng-model="vm.gsi" placeholder="">
 		</div>
 	</div>
 	<div class="red_width">
 		<h2 class="red_tuijian">知名投资机构精品项目推荐</h2>	
 		<ul class="clearFix red_jigou">
-			<li>丰厚资本</li>
-			<li>骏凯资本</li>
-			<li>领岸资本</li>
-			<li>洪泰基金</li>
-			<li>老鹰基金</li>
-			<li>盛景投资</li>
+			<li ng-click='vm.getjigou("","","丰厚资本",9)'>丰厚资本</li>
+			<li ng-click='vm.getjigou("","","骏凯资本",9)'>骏凯资本</li>
+			<li ng-click='vm.getjigou("","","领岸资本",9)'>领岸资本</li>
+			<li ng-click='vm.getjigou("","","洪泰基金",9)'>洪泰基金</li>
+			<li ng-click='vm.getjigou("","","老鹰基金",9)'>老鹰基金</li>
+			<li ng-click='vm.getjigou("","","盛景投资",9)'>盛景投资</li>
 			<li>更多...</li>
 		</ul>
-		<div class="clearFix">
-			<div class="fl red_list">
-				<img src="assets/images/shouzhi1.png" alt="" class="red_yihang">
+		<div class="clearFix" style="width: 945px;">
+			<div class="fl red_list" ng-repeat="item in vm.tuijian">
+				<img src="http://{{item.image}}" alt="" class="red_yihang">
 				<div class="red_cont">
 					<div class="clearFix" style="padding-left: 0;">
-						<img src="assets/images/wurenj.png" class="fl red_logo" alt="">
+						<img src="http://{{item.logo}}" class="fl red_logo" alt="">
 						<div class="fl clearFix red_yiwurenj">
 							<div class="clearFix">
-								<h4 class="fl red_wuren">亿航无人机</h4>
+								<h4 class="fl red_wuren">{{item.projectName}}</h4>
 								<div class="fr red_yihrenshu clearFix">
 									<img src="assets/images/zhuxingt.png" alt="" style="" class="fl">
-									<div class="fl">500</div>
+									<div class="fl">{{item.visitCount}}</div>
 								</div>
 							</div>
 							<div class="clearFix tianshi">
-								<div class="fl" style="">项目阶段：天使轮</div>
-								<div class="fl" style="margin-left: 20px;">本机构股份：6%</div>
+								<div class="fl" style="">项目阶段：{{vm.json[item.enterPhase]}}</div>
+								<div class="fl" style="margin-left: 20px;">本机构股份：{{item.stock}}</div>
 							</div>
 							<div class="clearFix tianshi" style="">
-								<div class="fl" style="text-align: left;">需融金额：200~500万</div>
-								<div class="fl" style="margin-left: 10px;">出让股份：10%</div>
+								<div class="fl" style="text-align: left;">需融金额：{{item.fundraising}}</div>
+								<div class="fl" style="margin-left: 10px;">出让股份：{{item.transferStock}}</div>
 							</div>
 						</div>
 					</div>
-					<p class="red_jumei">聚美优品是一家化妆品限时特卖商城，其前身为团美网。创始人可以将自己的项目送上擂台，千千万万项目同场竞技。</p>
+					<p class="red_jumei">{{item.description }}</p>
 				</div>
 				<a class="red_more" href="javascript:;" title="">READ MORE</a>
 			</div>
-			<div class="fl red_list" style="margin-left: 20px;">
-				<img src="assets/images/shouzhi1.png" alt="" class="red_yihang">
-				<div class="red_cont">
-					<div class="clearFix" style="padding-left: 0;">
-						<img src="assets/images/wurenj.png" class="fl red_logo" alt="">
-						<div class="fl clearFix red_yiwurenj">
-							<div class="clearFix">
-								<h4 class="fl red_wuren">亿航无人机</h4>
-								<div class="fr red_yihrenshu clearFix">
-									<img src="assets/images/zhuxingt.png" alt="" style="" class="fl">
-									<div class="fl">500</div>
-								</div>
-							</div>
-							<div class="clearFix tianshi">
-								<div class="fl" style="">项目阶段：天使轮</div>
-								<div class="fl" style="margin-left: 20px;">本机构股份：6%</div>
-							</div>
-							<div class="clearFix tianshi" style="">
-								<div class="fl" style="text-align: left;">需融金额：200~500万</div>
-								<div class="fl" style="margin-left: 10px;">出让股份：10%</div>
-							</div>
-						</div>
-					</div>
-					<p class="red_jumei">聚美优品是一家化妆品限时特卖商城，其前身为团美网。创始人可以将自己的项目送上擂台，千千万万项目同场竞技。</p>
-				</div>
-				<a class="red_more" href="javascript:;" title="">READ MORE</a>
-			</div>
-			<div class="fl red_list" style="margin-left: 20px;">
+			<!-- <div class="fl red_list">
 				<img src="assets/images/shouzhi1.png" alt="" class="red_yihang">
 				<div class="red_cont">
 					<div class="clearFix" style="padding-left: 0;">
@@ -125,34 +98,7 @@
 				</div>
 				<a class="red_more" href="javascript:;" title="">READ MORE</a>
 			</div>
-			<div class="fl red_list" style="margin-left: 20px;">
-				<img src="assets/images/shouzhi1.png" alt="" class="red_yihang">
-				<div class="red_cont">
-					<div class="clearFix" style="padding-left: 0;">
-						<img src="assets/images/wurenj.png" class="fl red_logo" alt="">
-						<div class="fl clearFix red_yiwurenj">
-							<div class="clearFix">
-								<h4 class="fl red_wuren">亿航无人机</h4>
-								<div class="fr red_yihrenshu clearFix">
-									<img src="assets/images/zhuxingt.png" alt="" style="" class="fl">
-									<div class="fl">500</div>
-								</div>
-							</div>
-							<div class="clearFix tianshi">
-								<div class="fl" style="">项目阶段：天使轮</div>
-								<div class="fl" style="margin-left: 20px;">本机构股份：6%</div>
-							</div>
-							<div class="clearFix tianshi" style="">
-								<div class="fl" style="text-align: left;">需融金额：200~500万</div>
-								<div class="fl" style="margin-left: 10px;">出让股份：10%</div>
-							</div>
-						</div>
-					</div>
-					<p class="red_jumei">聚美优品是一家化妆品限时特卖商城，其前身为团美网。创始人可以将自己的项目送上擂台，千千万万项目同场竞技。</p>
-				</div>
-				<a class="red_more" href="javascript:;" title="">READ MORE</a>
-			</div>
-			<div class="fl red_list" style="margin-left: 20px;">
+			<div class="fl red_list">
 				<img src="assets/images/shouzhi1.png" alt="" class="red_yihang">
 				<div class="red_cont">
 					<div class="clearFix" style="padding-left: 0;">
@@ -206,7 +152,7 @@
 				</div>
 				<a class="red_more" href="javascript:;" title="">READ MORE</a>
 			</div>
-			<div class="fl red_list" style="margin-left: 20px;">
+			<div class="fl red_list">
 				<img src="assets/images/shouzhi1.png" alt="" class="red_yihang">
 				<div class="red_cont">
 					<div class="clearFix" style="padding-left: 0;">
@@ -233,7 +179,7 @@
 				</div>
 				<a class="red_more" href="javascript:;" title="">READ MORE</a>
 			</div>
-			<div class="fl red_list" style="margin-left: 20px;">
+			<div class="fl red_list">
 				<img src="assets/images/shouzhi1.png" alt="" class="red_yihang">
 				<div class="red_cont">
 					<div class="clearFix" style="padding-left: 0;">
@@ -260,6 +206,60 @@
 				</div>
 				<a class="red_more" href="javascript:;" title="">READ MORE</a>
 			</div>
+			<div class="fl red_list">
+				<img src="assets/images/shouzhi1.png" alt="" class="red_yihang">
+				<div class="red_cont">
+					<div class="clearFix" style="padding-left: 0;">
+						<img src="assets/images/wurenj.png" class="fl red_logo" alt="">
+						<div class="fl clearFix red_yiwurenj">
+							<div class="clearFix">
+								<h4 class="fl red_wuren">亿航无人机</h4>
+								<div class="fr red_yihrenshu clearFix">
+									<img src="assets/images/zhuxingt.png" alt="" style="" class="fl">
+									<div class="fl">500</div>
+								</div>
+							</div>
+							<div class="clearFix tianshi">
+								<div class="fl" style="">项目阶段：天使轮</div>
+								<div class="fl" style="margin-left: 20px;">本机构股份：6%</div>
+							</div>
+							<div class="clearFix tianshi" style="">
+								<div class="fl" style="text-align: left;">需融金额：200~500万</div>
+								<div class="fl" style="margin-left: 10px;">出让股份：10%</div>
+							</div>
+						</div>
+					</div>
+					<p class="red_jumei">聚美优品是一家化妆品限时特卖商城，其前身为团美网。创始人可以将自己的项目送上擂台，千千万万项目同场竞技。</p>
+				</div>
+				<a class="red_more" href="javascript:;" title="">READ MORE</a>
+			</div>
+			<div class="fl red_list">
+				<img src="assets/images/shouzhi1.png" alt="" class="red_yihang">
+				<div class="red_cont">
+					<div class="clearFix" style="padding-left: 0;">
+						<img src="assets/images/wurenj.png" class="fl red_logo" alt="">
+						<div class="fl clearFix red_yiwurenj">
+							<div class="clearFix">
+								<h4 class="fl red_wuren">亿航无人机</h4>
+								<div class="fr red_yihrenshu clearFix">
+									<img src="assets/images/zhuxingt.png" alt="" style="" class="fl">
+									<div class="fl">500</div>
+								</div>
+							</div>
+							<div class="clearFix tianshi">
+								<div class="fl" style="">项目阶段：天使轮</div>
+								<div class="fl" style="margin-left: 20px;">本机构股份：6%</div>
+							</div>
+							<div class="clearFix tianshi" style="">
+								<div class="fl" style="text-align: left;">需融金额：200~500万</div>
+								<div class="fl" style="margin-left: 10px;">出让股份：10%</div>
+							</div>
+						</div>
+					</div>
+					<p class="red_jumei">聚美优品是一家化妆品限时特卖商城，其前身为团美网。创始人可以将自己的项目送上擂台，千千万万项目同场竞技。</p>
+				</div>
+				<a class="red_more" href="javascript:;" title="">READ MORE</a>
+			</div> -->
 		</div>
 		<nav style="width:660px;margin:20px auto;">
 		  <ul class="pagination" id="pagination">
